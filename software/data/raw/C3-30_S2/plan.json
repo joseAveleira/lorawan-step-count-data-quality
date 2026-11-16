@@ -1,0 +1,39 @@
+{
+  "id": "C3-30_S2",
+  "description": "Gilbert-Elliott, 30 % de pérdida, ráfaga media de 3 tramas",
+  "tier": 1,
+  "duration_s": 13320,
+  "eval_s": 11520,
+  "devaddr": "260BA8DC",
+  "setup": [
+    "set scenario 1",
+    "set period 240",
+    "set fup 1",
+    "set dr 5",
+    "set adr 0",
+    "set k 4",
+    "set n 40",
+    "set delta 60",
+    "set source 0",
+    "set buf 1440",
+    "set display 1",
+    "set strategy 2",
+    "set seed 1111",
+    "set scenario 3",
+    "set geloss 30",
+    "set geburst 3"
+  ],
+  "actions": [
+    {
+      "at": 11520,
+      "node": "set scenario 1",
+      "note": "vaciado con cobertura continua"
+    }
+  ],
+  "teardown": [
+    "set strategy 1",
+    "set scenario 1",
+    "set buf 1440"
+  ],
+  "ack_every": 0
+}

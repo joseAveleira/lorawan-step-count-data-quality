@@ -1,0 +1,33 @@
+{
+  "id": "C4-48_S0",
+  "description": "Corte de 48 h",
+  "tier": 2,
+  "duration_s": 19080,
+  "eval_s": 19080,
+  "devaddr": "260BA8DC",
+  "setup": [
+    "set scenario 1",
+    "set period 240",
+    "set fup 1",
+    "set dr 5",
+    "set adr 0",
+    "set k 4",
+    "set n 40",
+    "set delta 60",
+    "set source 0",
+    "set buf 1440",
+    "set display 1",
+    "set strategy 0",
+    "set seed 1322",
+    "set scenario 4",
+    "set outstart 1800",
+    "set outlen 11520"
+  ],
+  "actions": [],
+  "teardown": [
+    "set strategy 1",
+    "set scenario 1",
+    "set buf 1440"
+  ],
+  "ack_every": 0
+}

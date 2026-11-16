@@ -1,0 +1,39 @@
+{
+  "id": "C2_S2",
+  "description": "Visita diaria de 2,5 h",
+  "tier": 1,
+  "duration_s": 19680,
+  "eval_s": 17880,
+  "devaddr": "260BA8DC",
+  "setup": [
+    "set scenario 1",
+    "set period 240",
+    "set fup 1",
+    "set dr 5",
+    "set adr 0",
+    "set k 4",
+    "set n 40",
+    "set delta 60",
+    "set source 0",
+    "set buf 1440",
+    "set display 1",
+    "set strategy 2",
+    "set seed 2599",
+    "set scenario 2",
+    "set cycle 5760",
+    "set window 600"
+  ],
+  "actions": [
+    {
+      "at": 17880,
+      "node": "set scenario 1",
+      "note": "vaciado con cobertura continua"
+    }
+  ],
+  "teardown": [
+    "set strategy 1",
+    "set scenario 1",
+    "set buf 1440"
+  ],
+  "ack_every": 0
+}

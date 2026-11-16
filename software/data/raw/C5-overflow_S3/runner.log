@@ -1,0 +1,543 @@
+04:04:46  >> set scenario 1
+04:04:47  >> set period 240
+04:04:47  >> set fup 1
+04:04:47  >> set dr 5
+04:04:47  >> set adr 0
+04:04:47  >> set k 4
+04:04:47  >> set n 40
+04:04:48  >> set delta 60
+04:04:48  >> set source 0
+04:04:48  >> set buf 1440
+04:04:48  >> set display 1
+04:04:48  >> set strategy 3
+04:04:48  >> set seed 1144
+04:04:48  >> set scenario 5
+04:04:49  >> set outstart 1800
+04:04:49  >> set outlen 17280
+04:04:49  >> set buf 96
+04:04:49  >> reboot
+04:04:49  EV,set,scenario,1
+04:04:49  EV,set,period,240
+04:04:49  EV,set,fup,1
+04:04:49  EV,set,dr,5
+04:04:49  EV,set,adr,0
+04:04:49  EV,set,k,4
+04:04:49  EV,set,n,40
+04:04:49  EV,set,delta,60,next_boot
+04:04:49  EV,set,source,0,next_boot
+04:04:49  EV,set,buf,1440,next_boot
+04:04:49  EV,set,display,1
+04:04:49  EV,set,strategy,3
+04:04:49  EV,set,seed,1144,next_boot
+04:04:49  EV,set,scenario,5
+04:04:49  EV,set,outstart,1800
+04:04:49  EV,set,outlen,17280
+04:04:49  EV,set,buf,96,next_boot
+04:04:49  EV,reboot
+04:04:49  EV,boot,54,0.4.0,3,reset
+04:04:49  EV,config,strategy=3,scenario=5,delta=60,period=240,k=4,n=40,seed=1144,source=0,dr=5,adr=0,fup=1,buf=96,display=1,cycle=5760,window=600,geloss=30,geburst=3,outstart=1800,outlen=17280
+04:04:50  EV,sensor,ok,0x4B
+04:04:50  EV,buffer,96,94,0
+04:04:50  EV,exp,continue,56398248
+04:04:50  EV,join,restored,-1117,1
+04:04:50  >> clear
+04:04:50  >> exp
+04:04:50  EV,clear
+04:04:50  EV,exp,start,69754389
+04:04:51  experimento C5-overflow_S3 en marcha: 24840 s, 0 acciones
+04:04:51  # TTN: conectado (Success), suscrito a v3/lorawan-app-iot@ttn/devices/lorapasos/#
+04:04:59  # gateway: 129 registros nuevos (último id 1823)
+04:08:50  # TTN: uplink fcnt=1022 fport=13 rssi=-71 snr=13.8
+04:08:56  TX,54,1022,0,4,60,5,19,sent,71,69994179
+04:09:28  # gateway: 2 registros nuevos (último id 1825)
+04:12:50  # TTN: uplink fcnt=1023 fport=13 rssi=-57 snr=11.8
+04:12:56  TX,54,1023,4,4,60,5,19,sent,71,70234170
+04:13:57  # gateway: 2 registros nuevos (último id 1827)
+04:16:50  # TTN: uplink fcnt=1024 fport=13 rssi=-70 snr=14
+04:16:56  TX,54,1024,8,4,60,5,19,sent,71,70474173
+04:17:19  # gateway: 2 registros nuevos (último id 1829)
+04:20:51  # TTN: uplink fcnt=1025 fport=13 rssi=-70 snr=9.8
+04:20:56  TX,54,1025,12,4,60,5,19,sent,71,70714183
+04:21:48  # gateway: 2 registros nuevos (último id 1831)
+04:24:50  # TTN: uplink fcnt=1026 fport=13 rssi=-70 snr=13.5
+04:24:56  TX,54,1026,16,4,60,5,19,sent,71,70954183
+04:25:10  # gateway: 2 registros nuevos (último id 1833)
+04:28:50  # TTN: uplink fcnt=1027 fport=13 rssi=-57 snr=13.8
+04:28:56  TX,54,1027,20,4,60,5,19,sent,71,71194167
+04:29:39  # gateway: 4 registros nuevos (último id 1837)
+04:32:51  # TTN: uplink fcnt=1028 fport=13 rssi=-57 snr=13.5
+04:32:56  TX,54,1028,24,4,60,5,19,sent,71,71434177
+04:33:01  # gateway: 2 registros nuevos (último id 1839)
+04:36:50  TX,54,-1,28,4,60,5,19,suppressed,0,71674180
+04:40:50  TX,54,-1,32,4,60,5,19,suppressed,0,71914176
+04:44:50  TX,54,-1,36,4,60,5,19,suppressed,0,72154170
+04:48:50  TX,54,-1,40,4,60,5,19,suppressed,0,72394174
+04:52:50  TX,54,-1,44,4,60,5,19,suppressed,0,72634171
+04:56:50  TX,54,-1,48,4,60,5,19,suppressed,0,72874175
+05:00:50  TX,54,-1,52,4,60,5,19,suppressed,0,73114171
+05:04:50  TX,54,-1,56,4,60,5,19,suppressed,0,73354178
+05:08:50  TX,54,-1,60,4,60,5,19,suppressed,0,73594179
+05:12:50  TX,54,-1,64,4,60,5,19,suppressed,0,73834167
+05:16:50  TX,54,-1,68,4,60,5,19,suppressed,0,74074166
+05:20:50  TX,54,-1,72,4,60,5,19,suppressed,0,74314183
+05:24:50  TX,54,-1,76,4,60,5,19,suppressed,0,74554175
+05:28:50  TX,54,-1,80,4,60,5,19,suppressed,0,74794183
+05:32:50  TX,54,-1,84,4,60,5,19,suppressed,0,75034176
+05:36:50  TX,54,-1,88,4,60,5,19,suppressed,0,75274178
+05:40:50  TX,54,-1,92,4,60,5,19,suppressed,0,75514176
+05:41:50  EV,overflow,54,0
+05:42:50  EV,overflow,54,1
+05:43:50  EV,overflow,54,2
+05:44:50  EV,overflow,54,3
+05:44:50  TX,54,-1,96,4,60,5,19,suppressed,0,75754166
+05:45:50  EV,overflow,54,4
+05:46:50  EV,overflow,54,5
+05:47:50  EV,overflow,54,6
+05:48:50  EV,overflow,54,7
+05:48:50  TX,54,-1,100,4,60,5,19,suppressed,0,75994182
+05:49:50  EV,overflow,54,8
+05:50:50  EV,overflow,54,9
+05:51:50  EV,overflow,54,10
+05:52:50  EV,overflow,54,11
+05:52:50  TX,54,-1,104,4,60,5,19,suppressed,0,76234172
+05:53:50  EV,overflow,54,12
+05:54:50  EV,overflow,54,13
+05:55:50  EV,overflow,54,14
+05:56:50  EV,overflow,54,15
+05:56:50  TX,54,-1,108,4,60,5,19,suppressed,0,76474185
+05:57:50  EV,overflow,54,16
+05:58:50  EV,overflow,54,17
+05:59:50  EV,overflow,54,18
+06:00:50  EV,overflow,54,19
+06:00:50  TX,54,-1,112,4,60,5,19,suppressed,0,76714182
+06:01:50  EV,overflow,54,20
+06:02:50  EV,overflow,54,21
+06:03:50  EV,overflow,54,22
+06:04:50  EV,overflow,54,23
+06:04:50  TX,54,-1,116,4,60,5,19,suppressed,0,76954174
+06:05:50  EV,overflow,54,24
+06:06:50  EV,overflow,54,25
+06:07:50  EV,overflow,54,26
+06:08:50  EV,overflow,54,27
+06:08:50  TX,54,-1,120,4,60,5,19,suppressed,0,77194184
+06:09:50  EV,overflow,54,28
+06:10:50  EV,overflow,54,29
+06:11:50  EV,overflow,54,30
+06:12:50  EV,overflow,54,31
+06:12:50  TX,54,-1,124,4,60,5,19,suppressed,0,77434181
+06:13:50  EV,overflow,54,32
+06:14:50  EV,overflow,54,33
+06:15:50  EV,overflow,54,34
+06:16:50  EV,overflow,54,35
+06:16:50  TX,54,-1,128,4,60,5,19,suppressed,0,77674172
+06:17:50  EV,overflow,54,36
+06:18:50  EV,overflow,54,37
+06:19:50  EV,overflow,54,38
+06:20:50  EV,overflow,54,39
+06:20:50  TX,54,-1,132,4,60,5,19,suppressed,0,77914179
+06:21:50  EV,overflow,54,40
+06:22:50  EV,overflow,54,41
+06:23:50  EV,overflow,54,42
+06:24:50  EV,overflow,54,43
+06:24:50  TX,54,-1,136,4,60,5,19,suppressed,0,78154173
+06:25:50  EV,overflow,54,44
+06:26:50  EV,overflow,54,45
+06:27:50  EV,overflow,54,46
+06:28:50  EV,overflow,54,47
+06:28:50  TX,54,-1,140,4,60,5,19,suppressed,0,78394167
+06:29:50  EV,overflow,54,48
+06:30:50  EV,overflow,54,49
+06:31:50  EV,overflow,54,50
+06:32:50  EV,overflow,54,51
+06:32:50  TX,54,-1,144,4,60,5,19,suppressed,0,78634179
+06:33:50  EV,overflow,54,52
+06:34:50  EV,overflow,54,53
+06:35:50  EV,overflow,54,54
+06:36:50  EV,overflow,54,55
+06:36:50  TX,54,-1,148,4,60,5,19,suppressed,0,78874181
+06:37:50  EV,overflow,54,56
+06:38:50  EV,overflow,54,57
+06:39:50  EV,overflow,54,58
+06:40:50  EV,overflow,54,59
+06:40:50  TX,54,-1,152,4,60,5,19,suppressed,0,79114166
+06:41:50  EV,overflow,54,60
+06:42:50  EV,overflow,54,61
+06:43:50  EV,overflow,54,62
+06:44:50  EV,overflow,54,63
+06:44:50  TX,54,-1,156,4,60,5,19,suppressed,0,79354181
+06:45:50  EV,overflow,54,64
+06:46:50  EV,overflow,54,65
+06:47:50  EV,overflow,54,66
+06:48:50  EV,overflow,54,67
+06:48:50  TX,54,-1,160,4,60,5,19,suppressed,0,79594180
+06:49:50  EV,overflow,54,68
+06:50:50  EV,overflow,54,69
+06:51:50  EV,overflow,54,70
+06:52:50  EV,overflow,54,71
+06:52:50  TX,54,-1,164,4,60,5,19,suppressed,0,79834166
+06:53:50  EV,overflow,54,72
+06:54:50  EV,overflow,54,73
+06:55:50  EV,overflow,54,74
+06:56:50  EV,overflow,54,75
+06:56:50  TX,54,-1,168,4,60,5,19,suppressed,0,80074168
+06:57:50  EV,overflow,54,76
+06:58:50  EV,overflow,54,77
+06:59:50  EV,overflow,54,78
+07:00:50  EV,overflow,54,79
+07:00:50  TX,54,-1,172,4,60,5,19,suppressed,0,80314173
+07:01:50  EV,overflow,54,80
+07:02:50  EV,overflow,54,81
+07:03:50  EV,overflow,54,82
+07:04:50  EV,overflow,54,83
+07:04:50  TX,54,-1,176,4,60,5,19,suppressed,0,80554167
+07:05:50  EV,overflow,54,84
+07:06:50  EV,overflow,54,85
+07:07:50  EV,overflow,54,86
+07:08:50  EV,overflow,54,87
+07:08:50  TX,54,-1,180,4,60,5,19,suppressed,0,80794175
+07:09:50  EV,overflow,54,88
+07:10:50  EV,overflow,54,89
+07:11:50  EV,overflow,54,90
+07:12:50  EV,overflow,54,91
+07:12:50  TX,54,-1,184,4,60,5,19,suppressed,0,81034169
+07:13:50  EV,overflow,54,92
+07:14:50  EV,overflow,54,93
+07:15:50  EV,overflow,54,94
+07:16:50  EV,overflow,54,95
+07:16:50  TX,54,-1,188,4,60,5,19,suppressed,0,81274180
+07:17:50  EV,overflow,54,96
+07:18:50  EV,overflow,54,97
+07:19:50  EV,overflow,54,98
+07:20:50  EV,overflow,54,99
+07:20:50  TX,54,-1,192,4,60,5,19,suppressed,0,81514182
+07:21:50  EV,overflow,54,100
+07:22:50  EV,overflow,54,101
+07:23:50  EV,overflow,54,102
+07:24:50  EV,overflow,54,103
+07:24:50  TX,54,-1,196,4,60,5,19,suppressed,0,81754184
+07:25:50  EV,overflow,54,104
+07:26:50  EV,overflow,54,105
+07:27:50  EV,overflow,54,106
+07:28:50  EV,overflow,54,107
+07:28:50  TX,54,-1,200,4,60,5,19,suppressed,0,81994179
+07:29:50  EV,overflow,54,108
+07:30:50  EV,overflow,54,109
+07:31:50  EV,overflow,54,110
+07:32:50  EV,overflow,54,111
+07:32:50  TX,54,-1,204,4,60,5,19,suppressed,0,82234172
+07:33:50  EV,overflow,54,112
+07:34:50  EV,overflow,54,113
+07:35:50  EV,overflow,54,114
+07:36:50  EV,overflow,54,115
+07:36:50  TX,54,-1,208,4,60,5,19,suppressed,0,82474166
+07:37:50  EV,overflow,54,116
+07:38:50  EV,overflow,54,117
+07:39:50  EV,overflow,54,118
+07:40:50  EV,overflow,54,119
+07:40:50  TX,54,-1,212,4,60,5,19,suppressed,0,82714173
+07:41:50  EV,overflow,54,120
+07:42:50  EV,overflow,54,121
+07:43:50  EV,overflow,54,122
+07:44:50  EV,overflow,54,123
+07:44:50  TX,54,-1,216,4,60,5,19,suppressed,0,82954168
+07:45:50  EV,overflow,54,124
+07:46:50  EV,overflow,54,125
+07:47:50  EV,overflow,54,126
+07:48:50  EV,overflow,54,127
+07:48:50  TX,54,-1,220,4,60,5,19,suppressed,0,83194170
+07:49:50  EV,overflow,54,128
+07:50:50  EV,overflow,54,129
+07:51:50  EV,overflow,54,130
+07:52:50  EV,overflow,54,131
+07:52:50  TX,54,-1,224,4,60,5,19,suppressed,0,83434174
+07:53:50  EV,overflow,54,132
+07:54:50  EV,overflow,54,133
+07:55:50  EV,overflow,54,134
+07:56:50  EV,overflow,54,135
+07:56:50  TX,54,-1,228,4,60,5,19,suppressed,0,83674181
+07:57:50  EV,overflow,54,136
+07:58:50  EV,overflow,54,137
+07:59:50  EV,overflow,54,138
+08:00:50  EV,overflow,54,139
+08:00:50  TX,54,-1,232,4,60,5,19,suppressed,0,83914178
+08:01:50  EV,overflow,54,140
+08:02:50  EV,overflow,54,141
+08:03:50  EV,overflow,54,142
+08:04:50  EV,overflow,54,143
+08:04:50  TX,54,-1,236,4,60,5,19,suppressed,0,84154176
+08:05:50  EV,overflow,54,144
+08:06:50  EV,overflow,54,145
+08:07:50  EV,overflow,54,146
+08:08:50  EV,overflow,54,147
+08:08:50  TX,54,-1,240,4,60,5,19,suppressed,0,84394168
+08:09:50  EV,overflow,54,148
+08:10:50  EV,overflow,54,149
+08:11:50  EV,overflow,54,150
+08:12:50  EV,overflow,54,151
+08:12:50  TX,54,-1,244,4,60,5,19,suppressed,0,84634182
+08:13:50  EV,overflow,54,152
+08:14:50  EV,overflow,54,153
+08:15:50  EV,overflow,54,154
+08:16:50  EV,overflow,54,155
+08:16:50  TX,54,-1,248,4,60,5,19,suppressed,0,84874174
+08:17:50  EV,overflow,54,156
+08:18:50  EV,overflow,54,157
+08:19:50  EV,overflow,54,158
+08:20:50  EV,overflow,54,159
+08:20:50  TX,54,-1,252,4,60,5,19,suppressed,0,85114168
+08:21:50  EV,overflow,54,160
+08:22:50  EV,overflow,54,161
+08:23:50  EV,overflow,54,162
+08:24:50  EV,overflow,54,163
+08:24:50  TX,54,-1,256,4,60,5,19,suppressed,0,85354185
+08:25:50  EV,overflow,54,164
+08:26:50  EV,overflow,54,165
+08:27:50  EV,overflow,54,166
+08:28:50  EV,overflow,54,167
+08:28:50  TX,54,-1,260,4,60,5,19,suppressed,0,85594182
+08:29:50  EV,overflow,54,168
+08:30:50  EV,overflow,54,169
+08:31:50  EV,overflow,54,170
+08:32:50  EV,overflow,54,171
+08:32:50  TX,54,-1,264,4,60,5,19,suppressed,0,85834176
+08:33:50  EV,overflow,54,172
+08:34:50  EV,overflow,54,173
+08:35:50  EV,overflow,54,174
+08:36:50  EV,overflow,54,175
+08:36:50  TX,54,-1,268,4,60,5,19,suppressed,0,86074173
+08:37:50  EV,overflow,54,176
+08:38:50  EV,overflow,54,177
+08:39:50  EV,overflow,54,178
+08:40:50  EV,overflow,54,179
+08:40:50  TX,54,-1,272,4,60,5,19,suppressed,0,86314170
+08:41:50  EV,overflow,54,180
+08:42:50  EV,overflow,54,181
+08:43:50  EV,overflow,54,182
+08:44:50  EV,overflow,54,183
+08:44:50  TX,54,-1,276,4,60,5,19,suppressed,0,86554168
+08:45:50  EV,overflow,54,184
+08:46:50  EV,overflow,54,185
+08:47:50  EV,overflow,54,186
+08:48:50  EV,overflow,54,187
+08:48:50  TX,54,-1,280,4,60,5,19,suppressed,0,86794169
+08:49:50  EV,overflow,54,188
+08:50:50  EV,overflow,54,189
+08:51:50  EV,overflow,54,190
+08:52:50  EV,overflow,54,191
+08:52:50  TX,54,-1,284,4,60,5,19,suppressed,0,87034173
+08:53:50  EV,overflow,54,192
+08:54:50  EV,overflow,54,193
+08:55:50  EV,overflow,54,194
+08:56:50  EV,overflow,54,195
+08:56:50  TX,54,-1,288,4,60,5,19,suppressed,0,87274167
+08:57:50  EV,overflow,54,196
+08:58:50  EV,overflow,54,197
+08:59:50  EV,overflow,54,198
+09:00:50  EV,overflow,54,199
+09:00:50  TX,54,-1,292,4,60,5,19,suppressed,0,87514175
+09:01:50  EV,overflow,54,200
+09:02:50  EV,overflow,54,201
+09:03:50  EV,overflow,54,202
+09:04:50  EV,overflow,54,203
+09:04:50  TX,54,-1,296,4,60,5,19,suppressed,0,87754179
+09:05:50  EV,overflow,54,204
+09:06:50  EV,overflow,54,205
+09:07:50  EV,overflow,54,206
+09:08:50  EV,overflow,54,207
+09:08:50  TX,54,-1,300,4,60,5,19,suppressed,0,87994172
+09:09:50  EV,overflow,54,208
+09:10:50  EV,overflow,54,209
+09:11:50  EV,overflow,54,210
+09:12:50  EV,overflow,54,211
+09:12:50  TX,54,-1,304,4,60,5,19,suppressed,0,88234184
+09:13:50  EV,overflow,54,212
+09:14:50  EV,overflow,54,213
+09:15:50  EV,overflow,54,214
+09:16:50  EV,overflow,54,215
+09:16:50  TX,54,-1,308,4,60,5,19,suppressed,0,88474183
+09:17:50  EV,overflow,54,216
+09:18:50  EV,overflow,54,217
+09:19:50  EV,overflow,54,218
+09:20:50  EV,overflow,54,219
+09:20:50  TX,54,-1,312,4,60,5,19,suppressed,0,88714167
+09:21:50  EV,overflow,54,220
+09:22:50  EV,overflow,54,221
+09:23:50  EV,overflow,54,222
+09:24:50  EV,overflow,54,223
+09:24:50  # TTN: uplink fcnt=1029 fport=13 rssi=-73 snr=12
+09:24:50  # TTN: ACK (hueco) en cola para la próxima ventana RX: época 54, secuencia 223 (2 downlinks disponibles en 24 h)
+09:24:50  # TTN: lorapasos/down/queued
+09:24:51  # TTN: lorapasos/down/sent
+09:24:55  TX,54,1029,316,4,60,5,19,sent,71,88954174
+09:24:55  EV,downlink,20,3
+09:24:55  EV,ack,54,223,-1
+09:24:55  EV,rewind,gap,96
+09:25:42  # gateway: 3 registros nuevos (último id 1842)
+09:25:50  EV,overflow,54,224
+09:26:50  EV,overflow,54,225
+09:27:50  EV,overflow,54,226
+09:28:50  EV,overflow,54,227
+09:28:51  # TTN: uplink fcnt=1030 fport=13 rssi=-71 snr=12.2
+09:28:56  TX,54,1030,228,96,1440,5,203,sent,343,89194174
+09:29:04  # gateway: 2 registros nuevos (último id 1844)
+09:29:50  EV,overflow,54,228
+09:30:50  EV,overflow,54,229
+09:31:50  EV,overflow,54,230
+09:32:50  EV,overflow,54,231
+09:32:50  EV,txerr,-1108
+09:32:50  TX,54,-1,324,4,60,-1,19,dropped,0,89434181
+09:33:50  EV,overflow,54,232
+09:34:50  EV,overflow,54,233
+09:35:50  EV,overflow,54,234
+09:36:50  EV,overflow,54,235
+09:36:50  EV,txerr,-1108
+09:36:50  TX,54,-1,324,8,120,-1,27,dropped,0,89674171
+09:37:50  EV,overflow,54,236
+09:38:50  EV,overflow,54,237
+09:39:50  EV,overflow,54,238
+09:40:50  EV,overflow,54,239
+09:40:50  EV,txerr,-1108
+09:40:50  TX,54,-1,324,12,180,-1,35,dropped,0,89914170
+09:41:50  EV,overflow,54,240
+09:42:50  EV,overflow,54,241
+09:43:50  EV,overflow,54,242
+09:44:50  EV,overflow,54,243
+09:44:50  EV,txerr,-1108
+09:44:50  TX,54,-1,324,16,240,-1,43,dropped,0,90154178
+09:45:50  EV,overflow,54,244
+09:46:50  EV,overflow,54,245
+09:47:50  EV,overflow,54,246
+09:48:50  EV,overflow,54,247
+09:48:50  # TTN: uplink fcnt=1031 fport=13 rssi=-73 snr=10
+09:48:56  TX,54,1031,324,20,300,5,51,sent,118,90394199
+09:49:14  # gateway: 2 registros nuevos (último id 1846)
+09:49:50  EV,overflow,54,248
+09:50:50  EV,overflow,54,249
+09:51:50  EV,overflow,54,250
+09:52:50  EV,overflow,54,251
+09:52:50  EV,txerr,-1108
+09:52:50  TX,54,-1,344,4,60,-1,19,dropped,0,90634172
+09:53:50  EV,overflow,54,252
+09:54:50  EV,overflow,54,253
+09:55:50  EV,overflow,54,254
+09:56:50  EV,overflow,54,255
+09:56:50  # TTN: uplink fcnt=1032 fport=13 rssi=-73 snr=11.8
+09:56:56  TX,54,1032,344,8,120,5,27,sent,82,90874182
+09:57:05  # gateway: 2 registros nuevos (último id 1848)
+09:57:50  EV,overflow,54,256
+09:58:50  EV,overflow,54,257
+09:59:50  EV,overflow,54,258
+10:00:50  EV,overflow,54,259
+10:00:50  # TTN: uplink fcnt=1033 fport=13 rssi=-73 snr=13.8
+10:00:56  TX,54,1033,352,4,60,5,19,sent,71,91114197
+10:01:34  # gateway: 2 registros nuevos (último id 1850)
+10:01:50  EV,overflow,54,260
+10:02:50  EV,overflow,54,261
+10:03:50  EV,overflow,54,262
+10:04:50  EV,overflow,54,263
+10:04:50  # TTN: uplink fcnt=1034 fport=13 rssi=-71 snr=14
+10:04:56  # gateway: 2 registros nuevos (último id 1852)
+10:04:56  TX,54,1034,356,4,60,5,19,sent,71,91354172
+10:05:50  EV,overflow,54,264
+10:06:50  EV,overflow,54,265
+10:07:50  EV,overflow,54,266
+10:08:50  EV,overflow,54,267
+10:08:51  # TTN: uplink fcnt=1035 fport=13 rssi=-58 snr=13.5
+10:08:56  TX,54,1035,360,4,60,5,19,sent,71,91594173
+10:09:25  # gateway: 2 registros nuevos (último id 1854)
+10:09:50  EV,overflow,54,268
+10:10:50  EV,overflow,54,269
+10:11:50  EV,overflow,54,270
+10:12:50  EV,overflow,54,271
+10:12:51  # TTN: uplink fcnt=1036 fport=13 rssi=-58 snr=13.8
+10:12:56  TX,54,1036,364,4,60,5,19,sent,71,91834180
+10:13:50  EV,overflow,54,272
+10:13:54  # gateway: 2 registros nuevos (último id 1856)
+10:14:50  EV,overflow,54,273
+10:15:50  EV,overflow,54,274
+10:16:50  EV,overflow,54,275
+10:16:50  # TTN: uplink fcnt=1037 fport=13 rssi=-58 snr=11.8
+10:16:56  TX,54,1037,368,4,60,5,19,sent,71,92074171
+10:17:16  # gateway: 2 registros nuevos (último id 1858)
+10:17:50  EV,overflow,54,276
+10:18:50  EV,overflow,54,277
+10:19:50  EV,overflow,54,278
+10:20:50  EV,overflow,54,279
+10:20:50  # TTN: uplink fcnt=1038 fport=13 rssi=-58 snr=12.2
+10:20:56  TX,54,1038,372,4,60,5,19,sent,71,92314170
+10:21:45  # gateway: 2 registros nuevos (último id 1860)
+10:21:50  EV,overflow,54,280
+10:22:50  EV,overflow,54,281
+10:23:50  EV,overflow,54,282
+10:24:50  EV,overflow,54,283
+10:24:51  # TTN: uplink fcnt=1039 fport=13 rssi=-71 snr=13.2
+10:24:56  TX,54,1039,376,4,60,5,19,sent,71,92554173
+10:25:07  # gateway: 2 registros nuevos (último id 1862)
+10:25:50  EV,overflow,54,284
+10:26:50  EV,overflow,54,285
+10:27:50  EV,overflow,54,286
+10:28:50  EV,overflow,54,287
+10:28:50  # TTN: uplink fcnt=1040 fport=13 rssi=-57 snr=13.8
+10:28:56  TX,54,1040,380,4,60,5,19,sent,71,92794171
+10:29:36  # gateway: 2 registros nuevos (último id 1864)
+10:29:50  EV,overflow,54,288
+10:30:50  EV,overflow,54,289
+10:31:50  EV,overflow,54,290
+10:32:50  EV,overflow,54,291
+10:32:50  # TTN: uplink fcnt=1041 fport=13 rssi=-72 snr=13.8
+10:32:56  TX,54,1041,384,4,60,5,19,sent,71,93034175
+10:32:58  # gateway: 2 registros nuevos (último id 1866)
+10:33:50  EV,overflow,54,292
+10:34:50  EV,overflow,54,293
+10:35:50  EV,overflow,54,294
+10:36:50  EV,overflow,54,295
+10:36:50  # TTN: uplink fcnt=1042 fport=13 rssi=-72 snr=14
+10:36:56  TX,54,1042,388,4,60,5,19,sent,71,93274180
+10:37:27  # gateway: 2 registros nuevos (último id 1868)
+10:37:50  EV,overflow,54,296
+10:38:50  EV,overflow,54,297
+10:39:50  EV,overflow,54,298
+10:40:50  EV,overflow,54,299
+10:40:50  # TTN: uplink fcnt=1043 fport=13 rssi=-72 snr=10.5
+10:40:56  TX,54,1043,392,4,60,5,19,sent,71,93514179
+10:41:50  EV,overflow,54,300
+10:41:56  # gateway: 2 registros nuevos (último id 1870)
+10:42:50  EV,overflow,54,301
+10:43:50  EV,overflow,54,302
+10:44:50  EV,overflow,54,303
+10:44:50  # TTN: uplink fcnt=1044 fport=13 rssi=-73 snr=13.5
+10:44:56  TX,54,1044,396,4,60,5,19,sent,71,93754182
+10:45:18  # gateway: 2 registros nuevos (último id 1872)
+10:45:50  EV,overflow,54,304
+10:46:50  EV,overflow,54,305
+10:47:50  EV,overflow,54,306
+10:48:50  EV,overflow,54,307
+10:48:50  # TTN: uplink fcnt=1045 fport=13 rssi=-57 snr=13.8
+10:48:56  TX,54,1045,400,4,60,5,19,sent,71,93994172
+10:49:48  # gateway: 2 registros nuevos (último id 1874)
+10:49:50  EV,overflow,54,308
+10:50:50  EV,overflow,54,309
+10:51:50  EV,overflow,54,310
+10:52:50  EV,overflow,54,311
+10:52:50  # TTN: uplink fcnt=1046 fport=13 rssi=-59 snr=11
+10:52:55  TX,54,1046,404,4,60,5,19,sent,71,94234176
+10:53:09  # gateway: 3 registros nuevos (último id 1877)
+10:53:50  EV,overflow,54,312
+10:54:50  EV,overflow,54,313
+10:55:50  EV,overflow,54,314
+10:56:50  EV,overflow,54,315
+10:56:50  # TTN: uplink fcnt=1047 fport=13 rssi=-73 snr=13.8
+10:56:56  TX,54,1047,408,4,60,5,19,sent,77,94474180
+10:57:39  # gateway: 2 registros nuevos (último id 1879)
+10:57:50  EV,overflow,54,316
+10:58:50  EV,overflow,54,317
+10:58:51  >> dump
+10:58:51  EV,status,joined=1,epoch=54,open=414,cum=8464,count=96,sent=94,acked=0
+10:58:51  >> set strategy 1
+10:58:51  EV,set,strategy,1
+10:58:51  >> set scenario 1
+10:58:51  EV,set,scenario,1
+10:58:51  >> set buf 1440
+10:58:52  EV,set,buf,1440,next_boot
+10:58:52  experimento C5-overflow_S3 terminado
+10:58:53  # TTN: desconectado

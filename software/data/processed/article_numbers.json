@@ -1,0 +1,5844 @@
+{
+ "generated": "2026-10-24T10:40:18",
+ "lab": {
+  "n_runs": 28,
+  "table": "HIJ_2026_extension/tables/lab_results.tex",
+  "notes": "Times (delays, DC horizon, outage lengths) are laboratory times multiplied by the time compression (15). airtime_s_per_day: airtime of the transmitted frames per wall-clock day of the run, about 15 times the deployment value, to compare with the 30-s daily limit (frames emulated without coverage or lost were not transmitted). SR_bins: steps of the received bins over the steps of the evaluable bins (G), the definition of tab:metrics. SR_counter: share of the steps of G included in the cumulative count of the last received frame of each boot (each frame carries the counter of the boot in which it was sent, which restarts at zero); SR_cumulative is an alias with the former name. counter_gap_max_h_real: longest interval between two consecutive received frames of one boot, at deployment scale (the counter gives totals over such intervals, not per bin). FZR is counted per bin. S0 sends no bins, so its DC, RR and SR_bins are zero by construction; its FZR_naive and FZR_aware show each frame over the bins it covers, FZR_naive_lastbin shows the steps of each frame in its last bin (presentation of the original system, panel (b) of fig:timeline), SR_increments is the share of the steps of G covered by a received S0 frame and S0_interval_coverage the share of G covered. time_err_med_s, time_err_p95_s and time_err_max_s: median, 95th percentile and maximum of the absolute difference between the reconstructed and the true start of each received bin of G, in wall-clock seconds; the ground truth is on the gateway clock (clock_ref = gateway: node clock fitted to the gateway timestamps of the received frames) or, as a fallback, on the PC clock (clock_ref = pc). time_error: the same statistics pooled over the bins of the table runs and of all runs. downlinks: received by the node after the start of the run (EV,ack lines plus acknowledged confirmed uplinks of S4); downlinks_ttn: cross-check in TTN (down/sent on the acknowledgement port plus confirmed uplinks received), null when it cannot be determined. The table includes strategies S0 to S3 only (Methods); other runs are in excluded_runs.",
+  "runs": [
+   {
+    "id": "C1_S0",
+    "scenario_id": "C1",
+    "strategy": 0,
+    "clock_ref": "gateway",
+    "bins_generated": 187,
+    "bins_received": 0,
+    "bins_exposed": 0,
+    "DC_1h": 0.0,
+    "DC_24h": 0.0,
+    "DC_end": 0.0,
+    "RR": null,
+    "SR_bins": 0.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 1.0000478955041667,
+    "TI": null,
+    "time_err_med_s": null,
+    "time_err_p95_s": null,
+    "time_err_max_s": null,
+    "DR": null,
+    "OOR": null,
+    "delay_med_h_real": null,
+    "delay_p95_h_real": null,
+    "delay_max_h_real": null,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": 0.22941176470588234,
+    "SR_increments": 1.0,
+    "S0_interval_coverage": 1.0,
+    "airtime_s_per_day": 21.9482319600752,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 48,
+    "compression": 15.0,
+    "duration_h_lab": 3.2017157522222224,
+    "scenario": 1,
+    "delta_s": 60,
+    "clock_frames": 48,
+    "clock_resid_max_ms": 13.598203659057617,
+    "clock_drift_ppm": -3.4942283960726073,
+    "frames_delivered": 48,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C1_S1",
+    "scenario_id": "C1",
+    "strategy": 1,
+    "clock_ref": "gateway",
+    "bins_generated": 187,
+    "bins_received": 187,
+    "bins_exposed": 0,
+    "DC_1h": 1.0,
+    "DC_24h": 1.0,
+    "DC_end": 1.0,
+    "RR": null,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 1.0000497762583334,
+    "TI": 1.0,
+    "time_err_med_s": 0.313890544,
+    "time_err_p95_s": 0.3257794155,
+    "time_err_max_s": 0.331385852,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5012636050916667,
+    "delay_p95_h_real": 0.7513243540450001,
+    "delay_max_h_real": 0.7513777524291667,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 25.546619835893583,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 48,
+    "compression": 15.0,
+    "duration_h_lab": 3.2016760152777777,
+    "scenario": 1,
+    "delta_s": 60,
+    "clock_frames": 48,
+    "clock_resid_max_ms": 6.898403167724609,
+    "clock_drift_ppm": -4.029483291589919,
+    "delay_med_s": 120.303265222,
+    "delay_p95_s": 180.3178449708,
+    "delay_max_s": 180.330660583,
+    "frames_delivered": 48,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C1_S2",
+    "scenario_id": "C1",
+    "strategy": 2,
+    "clock_ref": "gateway",
+    "bins_generated": 187,
+    "bins_received": 187,
+    "bins_exposed": 0,
+    "DC_1h": 1.0,
+    "DC_24h": 1.0,
+    "DC_end": 1.0,
+    "RR": null,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 1.0001012064458332,
+    "TI": 1.0,
+    "time_err_med_s": 0.670241716,
+    "time_err_p95_s": 0.998198186,
+    "time_err_max_s": 1.030545035,
+    "DR": 1.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5013164664208333,
+    "delay_p95_h_real": 0.7536881726245833,
+    "delay_max_h_real": 0.7542916379,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 29.421100742294122,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 48,
+    "compression": 15.0,
+    "duration_h_lab": 3.2017836730555556,
+    "scenario": 1,
+    "delta_s": 60,
+    "clock_frames": 48,
+    "clock_resid_max_ms": 6.150484085083008,
+    "clock_drift_ppm": -4.600075444560758,
+    "delay_med_s": 120.315951941,
+    "delay_p95_s": 180.8851614299,
+    "delay_max_s": 181.029993096,
+    "frames_delivered": 48,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C1_S3",
+    "scenario_id": "C1",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 187,
+    "bins_received": 187,
+    "bins_exposed": 0,
+    "DC_1h": 1.0,
+    "DC_24h": 1.0,
+    "DC_end": 1.0,
+    "RR": null,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 1.0001005959416667,
+    "TI": 1.0,
+    "time_err_med_s": 0.315726529,
+    "time_err_p95_s": 0.3324251546,
+    "time_err_max_s": 0.334379739,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5012630227374999,
+    "delay_p95_h_real": 0.7513490889616666,
+    "delay_max_h_real": 0.7513895126958333,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 25.59088689023035,
+    "downlinks": 1,
+    "downlinks_ttn": 1,
+    "frames": 48,
+    "compression": 15.0,
+    "duration_h_lab": 3.2017647669444442,
+    "scenario": 1,
+    "delta_s": 60,
+    "clock_frames": 48,
+    "clock_resid_max_ms": 6.287097930908203,
+    "clock_drift_ppm": -4.98146178407044,
+    "delay_med_s": 120.303125457,
+    "delay_p95_s": 180.32378135079998,
+    "delay_max_s": 180.333483047,
+    "frames_delivered": 48,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C2_S0",
+    "scenario_id": "C2",
+    "strategy": 0,
+    "clock_ref": "gateway",
+    "bins_generated": 298,
+    "bins_received": 0,
+    "bins_exposed": 66,
+    "DC_1h": 0.0,
+    "DC_24h": 0.0,
+    "DC_end": 0.0,
+    "RR": 0.0,
+    "SR_bins": 0.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 22.999910139345833,
+    "TI": null,
+    "time_err_med_s": null,
+    "time_err_p95_s": null,
+    "time_err_max_s": null,
+    "DR": null,
+    "OOR": null,
+    "delay_med_h_real": null,
+    "delay_p95_h_real": null,
+    "delay_max_h_real": null,
+    "FZR_naive": 0.2846715328467153,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": 0.3082191780821918,
+    "SR_increments": 0.1924202992843201,
+    "S0_interval_coverage": 0.11409395973154363,
+    "airtime_s_per_day": 4.2835125244083825,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 82,
+    "compression": 15.0,
+    "duration_h_lab": 5.468409364166667,
+    "scenario": 2,
+    "delta_s": 60,
+    "clock_frames": 16,
+    "clock_resid_max_ms": 5.272150039672852,
+    "clock_drift_ppm": -5.258406182595543,
+    "frames_emulated_outage": 66,
+    "frames_delivered": 16,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C2_S1",
+    "scenario_id": "C2",
+    "strategy": 1,
+    "clock_ref": "gateway",
+    "bins_generated": 298,
+    "bins_received": 34,
+    "bins_exposed": 264,
+    "DC_1h": 0.11409395973154363,
+    "DC_24h": 0.10344827586206896,
+    "DC_end": 0.11409395973154363,
+    "RR": 0.0,
+    "SR_bins": 0.1924202992843201,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 22.999909250658334,
+    "TI": 1.0,
+    "time_err_med_s": 0.311121657,
+    "time_err_p95_s": 0.32264623935000003,
+    "time_err_max_s": 0.323203519,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5012704223895834,
+    "delay_p95_h_real": 0.7513180340250001,
+    "delay_max_h_real": 0.7513424593333333,
+    "FZR_naive": 0.2785714285714286,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 5.012045863713447,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 82,
+    "compression": 15.0,
+    "duration_h_lab": 5.468425618055555,
+    "scenario": 2,
+    "delta_s": 60,
+    "clock_frames": 16,
+    "clock_resid_max_ms": 5.863666534423828,
+    "clock_drift_ppm": -5.630011370216792,
+    "delay_med_s": 120.3049013735,
+    "delay_p95_s": 180.316328166,
+    "delay_max_s": 180.32219024,
+    "frames_emulated_outage": 66,
+    "frames_delivered": 16,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C2_S2",
+    "scenario_id": "C2",
+    "strategy": 2,
+    "clock_ref": "gateway",
+    "bins_generated": 298,
+    "bins_received": 46,
+    "bins_exposed": 264,
+    "DC_1h": 0.11409395973154363,
+    "DC_24h": 0.13852813852813853,
+    "DC_end": 0.15436241610738255,
+    "RR": 0.045454545454545456,
+    "SR_bins": 0.2716330513988289,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 22.999868044924998,
+    "TI": 1.0,
+    "time_err_med_s": 0.3322989285,
+    "time_err_p95_s": 0.34633023749999997,
+    "time_err_max_s": 0.352048444,
+    "DR": 0.4782608695652174,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5014239172208333,
+    "delay_p95_h_real": 1.6888435448541665,
+    "delay_max_h_real": 1.7513987227124999,
+    "FZR_naive": 0.25735294117647056,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 5.352317743472466,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 81,
+    "compression": 15.0,
+    "duration_h_lab": 5.466043198888889,
+    "scenario": 2,
+    "delta_s": 60,
+    "clock_frames": 15,
+    "clock_resid_max_ms": 5.344152450561523,
+    "clock_drift_ppm": -5.673764106539636,
+    "delay_med_s": 120.341740133,
+    "delay_p95_s": 405.322450765,
+    "delay_max_s": 420.335693451,
+    "frames_emulated_outage": 66,
+    "frames_delivered": 15,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C2_S3",
+    "scenario_id": "C2",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 298,
+    "bins_received": 298,
+    "bins_exposed": 266,
+    "DC_1h": 0.10738255033557047,
+    "DC_24h": 1.0,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 22.999847808000002,
+    "TI": 1.0,
+    "time_err_med_s": 0.581674942,
+    "time_err_p95_s": 0.59776106845,
+    "time_err_max_s": 0.603887806,
+    "DR": 0.040268456375838924,
+    "OOR": 0.8859060402684564,
+    "delay_med_h_real": 11.502422968583334,
+    "delay_p95_h_real": 22.53988875347791,
+    "delay_max_h_real": 23.752387544554164,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 7.263635101148263,
+    "downlinks": 3,
+    "downlinks_ttn": 3,
+    "frames": 82,
+    "compression": 15.0,
+    "duration_h_lab": 5.4683363697222225,
+    "scenario": 2,
+    "delta_s": 60,
+    "clock_frames": 11,
+    "clock_resid_max_ms": 10.895252227783203,
+    "clock_drift_ppm": -5.417021615494733,
+    "delay_med_s": 2760.58151246,
+    "delay_p95_s": 5409.573300834699,
+    "delay_max_s": 5700.573010693,
+    "frames_emulated_outage": 66,
+    "frames_delivered": 11,
+    "frames_node_dropped": 5,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C3-10_S0",
+    "scenario_id": "C3-10",
+    "strategy": 0,
+    "clock_ref": "gateway",
+    "bins_generated": 192,
+    "bins_received": 0,
+    "bins_exposed": 5,
+    "DC_1h": 0.0,
+    "DC_24h": 0.0,
+    "DC_end": 0.0,
+    "RR": 0.0,
+    "SR_bins": 0.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 3.9999635340083337,
+    "TI": null,
+    "time_err_med_s": null,
+    "time_err_p95_s": null,
+    "time_err_max_s": null,
+    "DR": null,
+    "OOR": null,
+    "delay_med_h_real": null,
+    "delay_p95_h_real": null,
+    "delay_max_h_real": null,
+    "FZR_naive": 0.09722222222222222,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": 0.22777777777777777,
+    "SR_increments": 0.7038520801232666,
+    "S0_interval_coverage": 0.8958333333333334,
+    "airtime_s_per_day": 19.782075614920704,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003194925,
+    "scenario": 3,
+    "delta_s": 60,
+    "clock_frames": 50,
+    "clock_resid_max_ms": 5.598545074462891,
+    "clock_drift_ppm": -5.962286493077507,
+    "frames_delivered": 50,
+    "frames_emulated_outage": 5,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C3-10_S1",
+    "scenario_id": "C3-10",
+    "strategy": 1,
+    "clock_ref": "gateway",
+    "bins_generated": 192,
+    "bins_received": 172,
+    "bins_exposed": 20,
+    "DC_1h": 0.8958333333333334,
+    "DC_24h": 0.9365079365079365,
+    "DC_end": 0.8958333333333334,
+    "RR": 0.0,
+    "SR_bins": 0.7038520801232666,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 3.999992431170833,
+    "TI": 1.0,
+    "time_err_med_s": 0.3109528365,
+    "time_err_p95_s": 0.3231979651,
+    "time_err_max_s": 0.324430087,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.37629137708125,
+    "delay_p95_h_real": 0.7513231637825,
+    "delay_max_h_real": 0.7513472660499999,
+    "FZR_naive": 0.09032258064516129,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 23.06389899028008,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003283805555554,
+    "scenario": 3,
+    "delta_s": 60,
+    "clock_frames": 50,
+    "clock_resid_max_ms": 5.982160568237305,
+    "clock_drift_ppm": -6.034218063777352,
+    "delay_med_s": 90.3099304995,
+    "delay_p95_s": 180.3175593078,
+    "delay_max_s": 180.323343852,
+    "frames_delivered": 50,
+    "frames_emulated_outage": 5,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C3-10_S2",
+    "scenario_id": "C3-10",
+    "strategy": 2,
+    "clock_ref": "gateway",
+    "bins_generated": 192,
+    "bins_received": 180,
+    "bins_exposed": 20,
+    "DC_1h": 0.8958333333333334,
+    "DC_24h": 0.9682539682539683,
+    "DC_end": 0.9375,
+    "RR": 0.4,
+    "SR_bins": 0.7839753466872111,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 3.9984105174833333,
+    "TI": 1.0,
+    "time_err_med_s": 0.4584493205,
+    "time_err_p95_s": 0.6796786051,
+    "time_err_max_s": 0.699093828,
+    "DR": 0.9111111111111111,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5014066164125,
+    "delay_p95_h_real": 0.7528711102697917,
+    "delay_max_h_real": 1.7513507430958333,
+    "FZR_naive": 0.06622516556291391,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 26.520677879356185,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003579036111107,
+    "scenario": 3,
+    "delta_s": 60,
+    "clock_frames": 50,
+    "clock_resid_max_ms": 5.192995071411133,
+    "clock_drift_ppm": -5.92335341764727,
+    "delay_med_s": 120.337587939,
+    "delay_p95_s": 180.68906646475,
+    "delay_max_s": 420.324178343,
+    "frames_delivered": 50,
+    "frames_emulated_outage": 5,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C3-10_S3",
+    "scenario_id": "C3-10",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 192,
+    "bins_received": 192,
+    "bins_exposed": 24,
+    "DC_1h": 0.875,
+    "DC_24h": 1.0,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 3.999972199179167,
+    "TI": 1.0,
+    "time_err_med_s": 0.3130245395,
+    "time_err_p95_s": 0.4105314486,
+    "time_err_max_s": 0.415131544,
+    "DR": 0.041666666666666664,
+    "OOR": 0.10416666666666667,
+    "delay_med_h_real": 0.5012847578458334,
+    "delay_p95_h_real": 3.1141068546927055,
+    "delay_max_h_real": 4.751702839033333,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 22.785043975542045,
+    "downlinks": 2,
+    "downlinks_ttn": 2,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.700322022222222,
+    "scenario": 3,
+    "delta_s": 60,
+    "clock_frames": 48,
+    "clock_resid_max_ms": 6.232500076293945,
+    "clock_drift_ppm": -5.658115835638355,
+    "delay_med_s": 120.308341883,
+    "delay_p95_s": 747.3856451262493,
+    "delay_max_s": 1140.408681368,
+    "frames_delivered": 48,
+    "frames_emulated_outage": 5,
+    "frames_node_dropped": 2,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C3-30_S0",
+    "scenario_id": "C3-30",
+    "strategy": 0,
+    "clock_ref": "gateway",
+    "bins_generated": 192,
+    "bins_received": 0,
+    "bins_exposed": 15,
+    "DC_1h": 0.0,
+    "DC_24h": 0.0,
+    "DC_end": 0.0,
+    "RR": 0.0,
+    "SR_bins": 0.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 7.999996940808334,
+    "TI": null,
+    "time_err_med_s": null,
+    "time_err_p95_s": null,
+    "time_err_max_s": null,
+    "DR": null,
+    "OOR": null,
+    "delay_med_h_real": null,
+    "delay_p95_h_real": null,
+    "delay_max_h_real": null,
+    "FZR_naive": 0.12857142857142856,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": 0.27932960893854747,
+    "SR_increments": 0.7136481089969462,
+    "S0_interval_coverage": 0.6875,
+    "airtime_s_per_day": 15.857770865205879,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003939897222224,
+    "scenario": 3,
+    "delta_s": 60,
+    "clock_frames": 40,
+    "clock_resid_max_ms": 4.923343658447266,
+    "clock_drift_ppm": -5.448389511220064,
+    "frames_delivered": 40,
+    "frames_emulated_outage": 15,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C3-30_S1",
+    "scenario_id": "C3-30",
+    "strategy": 1,
+    "clock_ref": "gateway",
+    "bins_generated": 192,
+    "bins_received": 132,
+    "bins_exposed": 60,
+    "DC_1h": 0.6875,
+    "DC_24h": 0.7936507936507936,
+    "DC_end": 0.6875,
+    "RR": 0.0,
+    "SR_bins": 0.7136481089969462,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 7.999953613004167,
+    "TI": 1.0,
+    "time_err_med_s": 0.31511440599999996,
+    "time_err_p95_s": 0.327808534,
+    "time_err_max_s": 0.329231846,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.3763094815520833,
+    "delay_p95_h_real": 0.7513289677658332,
+    "delay_max_h_real": 0.7513674273583334,
+    "FZR_naive": 0.12080536912751678,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 18.41998571116091,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003286033333334,
+    "scenario": 3,
+    "delta_s": 60,
+    "clock_frames": 40,
+    "clock_resid_max_ms": 5.814790725708008,
+    "clock_drift_ppm": -5.829080746422299,
+    "delay_med_s": 90.3142755725,
+    "delay_p95_s": 180.31895226379999,
+    "delay_max_s": 180.328182566,
+    "frames_delivered": 40,
+    "frames_emulated_outage": 15,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C3-30_S2",
+    "scenario_id": "C3-30",
+    "strategy": 2,
+    "clock_ref": "gateway",
+    "bins_generated": 192,
+    "bins_received": 152,
+    "bins_exposed": 60,
+    "DC_1h": 0.6875,
+    "DC_24h": 0.8253968253968254,
+    "DC_end": 0.7916666666666666,
+    "RR": 0.3333333333333333,
+    "SR_bins": 0.818651632605121,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 8.000019965679167,
+    "TI": 1.0,
+    "time_err_med_s": 0.37706621149999997,
+    "time_err_p95_s": 0.6467987086999998,
+    "time_err_max_s": 0.67874061,
+    "DR": 0.7368421052631579,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5014346094541666,
+    "delay_p95_h_real": 1.5013501968429166,
+    "delay_max_h_real": 1.7513959231791667,
+    "FZR_naive": 0.08391608391608392,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 21.202416095733298,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003330019444447,
+    "scenario": 3,
+    "delta_s": 60,
+    "clock_frames": 40,
+    "clock_resid_max_ms": 6.047964096069336,
+    "clock_drift_ppm": -5.723749057384708,
+    "delay_med_s": 120.344306269,
+    "delay_p95_s": 360.3240472423,
+    "delay_max_s": 420.335021563,
+    "frames_delivered": 40,
+    "frames_emulated_outage": 15,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C3-30_S3",
+    "scenario_id": "C3-30",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 192,
+    "bins_received": 192,
+    "bins_exposed": 68,
+    "DC_1h": 0.6458333333333334,
+    "DC_24h": 1.0,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 7.999956849316666,
+    "TI": 1.0,
+    "time_err_med_s": 0.3200275,
+    "time_err_p95_s": 0.52752202615,
+    "time_err_max_s": 0.532286166,
+    "DR": 0.10416666666666667,
+    "OOR": 0.3541666666666667,
+    "delay_med_h_real": 0.7512671518166666,
+    "delay_p95_h_real": 16.36462197526833,
+    "delay_max_h_real": 18.752107984816668,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 18.7767193142606,
+    "downlinks": 5,
+    "downlinks_ttn": 5,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003269227777777,
+    "scenario": 3,
+    "delta_s": 60,
+    "clock_frames": 37,
+    "clock_resid_max_ms": 12.395381927490234,
+    "clock_drift_ppm": -5.859983871148167,
+    "delay_med_s": 180.304116436,
+    "delay_p95_s": 3927.5092740643995,
+    "delay_max_s": 4500.505916356,
+    "frames_delivered": 37,
+    "frames_emulated_outage": 15,
+    "frames_node_dropped": 3,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C4-24_S0",
+    "scenario_id": "C4-24",
+    "strategy": 0,
+    "clock_ref": "gateway",
+    "bins_generated": 217,
+    "bins_received": 0,
+    "bins_exposed": 24,
+    "DC_1h": 0.0,
+    "DC_24h": 0.0,
+    "DC_end": 0.0,
+    "RR": 0.0,
+    "SR_bins": 0.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 24.999895007141667,
+    "TI": null,
+    "time_err_med_s": null,
+    "time_err_p95_s": null,
+    "time_err_max_s": null,
+    "DR": null,
+    "OOR": null,
+    "delay_med_h_real": null,
+    "delay_p95_h_real": null,
+    "delay_max_h_real": null,
+    "FZR_naive": 0.16560509554140126,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": 0.28217821782178215,
+    "SR_increments": 0.6457504097401077,
+    "S0_interval_coverage": 0.5576036866359447,
+    "airtime_s_per_day": 12.26463925728379,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003942022222223,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 31,
+    "clock_resid_max_ms": 8.056402206420898,
+    "clock_drift_ppm": -5.047136070190916,
+    "frames_delivered": 31,
+    "frames_emulated_outage": 24,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 5760
+   },
+   {
+    "id": "C4-24_S1",
+    "scenario_id": "C4-24",
+    "strategy": 1,
+    "clock_ref": "gateway",
+    "bins_generated": 217,
+    "bins_received": 121,
+    "bins_exposed": 96,
+    "DC_1h": 0.5576036866359447,
+    "DC_24h": 0.23809523809523808,
+    "DC_end": 0.5576036866359447,
+    "RR": 0.0,
+    "SR_bins": 0.6457504097401077,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 24.999824967029166,
+    "TI": 1.0,
+    "time_err_med_s": 0.311051049,
+    "time_err_p95_s": 0.321720646,
+    "time_err_max_s": 0.323538479,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5012298885958333,
+    "delay_p95_h_real": 0.7513162479125001,
+    "delay_max_h_real": 0.7513436900916667,
+    "FZR_naive": 0.14857142857142858,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 14.275446426175714,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003396197222225,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 31,
+    "clock_resid_max_ms": 13.52691650390625,
+    "clock_drift_ppm": -5.849213718378543,
+    "delay_med_s": 120.295173263,
+    "delay_p95_s": 180.315899499,
+    "delay_max_s": 180.322485622,
+    "frames_delivered": 31,
+    "frames_emulated_outage": 24,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 5760
+   },
+   {
+    "id": "C4-24_S2",
+    "scenario_id": "C4-24",
+    "strategy": 2,
+    "clock_ref": "gateway",
+    "bins_generated": 217,
+    "bins_received": 125,
+    "bins_exposed": 96,
+    "DC_1h": 0.5576036866359447,
+    "DC_24h": 0.2698412698412698,
+    "DC_end": 0.576036866359447,
+    "RR": 0.041666666666666664,
+    "SR_bins": 0.6457504097401077,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 24.9995484549,
+    "TI": 1.0,
+    "time_err_med_s": 0.435189444,
+    "time_err_p95_s": 0.6475813076,
+    "time_err_max_s": 0.688896136,
+    "DR": 0.928,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5013402448583334,
+    "delay_p95_h_real": 0.7526793866375,
+    "delay_max_h_real": 1.751333556225,
+    "FZR_naive": 0.14857142857142858,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 16.415815456917993,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003339955555554,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 31,
+    "clock_resid_max_ms": 6.119251251220703,
+    "clock_drift_ppm": -5.350997512754141,
+    "delay_med_s": 120.321658766,
+    "delay_p95_s": 180.643052793,
+    "delay_max_s": 420.320053494,
+    "frames_delivered": 31,
+    "frames_emulated_outage": 24,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 5760
+   },
+   {
+    "id": "C4-24_S3",
+    "scenario_id": "C4-24",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 217,
+    "bins_received": 217,
+    "bins_exposed": 116,
+    "DC_1h": 0.46543778801843316,
+    "DC_24h": 0.9365079365079365,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 24.999865918720833,
+    "TI": 1.0,
+    "time_err_med_s": 0.391068024,
+    "time_err_p95_s": 0.6179597348,
+    "time_err_max_s": 0.623048922,
+    "DR": 0.018433179723502304,
+    "OOR": 0.4423963133640553,
+    "delay_med_h_real": 1.7516308835916665,
+    "delay_p95_h_real": 23.052463935004166,
+    "delay_max_h_real": 25.75244846104167,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 14.242849131918318,
+    "downlinks": 1,
+    "downlinks_ttn": 1,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.700383224722222,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 26,
+    "clock_resid_max_ms": 16.963481903076172,
+    "clock_drift_ppm": -5.731108138284924,
+    "delay_med_s": 420.391412062,
+    "delay_p95_s": 5532.591344400999,
+    "delay_max_s": 6180.58763065,
+    "frames_delivered": 26,
+    "frames_emulated_outage": 24,
+    "frames_node_dropped": 5,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 5760
+   },
+   {
+    "id": "REAL-C4-24_S1",
+    "scenario_id": "REAL-C4-24",
+    "strategy": 1,
+    "clock_ref": "gateway",
+    "bins_generated": 217,
+    "bins_received": 121,
+    "bins_exposed": 96,
+    "DC_1h": 0.5576036866359447,
+    "DC_24h": 0.23809523809523808,
+    "DC_end": 0.5576036866359447,
+    "RR": 0.0,
+    "SR_bins": 0.6457504097401077,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 24.999899017358334,
+    "TI": 1.0,
+    "time_err_med_s": 0.30802112,
+    "time_err_p95_s": 0.315822476,
+    "time_err_max_s": 0.316588753,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.5012381082041667,
+    "delay_p95_h_real": 0.751292300725,
+    "delay_max_h_real": 0.7513143305708333,
+    "FZR_naive": 0.14857142857142858,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 25.32741831568829,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.7003376669444443,
+    "scenario": 1,
+    "delta_s": 60,
+    "clock_frames": 31,
+    "clock_resid_max_ms": 5.844831466674805,
+    "clock_drift_ppm": -6.385868469904743,
+    "delay_med_s": 120.297145969,
+    "delay_p95_s": 180.310152174,
+    "delay_max_s": 180.315439337,
+    "frames_delivered": 31,
+    "frames_gateway_filtered": 24,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "REAL-C4-24_S3",
+    "scenario_id": "REAL-C4-24",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 217,
+    "bins_received": 217,
+    "bins_exposed": 116,
+    "DC_1h": 0.46543778801843316,
+    "DC_24h": 0.9365079365079365,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 24.999836555095833,
+    "TI": 1.0,
+    "time_err_med_s": 0.413836495,
+    "time_err_p95_s": 0.6192391942,
+    "time_err_max_s": 0.624358947,
+    "DR": 0.018433179723502304,
+    "OOR": 0.4423963133640553,
+    "delay_med_h_real": 1.7517257601708334,
+    "delay_p95_h_real": 23.052468599904163,
+    "delay_max_h_real": 25.752453032366667,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 25.294722754079707,
+    "downlinks": 1,
+    "downlinks_ttn": 1,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.700376592777778,
+    "scenario": 1,
+    "delta_s": 60,
+    "clock_frames": 26,
+    "clock_resid_max_ms": 15.071868896484375,
+    "clock_drift_ppm": -5.765545247005122,
+    "delay_med_s": 420.414182441,
+    "delay_p95_s": 5532.592463976999,
+    "delay_max_s": 6180.588727768,
+    "frames_delivered": 26,
+    "frames_gateway_filtered": 24,
+    "frames_node_dropped": 5,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": null
+   },
+   {
+    "id": "C4-48_S0",
+    "scenario_id": "C4-48",
+    "strategy": 0,
+    "clock_ref": "gateway",
+    "bins_generated": 313,
+    "bins_received": 0,
+    "bins_exposed": 48,
+    "DC_1h": 0.0,
+    "DC_24h": 0.0,
+    "DC_end": 0.0,
+    "RR": 0.0,
+    "SR_bins": 0.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 48.99974499954583,
+    "TI": null,
+    "time_err_med_s": null,
+    "time_err_p95_s": null,
+    "time_err_max_s": null,
+    "DR": null,
+    "OOR": null,
+    "delay_med_h_real": null,
+    "delay_p95_h_real": null,
+    "delay_max_h_real": null,
+    "FZR_naive": 0.1976284584980237,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": 0.2785234899328859,
+    "SR_increments": 0.47241106719367587,
+    "S0_interval_coverage": 0.3865814696485623,
+    "airtime_s_per_day": 8.562461102117828,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 79,
+    "compression": 15.0,
+    "duration_h_lab": 5.300345246388889,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 31,
+    "clock_resid_max_ms": 6.607532501220703,
+    "clock_drift_ppm": -6.090362175803499,
+    "frames_emulated_outage": 48,
+    "frames_delivered": 31,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 11520
+   },
+   {
+    "id": "C4-48_S3",
+    "scenario_id": "C4-48",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 313,
+    "bins_received": 313,
+    "bins_exposed": 236,
+    "DC_1h": 0.24600638977635783,
+    "DC_24h": 0.44594594594594594,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 48.999696747816664,
+    "TI": 1.0,
+    "time_err_med_s": 0.571945197,
+    "time_err_p95_s": 0.64215063,
+    "time_err_max_s": 0.649184693,
+    "DR": 0.012779552715654952,
+    "OOR": 0.6134185303514377,
+    "delay_med_h_real": 15.752625682904165,
+    "delay_p95_h_real": 45.85233316026666,
+    "delay_max_h_real": 49.752309832995834,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 10.160674703648612,
+    "downlinks": 1,
+    "downlinks_ttn": 1,
+    "frames": 79,
+    "compression": 15.0,
+    "duration_h_lab": 5.300435411111112,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 22,
+    "clock_resid_max_ms": 9.19342041015625,
+    "clock_drift_ppm": -5.981375820307555,
+    "delay_med_s": 3780.630163897,
+    "delay_p95_s": 11004.559958463999,
+    "delay_max_s": 11940.554359919,
+    "frames_emulated_outage": 48,
+    "frames_delivered": 22,
+    "frames_node_dropped": 9,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 11520
+   },
+   {
+    "id": "C4-72_S0",
+    "scenario_id": "C4-72",
+    "strategy": 0,
+    "clock_ref": "gateway",
+    "bins_generated": 409,
+    "bins_received": 0,
+    "bins_exposed": 72,
+    "DC_1h": 0.0,
+    "DC_24h": 0.0,
+    "DC_end": 0.0,
+    "RR": 0.0,
+    "SR_bins": 0.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 72.9995600235625,
+    "TI": null,
+    "time_err_med_s": null,
+    "time_err_p95_s": null,
+    "time_err_max_s": null,
+    "DR": null,
+    "OOR": null,
+    "delay_med_h_real": null,
+    "delay_p95_h_real": null,
+    "delay_max_h_real": null,
+    "FZR_naive": 0.22063037249283668,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": 0.28426395939086296,
+    "SR_increments": 0.3785035629453682,
+    "S0_interval_coverage": 0.29584352078239606,
+    "airtime_s_per_day": 6.594461371881173,
+    "downlinks": 0,
+    "downlinks_ttn": 0,
+    "frames": 103,
+    "compression": 15.0,
+    "duration_h_lab": 6.900336120555555,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 31,
+    "clock_resid_max_ms": 6.063938140869141,
+    "clock_drift_ppm": -6.054178536163413,
+    "frames_emulated_outage": 72,
+    "frames_delivered": 31,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 17280
+   },
+   {
+    "id": "C4-72_S3",
+    "scenario_id": "C4-72",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 409,
+    "bins_received": 409,
+    "bins_exposed": 360,
+    "DC_1h": 0.1198044009779951,
+    "DC_24h": 0.24528301886792453,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 72.9995627782125,
+    "TI": 1.0,
+    "time_err_med_s": 0.574062251,
+    "time_err_p95_s": 0.6576914991999999,
+    "time_err_max_s": 0.664681884,
+    "DR": 0.009779951100244499,
+    "OOR": 0.7041564792176039,
+    "delay_med_h_real": 29.502631013479167,
+    "delay_p95_h_real": 68.65219420304916,
+    "delay_max_h_real": 73.75216507644583,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 7.554234450756873,
+    "downlinks": 1,
+    "downlinks_ttn": 1,
+    "frames": 103,
+    "compression": 15.0,
+    "duration_h_lab": 6.900500684722222,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 16,
+    "clock_resid_max_ms": 13.22317123413086,
+    "clock_drift_ppm": -5.711129253849201,
+    "delay_med_s": 7080.631443235,
+    "delay_p95_s": 16476.526608731798,
+    "delay_max_s": 17700.519618347,
+    "frames_emulated_outage": 72,
+    "frames_delivered": 16,
+    "frames_node_dropped": 15,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 17280
+   },
+   {
+    "id": "C5-reboot_S3",
+    "scenario_id": "C5-reboot",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 217,
+    "bins_received": 217,
+    "bins_exposed": 120,
+    "DC_1h": 0.4470046082949309,
+    "DC_24h": 0.9365079365079365,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 0.6457504097401077,
+    "SR_cumulative": 0.6457504097401077,
+    "counter_gap_max_h_real": 3.000231434241667,
+    "TI": 1.0,
+    "time_err_med_s": 0.505051022,
+    "time_err_p95_s": 1.9324661213999998,
+    "time_err_max_s": 1.936458632,
+    "DR": 0.018433179723502304,
+    "OOR": 0.4423963133640553,
+    "delay_med_h_real": 1.7521860147708335,
+    "delay_p95_h_real": 23.058006657346663,
+    "delay_max_h_real": 25.757990022683334,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 14.281723702151782,
+    "downlinks": 1,
+    "downlinks_ttn": 1,
+    "frames": 55,
+    "compression": 15.0,
+    "duration_h_lab": 3.700393671111111,
+    "scenario": 5,
+    "delta_s": 60,
+    "clock_frames": 26,
+    "clock_resid_max_ms": 6.70313835144043,
+    "clock_drift_ppm": -6.1611662448557425,
+    "delay_med_s": 420.524643545,
+    "delay_p95_s": 5533.921597763199,
+    "delay_max_s": 6181.917605444,
+    "frames_delivered": 26,
+    "frames_emulated_outage": 24,
+    "frames_node_dropped": 5,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 5760
+   },
+   {
+    "id": "C5-overflow_S3",
+    "scenario_id": "C5-overflow",
+    "strategy": 3,
+    "clock_ref": "gateway",
+    "bins_generated": 409,
+    "bins_received": 209,
+    "bins_exposed": 308,
+    "DC_1h": 0.2469437652811736,
+    "DC_24h": 0.3710691823899371,
+    "DC_end": 0.511002444987775,
+    "RR": 0.35064935064935066,
+    "SR_bins": 0.5882561436672968,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 72.99951583440418,
+    "TI": 1.0,
+    "time_err_med_s": 0.395497892,
+    "time_err_p95_s": 0.5914027672,
+    "time_err_max_s": 0.596502779,
+    "DR": 0.019138755980861243,
+    "OOR": 0.42105263157894735,
+    "delay_med_h_real": 1.2516582383583332,
+    "delay_p95_h_real": 21.152360582741665,
+    "delay_max_h_real": 23.752345235141668,
+    "FZR_naive": 0.15680473372781065,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 7.589171167398724,
+    "downlinks": 1,
+    "downlinks_ttn": 1,
+    "frames": 103,
+    "compression": 15.0,
+    "duration_h_lab": 6.9003582663888885,
+    "scenario": 5,
+    "delta_s": 60,
+    "clock_frames": 26,
+    "clock_resid_max_ms": 15.782356262207031,
+    "clock_drift_ppm": -5.902861161422024,
+    "delay_med_s": 300.397977206,
+    "delay_p95_s": 5076.5665398579995,
+    "delay_max_s": 5700.562856434,
+    "frames_emulated_outage": 72,
+    "frames_delivered": 26,
+    "frames_node_dropped": 5,
+    "buffer_bins": 96,
+    "outage_len_s_lab": 17280
+   }
+  ],
+  "excluded_runs": [
+   {
+    "id": "S4-valid",
+    "scenario_id": "S4-valid",
+    "strategy": 4,
+    "clock_ref": "gateway",
+    "bins_generated": 35,
+    "bins_received": 35,
+    "bins_exposed": 16,
+    "DC_1h": 0.5428571428571428,
+    "DC_24h": null,
+    "DC_end": 1.0,
+    "RR": 1.0,
+    "SR_bins": 1.0,
+    "SR_counter": 1.0,
+    "SR_cumulative": 1.0,
+    "counter_gap_max_h_real": 4.000078891245833,
+    "TI": 1.0,
+    "time_err_med_s": 0.318771523,
+    "time_err_p95_s": 0.345659376,
+    "time_err_max_s": 0.346543122,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.7513238824166667,
+    "delay_p95_h_real": 3.326415120465416,
+    "delay_max_h_real": 3.7514114381916666,
+    "FZR_naive": 0.0,
+    "FZR_aware": 0.0,
+    "FZR_naive_lastbin": null,
+    "SR_increments": null,
+    "S0_interval_coverage": null,
+    "airtime_s_per_day": 16.986611801845832,
+    "downlinks": 6,
+    "downlinks_ttn": 6,
+    "frames": 10,
+    "compression": 15.0,
+    "duration_h_lab": 0.6682910125,
+    "scenario": 4,
+    "delta_s": 60,
+    "clock_frames": 6,
+    "clock_resid_max_ms": 3.077268600463867,
+    "clock_drift_ppm": -8.664484257847604,
+    "delay_med_s": 180.31773178,
+    "delay_p95_s": 798.3396289116998,
+    "delay_max_s": 900.338745166,
+    "frames_delivered": 6,
+    "frames_emulated_outage": 3,
+    "frames_node_dropped": 1,
+    "buffer_bins": 1440,
+    "outage_len_s_lab": 720,
+    "reason": "strategy not defined in Methods (S0 to S3)"
+   }
+  ],
+  "time_error": {
+   "definition": "absolute difference between the reconstructed and the true start of each received bin of G, in wall-clock seconds; quantiles with pandas linear interpolation",
+   "runs_not_on_gateway_clock": [],
+   "table_runs": {
+    "runs": [
+     "C1_S1",
+     "C1_S2",
+     "C1_S3",
+     "C2_S1",
+     "C2_S2",
+     "C2_S3",
+     "C3-10_S1",
+     "C3-10_S2",
+     "C3-10_S3",
+     "C3-30_S1",
+     "C3-30_S2",
+     "C3-30_S3",
+     "C4-24_S1",
+     "C4-24_S2",
+     "C4-24_S3",
+     "REAL-C4-24_S1",
+     "REAL-C4-24_S3",
+     "C4-48_S3",
+     "C4-72_S3",
+     "C5-reboot_S3",
+     "C5-overflow_S3"
+    ],
+    "n_bins": 3908,
+    "median_s": 0.348326152,
+    "p95_s": 0.6562896859499999,
+    "max_s": 1.936458632,
+    "min_s": 0.294822311,
+    "max_run": "C5-reboot_S3"
+   },
+   "all_runs": {
+    "runs": [
+     "C1_S1",
+     "C1_S2",
+     "C1_S3",
+     "C2_S1",
+     "C2_S2",
+     "C2_S3",
+     "C3-10_S1",
+     "C3-10_S2",
+     "C3-10_S3",
+     "C3-30_S1",
+     "C3-30_S2",
+     "C3-30_S3",
+     "C4-24_S1",
+     "C4-24_S2",
+     "C4-24_S3",
+     "REAL-C4-24_S1",
+     "REAL-C4-24_S3",
+     "C4-48_S3",
+     "C4-72_S3",
+     "C5-reboot_S3",
+     "C5-overflow_S3",
+     "S4-valid"
+    ],
+    "n_bins": 3943,
+    "median_s": 0.343218459,
+    "p95_s": 0.6556759468,
+    "max_s": 1.936458632,
+    "min_s": 0.294822311,
+    "max_run": "C5-reboot_S3"
+   }
+  },
+  "radio": {
+   "table_runs": {
+    "frames_in_coverage": 933,
+    "frames_delivered": 933,
+    "fates": {
+     "delivered": 933,
+     "emulated_outage": 776,
+     "node_dropped": 54,
+     "gateway_filtered": 48
+    },
+    "rssi_dbm_min": -90,
+    "rssi_dbm_max": -33,
+    "snr_db_min": 8.5,
+    "snr_db_max": 14.8
+   },
+   "all_runs": {
+    "frames_in_coverage": 939,
+    "frames_delivered": 939,
+    "fates": {
+     "delivered": 939,
+     "emulated_outage": 779,
+     "node_dropped": 55,
+     "gateway_filtered": 48
+    },
+    "rssi_dbm_min": -90,
+    "rssi_dbm_max": -33,
+    "snr_db_min": 8.5,
+    "snr_db_max": 14.8
+   }
+  },
+  "downlink_mismatches": []
+ },
+ "sim30": {
+  "source": "software/data/processed/sim30_runs.csv",
+  "n_runs": 2400,
+  "patients_per_configuration": 50,
+  "patterns": [
+   "daily",
+   "every 2 days",
+   "twice weekly",
+   "weekly"
+  ],
+  "losses_percent": [
+   0,
+   10,
+   30
+  ],
+  "strategies": [
+   "S0",
+   "S1",
+   "S2",
+   "S3"
+  ],
+  "simulated_days": 33,
+  "notes": "DC_followup: share of the bins of the 30 days received by day 30 (end of follow-up). DC_end: share received by day 33, after 3 further days of continuous coverage that represent the return of the device. DC_1h and DC_24h: share received within 1 h and 24 h of the end of the bin. All metrics refer to the bins generated during the 30 days; delays in hours at deployment scale. SR_counter (SR_cumulative in older files): share of the steps included in the cumulative count of the last received frame of each boot. FZR of S0: each frame shown over the bins it covers. airtime_s_per_day (frames received by the network), airtime_tx_s_per_day (frames transmitted by the node, also without coverage, when available) and downlinks_per_day are means over the 33 simulated days (30 of follow-up plus 3 of return), not the values of a single day.",
+  "quantiles": "median, q25 and q75 with pandas linear interpolation, as in sim30_summary.csv",
+  "metrics": [
+   "DC_1h",
+   "DC_24h",
+   "DC_followup",
+   "DC_end",
+   "RR",
+   "SR_bins",
+   "SR_counter",
+   "delay_med_h_real",
+   "delay_p95_h_real",
+   "delay_max_h_real",
+   "FZR_naive",
+   "FZR_aware",
+   "airtime_s_per_day",
+   "airtime_tx_s_per_day",
+   "airtime_tx_max_day_s",
+   "downlinks_per_day"
+  ],
+  "summary": {
+   "daily": {
+    "0": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.2768012951746974,
+       "q25": 0.2612896003043834,
+       "q75": 0.296830229226361
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2994545454545454,
+       "q25": 0.2439999999999999,
+       "q75": 0.2994545454545454
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.125173852573018,
+       "q25": 0.0834492350486787,
+       "q75": 0.125173852573018
+      },
+      "DC_24h": {
+       "median": 0.125,
+       "q25": 0.0833333333333333,
+       "q75": 0.125
+      },
+      "DC_followup": {
+       "median": 0.125,
+       "q25": 0.0833333333333333,
+       "q75": 0.125
+      },
+      "DC_end": {
+       "median": 0.125,
+       "q25": 0.0833333333333333,
+       "q75": 0.125
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.10389976472250105,
+       "q25": 0.08262027323007252,
+       "q75": 0.13446480848906825
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155554166,
+       "q25": 0.3751033155554166,
+       "q75": 0.3751033155554166
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.2746051557985057,
+       "q25": 0.2583607924234109,
+       "q75": 0.29471906116642954
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.3485454545454545,
+       "q25": 0.284,
+       "q75": 0.3485454545454545
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.125173852573018,
+       "q25": 0.0834492350486787,
+       "q75": 0.125173852573018
+      },
+      "DC_24h": {
+       "median": 0.1666666666666666,
+       "q25": 0.125,
+       "q75": 0.1666666666666666
+      },
+      "DC_followup": {
+       "median": 0.1652777777777777,
+       "q25": 0.1236111111111111,
+       "q75": 0.1652777777777777
+      },
+      "DC_end": {
+       "median": 0.1666666666666666,
+       "q25": 0.125,
+       "q75": 0.1666666666666666
+      },
+      "RR": {
+       "median": 0.0476190476190476,
+       "q25": 0.0454545454545454,
+       "q75": 0.0476190476190476
+      },
+      "SR_bins": {
+       "median": 0.14818717841627954,
+       "q25": 0.12361931356930578,
+       "q75": 0.17610946429146065
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.50010616,
+       "q25": 0.50010616,
+       "q75": 0.6251047377777779
+      },
+      "delay_p95_h_real": {
+       "median": 1.750106159999736,
+       "q25": 1.750106159999736,
+       "q75": 1.75010616
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.26536934272260704,
+       "q25": 0.25090519291122204,
+       "q75": 0.28484044216595944
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.4022121212121212,
+       "q25": 0.3276666666666667,
+       "q75": 0.4022121212121212
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.125173852573018,
+       "q25": 0.0834492350486787,
+       "q75": 0.125173852573018
+      },
+      "DC_24h": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "DC_followup": {
+       "median": 0.9708333333333332,
+       "q25": 0.9694444444444444,
+       "q75": 0.9708333333333332
+      },
+      "DC_end": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "RR": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "SR_bins": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 10.875174426666526,
+       "q25": 10.875174426666526,
+       "q75": 11.875178693333195
+      },
+      "delay_p95_h_real": {
+       "median": 21.750174426666668,
+       "q25": 21.750174426666668,
+       "q75": 22.75017869333306
+      },
+      "delay_max_h_real": {
+       "median": 22.750174426666668,
+       "q25": 22.750174426666668,
+       "q75": 23.75017869333333
+      },
+      "FZR_naive": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.5812727272727272,
+       "q25": 0.5312727272727273,
+       "q75": 0.5812727272727272
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.9367272727272729,
+       "q25": 1.9367272727272729,
+       "q75": 1.951272727272727
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.96,
+       "q25": 1.96,
+       "q75": 1.976
+      },
+      "downlinks_per_day": {
+       "median": 0.9393939393939394,
+       "q25": 0.9393939393939394,
+       "q75": 0.9393939393939394
+      }
+     }
+    },
+    "10": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.27921647230320695,
+       "q25": 0.26324700744694407,
+       "q75": 0.2999926738734045
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2532424242424242,
+       "q25": 0.2352196969696969,
+       "q75": 0.28743939393939394
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0904033379694019,
+       "q25": 0.07684283727399158,
+       "q75": 0.11613351877607789
+      },
+      "DC_24h": {
+       "median": 0.0890804597701149,
+       "q25": 0.07794540229885055,
+       "q75": 0.11745689655172405
+      },
+      "DC_followup": {
+       "median": 0.09027777777777775,
+       "q25": 0.07673611111111109,
+       "q75": 0.11597222222222214
+      },
+      "DC_end": {
+       "median": 0.09027777777777775,
+       "q25": 0.07673611111111109,
+       "q75": 0.11597222222222214
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.09186170677499035,
+       "q25": 0.07251734746557022,
+       "q75": 0.12219852177629517
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155554166,
+       "q25": 0.3751033155554166,
+       "q75": 0.3751033155554166
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.27741272375128073,
+       "q25": 0.26195826375638404,
+       "q75": 0.2971866054249683
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2947575757575758,
+       "q25": 0.273780303030303,
+       "q75": 0.33456060606060606
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0904033379694019,
+       "q25": 0.07684283727399158,
+       "q75": 0.11613351877607789
+      },
+      "DC_24h": {
+       "median": 0.12571839080459768,
+       "q25": 0.11709770114942519,
+       "q75": 0.1587643678160919
+      },
+      "DC_followup": {
+       "median": 0.12499999999999994,
+       "q25": 0.1152777777777777,
+       "q75": 0.15520833333333328
+      },
+      "DC_end": {
+       "median": 0.12638888888888886,
+       "q25": 0.1166666666666666,
+       "q75": 0.15659722222222217
+      },
+      "RR": {
+       "median": 0.0453172205438066,
+       "q25": 0.042073700206230275,
+       "q75": 0.0464456204747198
+      },
+      "SR_bins": {
+       "median": 0.13554540994425845,
+       "q25": 0.11166057832569232,
+       "q75": 0.1620531605521157
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.50010616,
+       "q25": 0.50010616,
+       "q75": 0.7501061599997223
+      },
+      "delay_p95_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.2691063807472094,
+       "q25": 0.2518634589462388,
+       "q75": 0.2862342886135343
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.34009090909090905,
+       "q25": 0.31586363636363635,
+       "q75": 0.38606060606060605
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0834492350486787,
+       "q25": 0.0598052851182197,
+       "q75": 0.11265646731571625
+      },
+      "DC_24h": {
+       "median": 0.8067528735632183,
+       "q25": 0.500628591954023,
+       "q75": 0.9379489942528735
+      },
+      "DC_followup": {
+       "median": 0.9590277777777778,
+       "q25": 0.9073784722222222,
+       "q75": 0.9708333333333332
+      },
+      "DC_end": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "RR": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "SR_bins": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 14.125174426666666,
+       "q25": 11.875178693333195,
+       "q75": 23.06268296
+      },
+      "delay_p95_h_real": {
+       "median": 44.63143580444441,
+       "q25": 28.37831080444443,
+       "q75": 82.25018580444446
+      },
+      "delay_max_h_real": {
+       "median": 70.75018580444444,
+       "q25": 47.75018580444444,
+       "q75": 95.75018580444446
+      },
+      "FZR_naive": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.5379848484848486,
+       "q25": 0.5214772727272727,
+       "q75": 0.5698257575757576
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.996575757575758,
+       "q25": 1.9520681818181815,
+       "q75": 2.18630303030303
+      },
+      "airtime_tx_max_day_s": {
+       "median": 2.529,
+       "q25": 2.257,
+       "q75": 2.91275
+      },
+      "downlinks_per_day": {
+       "median": 0.9090909090909092,
+       "q25": 0.8787878787878788,
+       "q75": 0.9393939393939394
+      }
+     }
+    },
+    "30": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.28403517234080655,
+       "q25": 0.2692387431029952,
+       "q75": 0.3029796738764585
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2255151515151515,
+       "q25": 0.21165151515151515,
+       "q75": 0.2490833333333333
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0695410292072322,
+       "q25": 0.0591098748261474,
+       "q75": 0.08727399165507646
+      },
+      "DC_24h": {
+       "median": 0.0711206896551724,
+       "q25": 0.05783045977011485,
+       "q75": 0.0862068965517241
+      },
+      "DC_followup": {
+       "median": 0.0694444444444444,
+       "q25": 0.05902777777777775,
+       "q75": 0.08715277777777777
+      },
+      "DC_end": {
+       "median": 0.0694444444444444,
+       "q25": 0.05902777777777775,
+       "q75": 0.08715277777777777
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.07431211848080019,
+       "q25": 0.056413854867671295,
+       "q75": 0.08668121165942935
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155554166,
+       "q25": 0.3751033155554166,
+       "q75": 0.3751033155554166
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.28222350312156425,
+       "q25": 0.2675708809009703,
+       "q75": 0.30191380262545653
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2624848484848485,
+       "q25": 0.2463484848484848,
+       "q75": 0.2899166666666667
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0695410292072322,
+       "q25": 0.0591098748261474,
+       "q75": 0.08727399165507646
+      },
+      "DC_24h": {
+       "median": 0.1034482758620689,
+       "q25": 0.0905172413793103,
+       "q75": 0.1221264367816092
+      },
+      "DC_followup": {
+       "median": 0.10347222222222216,
+       "q25": 0.08923611111111102,
+       "q75": 0.1222222222222222
+      },
+      "DC_end": {
+       "median": 0.10486111111111104,
+       "q25": 0.09062499999999993,
+       "q75": 0.1236111111111111
+      },
+      "RR": {
+       "median": 0.0378501352404529,
+       "q25": 0.033230657127715925,
+       "q75": 0.041651188707280774
+      },
+      "SR_bins": {
+       "median": 0.11051322587358794,
+       "q25": 0.08648902831480683,
+       "q75": 0.12931575486596691
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.6876061599997917,
+       "q25": 0.50010616,
+       "q75": 0.7501061599997223
+      },
+      "delay_p95_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.27567239002557725,
+       "q25": 0.25759951436229517,
+       "q75": 0.2957939782026971
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.3028181818181818,
+       "q25": 0.28418181818181815,
+       "q75": 0.3345
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.04589707927677325,
+       "q25": 0.03650904033379687,
+       "q75": 0.06415159944367174
+      },
+      "DC_24h": {
+       "median": 0.23096264367816088,
+       "q25": 0.10039511494252867,
+       "q75": 0.4823096264367816
+      },
+      "DC_followup": {
+       "median": 0.7815972222222223,
+       "q25": 0.6556423611111111,
+       "q75": 0.9360243055555556
+      },
+      "DC_end": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "RR": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "SR_bins": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 66.25018580444444,
+       "q25": 24.187685804444445,
+       "q75": 144.84393580444444
+      },
+      "delay_p95_h_real": {
+       "median": 170.6314358044444,
+       "q25": 87.0095608044444,
+       "q75": 241.8251858044444
+      },
+      "delay_max_h_real": {
+       "median": 185.50018580444444,
+       "q25": 112.81268580444446,
+       "q75": 261.18768580444447
+      },
+      "FZR_naive": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.5133787878787879,
+       "q25": 0.49568939393939393,
+       "q75": 0.5349318181818181
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.459272727272727,
+       "q25": 2.1308181818181815,
+       "q75": 3.1291212121212126
+      },
+      "airtime_tx_max_day_s": {
+       "median": 3.9115,
+       "q25": 3.024,
+       "q75": 4.768000000000001
+      },
+      "downlinks_per_day": {
+       "median": 0.7878787878787878,
+       "q25": 0.7045454545454546,
+       "q75": 0.8712121212121212
+      }
+     }
+    }
+   },
+   "every 2 days": {
+    "0": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.2867955996738736,
+       "q25": 0.2719742351691944,
+       "q75": 0.3074190131192091
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2162727272727272,
+       "q25": 0.1885454545454545,
+       "q75": 0.2162727272727272
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.062586926286509,
+       "q25": 0.0417246175243393,
+       "q75": 0.062586926286509
+      },
+      "DC_24h": {
+       "median": 0.0646551724137931,
+       "q25": 0.043103448275862,
+       "q75": 0.0646551724137931
+      },
+      "DC_followup": {
+       "median": 0.0625,
+       "q25": 0.0416666666666666,
+       "q75": 0.0625
+      },
+      "DC_end": {
+       "median": 0.0625,
+       "q25": 0.0416666666666666,
+       "q75": 0.0625
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0487463050044927,
+       "q25": 0.03404300052565332,
+       "q75": 0.07316741009511676
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155554166,
+       "q25": 0.3751033155554166,
+       "q75": 0.3751033155554166
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.2860401442974748,
+       "q25": 0.2706847752074023,
+       "q75": 0.3062342805290619
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2517272727272727,
+       "q25": 0.2194545454545454,
+       "q75": 0.2517272727272727
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.062586926286509,
+       "q25": 0.0417246175243393,
+       "q75": 0.062586926286509
+      },
+      "DC_24h": {
+       "median": 0.0847701149425287,
+       "q25": 0.0632183908045977,
+       "q75": 0.0847701149425287
+      },
+      "DC_followup": {
+       "median": 0.0819444444444444,
+       "q25": 0.0611111111111111,
+       "q75": 0.0819444444444444
+      },
+      "DC_end": {
+       "median": 0.0833333333333333,
+       "q25": 0.0625,
+       "q75": 0.0833333333333333
+      },
+      "RR": {
+       "median": 0.0222222222222222,
+       "q25": 0.0217391304347826,
+       "q75": 0.0222222222222222
+      },
+      "SR_bins": {
+       "median": 0.0713502878034257,
+       "q25": 0.05400008338679953,
+       "q75": 0.0922249271408123
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.50010616,
+       "q25": 0.50010616,
+       "q75": 0.6251047377777779
+      },
+      "delay_p95_h_real": {
+       "median": 1.750106159999736,
+       "q25": 1.750106159999736,
+       "q75": 1.75010616
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.28170902879097054,
+       "q25": 0.2656278350201967,
+       "q75": 0.3017102170072169
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2903939393939394,
+       "q25": 0.2531212121212121,
+       "q75": 0.2903939393939394
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.043115438108484,
+       "q25": 0.0222531293463143,
+       "q75": 0.043115438108484
+      },
+      "DC_24h": {
+       "median": 0.507183908045977,
+       "q25": 0.026221264367816,
+       "q75": 0.507183908045977
+      },
+      "DC_followup": {
+       "median": 0.9375,
+       "q25": 0.5229166666666667,
+       "q75": 0.9375
+      },
+      "DC_end": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "RR": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "SR_bins": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 22.875185804444445,
+       "q25": 22.875185804444445,
+       "q75": 175.50018580444444
+      },
+      "delay_p95_h_real": {
+       "median": 44.50018580444444,
+       "q25": 44.50018580444444,
+       "q75": 323.5001858044444
+      },
+      "delay_max_h_real": {
+       "median": 46.75018580444444,
+       "q25": 46.75018580444444,
+       "q75": 352.2501858044444
+      },
+      "FZR_naive": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.4985454545454545,
+       "q25": 0.4706969696969696,
+       "q75": 0.4985454545454545
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.9508181818181816,
+       "q25": 1.9508181818181816,
+       "q75": 2.7701515151515155
+      },
+      "airtime_tx_max_day_s": {
+       "median": 2.247,
+       "q25": 2.247,
+       "q75": 5.837
+      },
+      "downlinks_per_day": {
+       "median": 0.4848484848484848,
+       "q25": 0.4848484848484848,
+       "q75": 0.4848484848484848
+      }
+     }
+    },
+    "10": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.2879696081947461,
+       "q25": 0.2727834958468761,
+       "q75": 0.3074190131192091
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.19131818181818178,
+       "q25": 0.1848484848484848,
+       "q75": 0.2107272727272727
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.043810848400556296,
+       "q25": 0.03894297635605,
+       "q75": 0.0584144645340751
+      },
+      "DC_24h": {
+       "median": 0.045258620689655096,
+       "q25": 0.0402298850574712,
+       "q75": 0.0603448275862069
+      },
+      "DC_followup": {
+       "median": 0.043749999999999956,
+       "q25": 0.0388888888888888,
+       "q75": 0.0583333333333333
+      },
+      "DC_end": {
+       "median": 0.043749999999999956,
+       "q25": 0.0388888888888888,
+       "q75": 0.0583333333333333
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0458022194756232,
+       "q25": 0.031063669075220075,
+       "q75": 0.06315845033255758
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155554166,
+       "q25": 0.3751033155554166,
+       "q75": 0.3751033155554166
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.28720517021527114,
+       "q25": 0.27158764911288774,
+       "q75": 0.3062342805290619
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.22268181818181815,
+       "q25": 0.2151515151515151,
+       "q75": 0.2452727272727272
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.043810848400556296,
+       "q25": 0.03894297635605,
+       "q75": 0.0584144645340751
+      },
+      "DC_24h": {
+       "median": 0.0632183908045977,
+       "q25": 0.0603448275862069,
+       "q75": 0.08010057471264365
+      },
+      "DC_followup": {
+       "median": 0.0611111111111111,
+       "q25": 0.0583333333333333,
+       "q75": 0.0774305555555555
+      },
+      "DC_end": {
+       "median": 0.0625,
+       "q25": 0.0597222222222222,
+       "q75": 0.07881944444444437
+      },
+      "RR": {
+       "median": 0.0217391304347826,
+       "q25": 0.020535395162366826,
+       "q75": 0.0221157480417584
+      },
+      "SR_bins": {
+       "median": 0.062129213419696044,
+       "q25": 0.0499285109228944,
+       "q75": 0.0889091780201607
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.50010616,
+       "q25": 0.50010616,
+       "q75": 0.7501047377776389
+      },
+      "delay_p95_h_real": {
+       "median": 1.75010616,
+       "q25": 1.750106159999861,
+       "q75": 1.75010616
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.2834017479400291,
+       "q25": 0.2675284713648618,
+       "q75": 0.3017102170072169
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.25684848484848477,
+       "q25": 0.2481515151515151,
+       "q75": 0.2829393939393939
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.022948539638386597,
+       "q25": 0.0222531293463143,
+       "q75": 0.035813630041724547
+      },
+      "DC_24h": {
+       "median": 0.04489942528735626,
+       "q25": 0.026221264367816,
+       "q75": 0.3530890804597701
+      },
+      "DC_followup": {
+       "median": 0.5913194444444445,
+       "q25": 0.4854166666666666,
+       "q75": 0.8922743055555555
+      },
+      "DC_end": {
+       "median": 1.0,
+       "q25": 0.9739583333333334,
+       "q75": 1.0
+      },
+      "RR": {
+       "median": 1.0,
+       "q25": 0.9733664772727272,
+       "q75": 1.0
+      },
+      "SR_bins": {
+       "median": 1.0,
+       "q25": 0.9835076593641904,
+       "q75": 1.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 141.50018580444444,
+       "q25": 32.50018580444444,
+       "q75": 175.50018580444444
+      },
+      "delay_p95_h_real": {
+       "median": 271.75643580444444,
+       "q25": 79.38768580444439,
+       "q75": 340.7501858044444
+      },
+      "delay_max_h_real": {
+       "median": 304.0001858044444,
+       "q25": 100.18768580444446,
+       "q75": 359.7501858044444
+      },
+      "FZR_naive": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0075467177767129506
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.47309090909090906,
+       "q25": 0.4607196969696969,
+       "q75": 0.4924545454545454
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.501666666666667,
+       "q25": 2.0410757575757574,
+       "q75": 2.8079015151515145
+      },
+      "airtime_tx_max_day_s": {
+       "median": 5.271,
+       "q25": 3.1027500000000003,
+       "q75": 5.929
+      },
+      "downlinks_per_day": {
+       "median": 0.4848484848484848,
+       "q25": 0.4545454545454545,
+       "q75": 0.4848484848484848
+      }
+     }
+    },
+    "30": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.29148894785141444,
+       "q25": 0.27415170046196147,
+       "q75": 0.308998209947577
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1811515151515151,
+       "q25": 0.1737575757575757,
+       "q75": 0.1922424242424242
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0361613351877607,
+       "q25": 0.0305980528511821,
+       "q75": 0.0445062586926286
+      },
+      "DC_24h": {
+       "median": 0.0373563218390804,
+       "q25": 0.0316091954022988,
+       "q75": 0.0459770114942528
+      },
+      "DC_followup": {
+       "median": 0.0361111111111111,
+       "q25": 0.0305555555555555,
+       "q75": 0.0444444444444444
+      },
+      "DC_end": {
+       "median": 0.0361111111111111,
+       "q25": 0.0305555555555555,
+       "q75": 0.0444444444444444
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0348693641287043,
+       "q25": 0.027011844126344976,
+       "q75": 0.052004214538496726
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155554166,
+       "q25": 0.3751033155554166,
+       "q75": 0.3751033155554166
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.29071889901147474,
+       "q25": 0.27324054389228447,
+       "q75": 0.30829675702364917
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2108484848484848,
+       "q25": 0.2022424242424242,
+       "q75": 0.2237575757575757
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0361613351877607,
+       "q25": 0.0305980528511821,
+       "q75": 0.0445062586926286
+      },
+      "DC_24h": {
+       "median": 0.0560344827586206,
+       "q25": 0.047772988505747044,
+       "q75": 0.0632183908045977
+      },
+      "DC_followup": {
+       "median": 0.0541666666666666,
+       "q25": 0.04618055555555553,
+       "q75": 0.0611111111111111
+      },
+      "DC_end": {
+       "median": 0.0555555555555555,
+       "q25": 0.04756944444444443,
+       "q75": 0.0625
+      },
+      "RR": {
+       "median": 0.0187050746960813,
+       "q25": 0.01619176875782995,
+       "q75": 0.0204679671199711
+      },
+      "SR_bins": {
+       "median": 0.052742692989068446,
+       "q25": 0.042157594452582874,
+       "q75": 0.0731499776059422
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.6251047377777779,
+       "q25": 0.50010616,
+       "q75": 0.7501061599997223
+      },
+      "delay_p95_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.2871306303257297,
+       "q25": 0.26959779757848523,
+       "q75": 0.30554163523018907
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2431818181818182,
+       "q25": 0.23332575757575755,
+       "q75": 0.2580909090909091
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.019471488178025,
+       "q25": 0.0166898470097357,
+       "q75": 0.0222531293463143
+      },
+      "DC_24h": {
+       "median": 0.024964080459770048,
+       "q25": 0.021551724137931,
+       "q75": 0.05657327586206893
+      },
+      "DC_followup": {
+       "median": 0.44930555555555557,
+       "q25": 0.340625,
+       "q75": 0.6243055555555554
+      },
+      "DC_end": {
+       "median": 0.9381944444444443,
+       "q25": 0.8295138888888889,
+       "q75": 1.0
+      },
+      "RR": {
+       "median": 0.936878299639454,
+       "q25": 0.8256392045454546,
+       "q75": 1.0
+      },
+      "SR_bins": {
+       "median": 0.9376547414724545,
+       "q25": 0.7965918617625265,
+       "q75": 1.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 177.93768580444444,
+       "q25": 141.53143580444444,
+       "q75": 214.25018580444444
+      },
+      "delay_p95_h_real": {
+       "median": 331.1876858044444,
+       "q25": 251.87831080444442,
+       "q75": 351.49081080444444
+      },
+      "delay_max_h_real": {
+       "median": 359.7501858044444,
+       "q25": 277.75018580444447,
+       "q75": 359.7501858044444
+      },
+      "FZR_naive": {
+       "median": 0.026672375509525698,
+       "q25": 0.0,
+       "q75": 0.07649126337733406
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.449030303030303,
+       "q25": 0.4091212121212121,
+       "q75": 0.47489393939393937
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.8238939393939395,
+       "q25": 2.5926515151515153,
+       "q75": 2.981189393939394
+      },
+      "airtime_tx_max_day_s": {
+       "median": 5.929,
+       "q25": 5.2085,
+       "q75": 5.929
+      },
+      "downlinks_per_day": {
+       "median": 0.4242424242424242,
+       "q25": 0.37121212121212116,
+       "q75": 0.4545454545454545
+      }
+     }
+    }
+   },
+   "twice weekly": {
+    "0": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.29122673101546337,
+       "q25": 0.27708277330403647,
+       "q75": 0.30684063879789203
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.183,
+       "q25": 0.1663636363636363,
+       "q75": 0.183
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0375521557719054,
+       "q25": 0.0250347705146036,
+       "q75": 0.0375521557719054
+      },
+      "DC_24h": {
+       "median": 0.0387931034482758,
+       "q25": 0.0258620689655172,
+       "q75": 0.0387931034482758
+      },
+      "DC_followup": {
+       "median": 0.0375,
+       "q25": 0.025,
+       "q75": 0.0375
+      },
+      "DC_end": {
+       "median": 0.0375,
+       "q25": 0.025,
+       "q75": 0.0375
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0293426166596789,
+       "q25": 0.0217256611958938,
+       "q75": 0.04181483147217058
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155555555,
+       "q25": 0.3751033155555555,
+       "q75": 0.3751033155555555
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.29071695605788017,
+       "q25": 0.27684131365507314,
+       "q75": 0.3062763393097964
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.213,
+       "q25": 0.1936363636363636,
+       "q75": 0.213
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0375521557719054,
+       "q25": 0.0250347705146036,
+       "q75": 0.0375521557719054
+      },
+      "DC_24h": {
+       "median": 0.050287356321839,
+       "q25": 0.0373563218390804,
+       "q75": 0.050287356321839
+      },
+      "DC_followup": {
+       "median": 0.0486111111111111,
+       "q25": 0.0361111111111111,
+       "q75": 0.0486111111111111
+      },
+      "DC_end": {
+       "median": 0.05,
+       "q25": 0.0375,
+       "q75": 0.05
+      },
+      "RR": {
+       "median": 0.0129870129870129,
+       "q25": 0.0128205128205128,
+       "q75": 0.0129870129870129
+      },
+      "SR_bins": {
+       "median": 0.0420192528915314,
+       "q25": 0.0345077156846498,
+       "q75": 0.05389849148764955
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.50010616,
+       "q25": 0.50010616,
+       "q75": 0.6251047377777779
+      },
+      "delay_p95_h_real": {
+       "median": 1.750106159999722,
+       "q25": 1.750106159999722,
+       "q75": 1.7501061599999028
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.2884139518494895,
+       "q25": 0.27495253946057374,
+       "q75": 0.30287723128597965
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2456666666666666,
+       "q25": 0.2233030303030302,
+       "q75": 0.2456666666666666
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0041724617524339,
+       "q25": 0.0027816411682892,
+       "q75": 0.0041724617524339
+      },
+      "DC_24h": {
+       "median": 0.0298132183908045,
+       "q25": 0.0283764367816091,
+       "q75": 0.0298132183908045
+      },
+      "DC_followup": {
+       "median": 0.6420138888888889,
+       "q25": 0.4868055555555555,
+       "q75": 0.6420138888888889
+      },
+      "DC_end": {
+       "median": 1.0,
+       "q25": 0.9805555555555556,
+       "q75": 1.0
+      },
+      "RR": {
+       "median": 1.0,
+       "q25": 0.98050139275766,
+       "q75": 1.0
+      },
+      "SR_bins": {
+       "median": 1.0,
+       "q25": 0.9821809164235379,
+       "q75": 1.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 161.87518580444444,
+       "q25": 161.87518580444444,
+       "q75": 178.87518580444444
+      },
+      "delay_p95_h_real": {
+       "median": 264.50018580444447,
+       "q25": 264.50018580444447,
+       "q75": 332.0001858044444
+      },
+      "delay_max_h_real": {
+       "median": 290.25018580444447,
+       "q25": 290.25018580444447,
+       "q75": 357.2501858044444
+      },
+      "FZR_naive": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.00748739431616595
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.5306363636363636,
+       "q25": 0.4647272727272727,
+       "q75": 0.5306363636363636
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.659666666666667,
+       "q25": 2.659666666666667,
+       "q75": 2.71239393939394
+      },
+      "airtime_tx_max_day_s": {
+       "median": 6.528,
+       "q25": 6.528,
+       "q75": 6.846
+      },
+      "downlinks_per_day": {
+       "median": 0.1515151515151515,
+       "q25": 0.1515151515151515,
+       "q75": 0.1818181818181818
+      }
+     }
+    },
+    "10": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.2917254334975854,
+       "q25": 0.2773153011204481,
+       "q75": 0.3085720047512676
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1682121212121212,
+       "q25": 0.1663636363636363,
+       "q75": 0.1806893939393939
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0264255910987482,
+       "q25": 0.0250347705146036,
+       "q75": 0.035813630041724547
+      },
+      "DC_24h": {
+       "median": 0.0272988505747126,
+       "q25": 0.0258620689655172,
+       "q75": 0.03699712643678155
+      },
+      "DC_followup": {
+       "median": 0.0263888888888888,
+       "q25": 0.025,
+       "q75": 0.03576388888888887
+      },
+      "DC_end": {
+       "median": 0.0263888888888888,
+       "q25": 0.025,
+       "q75": 0.03576388888888887
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0270940978670043,
+       "q25": 0.021266266864879976,
+       "q75": 0.036271506484287674
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155555555,
+       "q25": 0.3751033155555555,
+       "q75": 0.3751033155555555
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.29121524537977217,
+       "q25": 0.27721809440559436,
+       "q75": 0.3079498335142294
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1957878787878788,
+       "q25": 0.1936363636363636,
+       "q75": 0.210310606060606
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0264255910987482,
+       "q25": 0.0250347705146036,
+       "q75": 0.035813630041724547
+      },
+      "DC_24h": {
+       "median": 0.0373563218390804,
+       "q25": 0.0373563218390804,
+       "q75": 0.04849137931034475
+      },
+      "DC_followup": {
+       "median": 0.0361111111111111,
+       "q25": 0.0361111111111111,
+       "q75": 0.04687499999999997
+      },
+      "DC_end": {
+       "median": 0.0375,
+       "q25": 0.0375,
+       "q75": 0.04826388888888887
+      },
+      "RR": {
+       "median": 0.0128205128205128,
+       "q25": 0.012788637171860824,
+       "q75": 0.0129682997118155
+      },
+      "SR_bins": {
+       "median": 0.03958774330929225,
+       "q25": 0.03328012482082793,
+       "q75": 0.04936870705398647
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.50010616,
+       "q25": 0.50010616,
+       "q75": 0.6251047377777779
+      },
+      "delay_p95_h_real": {
+       "median": 1.7501061599998193,
+       "q25": 1.750106159999722,
+       "q75": 1.7501061599999028
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.2884139518494895,
+       "q25": 0.275454889476682,
+       "q75": 0.30435295298309
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2257878787878788,
+       "q25": 0.2233030303030302,
+       "q75": 0.24256060606060606
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0027816411682892,
+       "q25": 0.0027816411682892,
+       "q75": 0.0041724617524339
+      },
+      "DC_24h": {
+       "median": 0.0283764367816091,
+       "q25": 0.0283764367816091,
+       "q75": 0.0298132183908045
+      },
+      "DC_followup": {
+       "median": 0.4868055555555555,
+       "q25": 0.4813368055555556,
+       "q75": 0.5677083333333334
+      },
+      "DC_end": {
+       "median": 0.9805555555555556,
+       "q25": 0.9691840277777778,
+       "q75": 1.0
+      },
+      "RR": {
+       "median": 0.98050139275766,
+       "q25": 0.9690118715083799,
+       "q75": 1.0
+      },
+      "SR_bins": {
+       "median": 0.9876161361578469,
+       "q25": 0.9554679453912206,
+       "q75": 1.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 178.87518580444444,
+       "q25": 162.31268580444444,
+       "q75": 181.03143580444444
+      },
+      "delay_p95_h_real": {
+       "median": 332.0001858044444,
+       "q25": 305.38768580444435,
+       "q75": 340.74081080444444
+      },
+      "delay_max_h_real": {
+       "median": 357.2501858044444,
+       "q25": 334.5626858044444,
+       "q75": 359.7501858044444
+      },
+      "FZR_naive": {
+       "median": 0.0046232550507098,
+       "q25": 0.0,
+       "q75": 0.020535926387837175
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.46734848484848485,
+       "q25": 0.4647272727272727,
+       "q75": 0.5225075757575758
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.71239393939394,
+       "q25": 2.6602045454545458,
+       "q75": 2.71239393939394
+      },
+      "airtime_tx_max_day_s": {
+       "median": 6.7995,
+       "q25": 6.528,
+       "q75": 6.846
+      },
+      "downlinks_per_day": {
+       "median": 0.1818181818181818,
+       "q25": 0.1515151515151515,
+       "q75": 0.1818181818181818
+      }
+     }
+    },
+    "30": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.294663205874905,
+       "q25": 0.2773153011204481,
+       "q75": 0.30892688771902255
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1626666666666666,
+       "q25": 0.1552727272727272,
+       "q75": 0.1695984848484848
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0222531293463143,
+       "q25": 0.0166898470097357,
+       "q75": 0.027468706536856725
+      },
+      "DC_24h": {
+       "median": 0.0229885057471264,
+       "q25": 0.0172413793103448,
+       "q75": 0.02837643678160915
+      },
+      "DC_followup": {
+       "median": 0.0222222222222222,
+       "q25": 0.0166666666666666,
+       "q75": 0.027430555555555475
+      },
+      "DC_end": {
+       "median": 0.0222222222222222,
+       "q25": 0.0166666666666666,
+       "q75": 0.027430555555555475
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.022247369321430947,
+       "q25": 0.013167393726211125,
+       "q75": 0.02699041407350545
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155555555,
+       "q25": 0.3751033155555555,
+       "q75": 0.3751033155555555
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.29423244544760263,
+       "q25": 0.27721809440559436,
+       "q75": 0.3085214465462223
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1893333333333333,
+       "q25": 0.1807272727272727,
+       "q75": 0.1974015151515151
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0222531293463143,
+       "q25": 0.0166898470097357,
+       "q75": 0.027468706536856725
+      },
+      "DC_24h": {
+       "median": 0.0344827586206896,
+       "q25": 0.0258620689655172,
+       "q75": 0.0387931034482758
+      },
+      "DC_followup": {
+       "median": 0.0333333333333333,
+       "q25": 0.025,
+       "q75": 0.0375
+      },
+      "DC_end": {
+       "median": 0.0347222222222222,
+       "q25": 0.0263888888888888,
+       "q75": 0.0388888888888888
+      },
+      "RR": {
+       "median": 0.011379800853485,
+       "q25": 0.0098870056497175,
+       "q75": 0.01283422948900835
+      },
+      "SR_bins": {
+       "median": 0.034111451355075845,
+       "q25": 0.02199622859390085,
+       "q75": 0.04169672715648415
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.6251047377777779,
+       "q25": 0.50010616,
+       "q75": 0.7501061599997223
+      },
+      "delay_p95_h_real": {
+       "median": 1.7501061599997916,
+       "q25": 1.750106159999722,
+       "q75": 1.7501061599999583
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.29151363910921424,
+       "q25": 0.275454889476682,
+       "q75": 0.3059720427668241
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2183333333333333,
+       "q25": 0.20847727272727265,
+       "q75": 0.22773484848484848
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0027816411682892,
+       "q25": 0.0027816411682892,
+       "q75": 0.0041724617524339
+      },
+      "DC_24h": {
+       "median": 0.0283764367816091,
+       "q25": 0.014457614942528674,
+       "q75": 0.0298132183908045
+      },
+      "DC_followup": {
+       "median": 0.40173611111111107,
+       "q25": 0.32317708333333334,
+       "q75": 0.47604166666666664
+      },
+      "DC_end": {
+       "median": 0.8838541666666666,
+       "q25": 0.8129340277777778,
+       "q75": 0.9336805555555555
+      },
+      "RR": {
+       "median": 0.8836998994119467,
+       "q25": 0.8124129526462396,
+       "q75": 0.9333794499894814
+      },
+      "SR_bins": {
+       "median": 0.8734715764612921,
+       "q25": 0.821859956423188,
+       "q75": 0.9369905508063386
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 205.25018580444444,
+       "q25": 175.21893580444444,
+       "q75": 227.81268580444444
+      },
+      "delay_p95_h_real": {
+       "median": 341.6376858044444,
+       "q25": 333.24081080444444,
+       "q75": 347.4376858044444
+      },
+      "delay_max_h_real": {
+       "median": 359.7501858044444,
+       "q25": 359.7501858044444,
+       "q75": 359.7501858044444
+      },
+      "FZR_naive": {
+       "median": 0.05274182051918455,
+       "q25": 0.023941673964267697,
+       "q75": 0.07196397244282295
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.4424242424242424,
+       "q25": 0.4071060606060606,
+       "q75": 0.46792424242424235
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.7370909090909095,
+       "q25": 2.71239393939394,
+       "q75": 2.76969696969697
+      },
+      "airtime_tx_max_day_s": {
+       "median": 6.525499999999999,
+       "q25": 6.226,
+       "q75": 6.846
+      },
+      "downlinks_per_day": {
+       "median": 0.1818181818181818,
+       "q25": 0.1818181818181818,
+       "q75": 0.2121212121212121
+      }
+     }
+    }
+   },
+   "weekly": {
+    "0": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.2958033073564621,
+       "q25": 0.27728812970820155,
+       "q75": 0.3098533819122054
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1608181818181818,
+       "q25": 0.1515757575757575,
+       "q75": 0.1608181818181818
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0208623087621696,
+       "q25": 0.0139082058414464,
+       "q75": 0.0208623087621696
+      },
+      "DC_24h": {
+       "median": 0.021551724137931,
+       "q25": 0.014367816091954,
+       "q75": 0.021551724137931
+      },
+      "DC_followup": {
+       "median": 0.0208333333333333,
+       "q25": 0.0138888888888888,
+       "q75": 0.0208333333333333
+      },
+      "DC_end": {
+       "median": 0.0208333333333333,
+       "q25": 0.0138888888888888,
+       "q75": 0.0208333333333333
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.01693451625804725,
+       "q25": 0.011689466387624126,
+       "q75": 0.0255567966979321
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155555555,
+       "q25": 0.3751033155555555,
+       "q75": 0.3751033155555555
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.29549346327085335,
+       "q25": 0.27697272380928234,
+       "q75": 0.30961035577947776
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1871818181818181,
+       "q25": 0.1764242424242424,
+       "q75": 0.1871818181818181
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0208623087621696,
+       "q25": 0.0139082058414464,
+       "q75": 0.0208623087621696
+      },
+      "DC_24h": {
+       "median": 0.0272988505747126,
+       "q25": 0.0201149425287356,
+       "q75": 0.0272988505747126
+      },
+      "DC_followup": {
+       "median": 0.0263888888888888,
+       "q25": 0.0194444444444444,
+       "q75": 0.0263888888888888
+      },
+      "DC_end": {
+       "median": 0.0277777777777777,
+       "q25": 0.0208333333333333,
+       "q75": 0.0277777777777777
+      },
+      "RR": {
+       "median": 0.0070921985815602,
+       "q25": 0.0070422535211267,
+       "q75": 0.0070921985815602
+      },
+      "SR_bins": {
+       "median": 0.02447143550591,
+       "q25": 0.016675491929615274,
+       "q75": 0.03491247380626468
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.50010616,
+       "q25": 0.50010616,
+       "q75": 0.6251047377777779
+      },
+      "delay_p95_h_real": {
+       "median": 1.750106159999722,
+       "q25": 1.750106159999722,
+       "q75": 1.750106159999736
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.29338698390482854,
+       "q25": 0.2757097790639868,
+       "q75": 0.3077071577071576
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2158484848484848,
+       "q25": 0.2034242424242424,
+       "q75": 0.2158484848484848
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0041724617524339,
+       "q25": 0.0027816411682892,
+       "q75": 0.0041724617524339
+      },
+      "DC_24h": {
+       "median": 0.0043103448275862,
+       "q25": 0.0028735632183908,
+       "q75": 0.0043103448275862
+      },
+      "DC_followup": {
+       "median": 0.4010416666666667,
+       "q25": 0.2916666666666667,
+       "q75": 0.4010416666666667
+      },
+      "DC_end": {
+       "median": 0.8555555555555555,
+       "q25": 0.7524305555555556,
+       "q75": 0.8555555555555555
+      },
+      "RR": {
+       "median": 0.8549511854951185,
+       "q25": 0.7517409470752089,
+       "q75": 0.8549511854951185
+      },
+      "SR_bins": {
+       "median": 0.8149995282901936,
+       "q25": 0.7268798715935946,
+       "q75": 0.8797019834831878
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 232.00018580444444,
+       "q25": 223.25018580444444,
+       "q75": 232.00018580444444
+      },
+      "delay_p95_h_real": {
+       "median": 348.0001858044444,
+       "q25": 348.0001858044444,
+       "q75": 350.7501858044444
+      },
+      "delay_max_h_real": {
+       "median": 359.7501858044444,
+       "q25": 359.7501858044444,
+       "q75": 359.7501858044444
+      },
+      "FZR_naive": {
+       "median": 0.0747014241923898,
+       "q25": 0.04469262904131295,
+       "q75": 0.10463682735828715
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.4215151515151515,
+       "q25": 0.3764545454545454,
+       "q75": 0.4215151515151515
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.772636363636364,
+       "q25": 2.772636363636364,
+       "q75": 2.784727272727273
+      },
+      "airtime_tx_max_day_s": {
+       "median": 6.226,
+       "q25": 6.226,
+       "q75": 6.226
+      },
+      "downlinks_per_day": {
+       "median": 0.1818181818181818,
+       "q25": 0.1818181818181818,
+       "q75": 0.1818181818181818
+      }
+     }
+    },
+    "10": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.2958033073564621,
+       "q25": 0.27749966492101846,
+       "q75": 0.3098533819122054
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1515757575757575,
+       "q25": 0.1515757575757575,
+       "q75": 0.1608181818181818
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0139082058414464,
+       "q25": 0.0139082058414464,
+       "q75": 0.0208623087621696
+      },
+      "DC_24h": {
+       "median": 0.014367816091954,
+       "q25": 0.014367816091954,
+       "q75": 0.021551724137931
+      },
+      "DC_followup": {
+       "median": 0.0138888888888888,
+       "q25": 0.0138888888888888,
+       "q75": 0.0208333333333333
+      },
+      "DC_end": {
+       "median": 0.0138888888888888,
+       "q25": 0.0138888888888888,
+       "q75": 0.0208333333333333
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0157061775322468,
+       "q25": 0.00939296977519625,
+       "q75": 0.024021360298733627
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155555555,
+       "q25": 0.3751033155555555,
+       "q75": 0.3751033155555555
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.29549346327085335,
+       "q25": 0.27728224872279583,
+       "q75": 0.30961035577947776
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1764242424242424,
+       "q25": 0.1764242424242424,
+       "q75": 0.1871818181818181
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0139082058414464,
+       "q25": 0.0139082058414464,
+       "q75": 0.0208623087621696
+      },
+      "DC_24h": {
+       "median": 0.0201149425287356,
+       "q25": 0.0201149425287356,
+       "q75": 0.0272988505747126
+      },
+      "DC_followup": {
+       "median": 0.0194444444444444,
+       "q25": 0.0194444444444444,
+       "q75": 0.0263888888888888
+      },
+      "DC_end": {
+       "median": 0.0208333333333333,
+       "q25": 0.0208333333333333,
+       "q75": 0.0277777777777777
+      },
+      "RR": {
+       "median": 0.0070422535211267,
+       "q25": 0.0070422535211267,
+       "q75": 0.0070921985815602
+      },
+      "SR_bins": {
+       "median": 0.02347852493079315,
+       "q25": 0.013678816137745325,
+       "q75": 0.03277890843834093
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.562605448888889,
+       "q25": 0.50010616,
+       "q75": 0.6251047377777779
+      },
+      "delay_p95_h_real": {
+       "median": 1.750106159999736,
+       "q25": 1.750106159999722,
+       "q75": 1.750106159999736
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.29338698390482854,
+       "q25": 0.27615426876167454,
+       "q75": 0.3077071577071576
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2034242424242424,
+       "q25": 0.2034242424242424,
+       "q75": 0.2158484848484848
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0027816411682892,
+       "q25": 0.0027816411682892,
+       "q75": 0.0041724617524339
+      },
+      "DC_24h": {
+       "median": 0.0035919540229884996,
+       "q25": 0.0028735632183908,
+       "q75": 0.0043103448275862
+      },
+      "DC_followup": {
+       "median": 0.2916666666666667,
+       "q25": 0.2916666666666667,
+       "q75": 0.4010416666666667
+      },
+      "DC_end": {
+       "median": 0.7524305555555556,
+       "q25": 0.7524305555555556,
+       "q75": 0.8555555555555555
+      },
+      "RR": {
+       "median": 0.7517409470752089,
+       "q25": 0.7517409470752089,
+       "q75": 0.8549511854951185
+      },
+      "SR_bins": {
+       "median": 0.796018309192253,
+       "q25": 0.7171397614020754,
+       "q75": 0.8525437655538217
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 223.25018580444444,
+       "q25": 223.25018580444444,
+       "q75": 232.00018580444444
+      },
+      "delay_p95_h_real": {
+       "median": 348.7189358044444,
+       "q25": 348.0001858044444,
+       "q75": 350.7501858044444
+      },
+      "delay_max_h_real": {
+       "median": 359.7501858044444,
+       "q25": 359.7501858044444,
+       "q75": 359.7501858044444
+      },
+      "FZR_naive": {
+       "median": 0.0774429616874731,
+       "q25": 0.05411580522463255,
+       "q75": 0.11491388462899604
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.3764545454545454,
+       "q25": 0.3764545454545454,
+       "q75": 0.4215151515151515
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.783333333333333,
+       "q25": 2.772636363636364,
+       "q75": 2.784727272727273
+      },
+      "airtime_tx_max_day_s": {
+       "median": 6.226,
+       "q25": 6.226,
+       "q75": 6.226
+      },
+      "downlinks_per_day": {
+       "median": 0.1818181818181818,
+       "q25": 0.1818181818181818,
+       "q75": 0.1818181818181818
+      }
+     }
+    },
+    "30": {
+     "S0": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_24h": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_followup": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "DC_end": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_p95_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "delay_max_h_real": {
+       "median": null,
+       "q25": null,
+       "q75": null
+      },
+      "FZR_naive": {
+       "median": 0.2964385474860335,
+       "q25": 0.27749966492101846,
+       "q75": 0.31302228412256267
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1515757575757575,
+       "q25": 0.146030303030303,
+       "q75": 0.1529621212121212
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.464,
+       "q25": 1.464,
+       "q75": 1.464
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S1": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0139082058414464,
+       "q25": 0.0097357440890125,
+       "q75": 0.01495132127955485
+      },
+      "DC_24h": {
+       "median": 0.014367816091954,
+       "q25": 0.0100574712643678,
+       "q75": 0.015445402298850549
+      },
+      "DC_followup": {
+       "median": 0.0138888888888888,
+       "q25": 0.0097222222222222,
+       "q75": 0.014930555555555475
+      },
+      "DC_end": {
+       "median": 0.0138888888888888,
+       "q25": 0.0097222222222222,
+       "q75": 0.014930555555555475
+      },
+      "RR": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "SR_bins": {
+       "median": 0.0118184005494994,
+       "q25": 0.006597792629550425,
+       "q75": 0.0164482346867697
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.3751033155555555,
+       "q25": 0.3751033155555555,
+       "q75": 0.3751033155555555
+      },
+      "delay_p95_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "delay_max_h_real": {
+       "median": 0.7501033155555555,
+       "q25": 0.7501033155555555,
+       "q75": 0.7501033155555555
+      },
+      "FZR_naive": {
+       "median": 0.296231681786462,
+       "q25": 0.27728224872279583,
+       "q75": 0.31291333101287855
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.1764242424242424,
+       "q25": 0.1699696969696969,
+       "q75": 0.17803787878787872
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.704,
+       "q25": 1.704,
+       "q75": 1.704
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S2": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0139082058414464,
+       "q25": 0.0097357440890125,
+       "q75": 0.01495132127955485
+      },
+      "DC_24h": {
+       "median": 0.0186781609195402,
+       "q25": 0.014367816091954,
+       "q75": 0.0201149425287356
+      },
+      "DC_followup": {
+       "median": 0.0180555555555555,
+       "q25": 0.0138888888888888,
+       "q75": 0.0194444444444444
+      },
+      "DC_end": {
+       "median": 0.0194444444444444,
+       "q25": 0.0152777777777777,
+       "q75": 0.0208333333333333
+      },
+      "RR": {
+       "median": 0.0070224719101123,
+       "q25": 0.005610098176718,
+       "q75": 0.0070422535211267
+      },
+      "SR_bins": {
+       "median": 0.01885378316514795,
+       "q25": 0.010642593493580476,
+       "q75": 0.026445585150284525
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 0.6251047377777779,
+       "q25": 0.50010616,
+       "q75": 0.7501047377776389
+      },
+      "delay_p95_h_real": {
+       "median": 1.750106159999736,
+       "q25": 1.750106159999722,
+       "q75": 1.7501061599997916
+      },
+      "delay_max_h_real": {
+       "median": 1.75010616,
+       "q25": 1.75010616,
+       "q75": 1.75010616
+      },
+      "FZR_naive": {
+       "median": 0.294251279589945,
+       "q25": 0.27615426876167454,
+       "q75": 0.311714135030722
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.2034242424242424,
+       "q25": 0.1959696969696969,
+       "q75": 0.20528787878787877
+      },
+      "airtime_tx_s_per_day": {
+       "median": 1.967666666666667,
+       "q25": 1.967666666666667,
+       "q75": 1.967666666666667
+      },
+      "airtime_tx_max_day_s": {
+       "median": 1.968,
+       "q25": 1.968,
+       "q75": 1.968
+      },
+      "downlinks_per_day": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      }
+     },
+     "S3": {
+      "n_runs": 50,
+      "DC_1h": {
+       "median": 0.0027816411682892,
+       "q25": 0.0027816411682892,
+       "q75": 0.0041724617524339
+      },
+      "DC_24h": {
+       "median": 0.0043103448275862,
+       "q25": 0.0028735632183908,
+       "q75": 0.0043103448275862
+      },
+      "DC_followup": {
+       "median": 0.2458333333333333,
+       "q25": 0.18810763888888885,
+       "q75": 0.2916666666666667
+      },
+      "DC_end": {
+       "median": 0.7159722222222222,
+       "q25": 0.6774305555555555,
+       "q75": 0.7524305555555556
+      },
+      "RR": {
+       "median": 0.7151810584958217,
+       "q25": 0.6760808926080892,
+       "q75": 0.7517409470752089
+      },
+      "SR_bins": {
+       "median": 0.7148965066260629,
+       "q25": 0.6343372817994121,
+       "q75": 0.7790857209950091
+      },
+      "SR_counter": {
+       "median": 1.0,
+       "q25": 1.0,
+       "q75": 1.0
+      },
+      "delay_med_h_real": {
+       "median": 210.12518580444444,
+       "q25": 195.87518580444444,
+       "q75": 223.25018580444444
+      },
+      "delay_p95_h_real": {
+       "median": 347.5251858044444,
+       "q25": 345.77206080444444,
+       "q75": 350.1876858044444
+      },
+      "delay_max_h_real": {
+       "median": 359.7501858044444,
+       "q25": 359.7501858044444,
+       "q75": 359.7501858044444
+      },
+      "FZR_naive": {
+       "median": 0.10947718167017775,
+       "q25": 0.0811942932014996,
+       "q75": 0.13352797762225577
+      },
+      "FZR_aware": {
+       "median": 0.0,
+       "q25": 0.0,
+       "q75": 0.0
+      },
+      "airtime_s_per_day": {
+       "median": 0.36613636363636365,
+       "q25": 0.3498484848484848,
+       "q75": 0.3769090909090909
+      },
+      "airtime_tx_s_per_day": {
+       "median": 2.784727272727273,
+       "q25": 2.772636363636364,
+       "q75": 2.790636363636364
+      },
+      "airtime_tx_max_day_s": {
+       "median": 6.226,
+       "q25": 6.226,
+       "q75": 6.226
+      },
+      "downlinks_per_day": {
+       "median": 0.1818181818181818,
+       "q25": 0.1515151515151515,
+       "q75": 0.1818181818181818
+      }
+     }
+    }
+   }
+  },
+  "max_airtime_s_per_day": {
+   "value": 0.5812727272727272,
+   "n_runs": 29,
+   "configurations": [
+    {
+     "pattern": "daily",
+     "loss": 0,
+     "strategy": "S3",
+     "n_runs": 26
+    },
+    {
+     "pattern": "daily",
+     "loss": 10,
+     "strategy": "S3",
+     "n_runs": 3
+    }
+   ]
+  },
+  "max_downlinks_per_day": {
+   "value": 0.9696969696969696,
+   "n_runs": 2,
+   "configurations": [
+    {
+     "pattern": "daily",
+     "loss": 10,
+     "strategy": "S3",
+     "n_runs": 1
+    },
+    {
+     "pattern": "daily",
+     "loss": 30,
+     "strategy": "S3",
+     "n_runs": 1
+    }
+   ]
+  },
+  "max_airtime_tx_s_per_day": {
+   "value": 3.69730303030303,
+   "n_runs": 1,
+   "configurations": [
+    {
+     "pattern": "daily",
+     "loss": 30,
+     "strategy": "S3",
+     "n_runs": 1
+    }
+   ]
+  },
+  "max_airtime_tx_s_per_day_B2880": {
+   "value": 3.959212121212121,
+   "n_runs": 1,
+   "configurations": [
+    {
+     "pattern": "daily",
+     "loss": 30,
+     "strategy": "S3",
+     "n_runs": 1
+    }
+   ]
+  },
+  "max_airtime_tx_single_day_s": {
+   "value": 8.535,
+   "n_runs": 2,
+   "configurations": [
+    {
+     "pattern": "twice weekly",
+     "loss": 30,
+     "strategy": "S3",
+     "n_runs": 2
+    }
+   ]
+  }
+ },
+ "validation": {
+  "source": "software/data/processed/sim_validation.csv",
+  "n_runs": 29,
+  "runs": [
+   "C1_S0",
+   "C1_S1",
+   "C1_S2",
+   "C1_S3",
+   "C2_S0",
+   "C2_S1",
+   "C2_S2",
+   "C2_S3",
+   "C3-10_S0",
+   "C3-10_S1",
+   "C3-10_S2",
+   "C3-10_S3",
+   "C3-30_S0",
+   "C3-30_S1",
+   "C3-30_S2",
+   "C3-30_S3",
+   "C4-24_S0",
+   "C4-24_S1",
+   "C4-24_S2",
+   "C4-24_S3",
+   "C4-48_S0",
+   "C4-48_S3",
+   "C4-72_S0",
+   "C4-72_S3",
+   "C5-overflow_S3",
+   "C5-reboot_S3",
+   "REAL-C4-24_S1",
+   "REAL-C4-24_S3",
+   "S4-valid"
+  ],
+  "runs_not_validated": [],
+  "validated_runs_without_done": [],
+  "frames_same": 1821,
+  "frames_real": 1821,
+  "bins_same_steps": 7326,
+  "bins_real": 7326,
+  "downlinks_real": 23,
+  "downlinks_sim": 23,
+  "runs_with_frame_differences": 0,
+  "max_abs_diff": {
+   "bins": 0.0,
+   "frames": 0.0,
+   "sent": 0.0,
+   "suppressed": 0.0,
+   "dropped": 0.0,
+   "DC_1h": 0.0,
+   "DC_24h": 0.0,
+   "DC_end": 0.0,
+   "RR": 0.0,
+   "SR_bins": 0.0,
+   "SR_counter": 0.0,
+   "TI": 0.0,
+   "DR": 0.0,
+   "OOR": 0.0,
+   "delay_med_h_real": 0.00031984446250010734,
+   "delay_p95_h_real": 0.0017720926120834424,
+   "delay_max_h_real": 0.002291237887500075,
+   "FZR_naive": 0.0,
+   "FZR_aware": 0.0,
+   "FZR_naive_lastbin": 0.0,
+   "SR_increments": 0.0,
+   "airtime_s_per_day": 0.045102451798019416,
+   "downlinks": 0.0
+  },
+  "max_rel_diff": {
+   "bins": 0.0,
+   "frames": 0.0,
+   "sent": 0.0,
+   "suppressed": 0.0,
+   "dropped": 0.0,
+   "DC_1h": 0.0,
+   "DC_24h": 0.0,
+   "DC_end": 0.0,
+   "RR": 0.0,
+   "SR_bins": 0.0,
+   "SR_counter": 0.0,
+   "TI": 0.0,
+   "DR": 0.0,
+   "OOR": 0.0,
+   "delay_med_h_real": 0.0006921212501690293,
+   "delay_p95_h_real": 0.0023512278372532355,
+   "delay_max_h_real": 0.003037602132086522,
+   "FZR_naive": 0.0,
+   "FZR_aware": null,
+   "FZR_naive_lastbin": 0.0,
+   "SR_increments": 0.0,
+   "airtime_s_per_day": 0.005259540892107711,
+   "downlinks": 0.0
+  },
+  "runs_with_both_values": {
+   "bins": 29,
+   "frames": 29,
+   "sent": 29,
+   "suppressed": 29,
+   "dropped": 29,
+   "DC_1h": 29,
+   "DC_24h": 28,
+   "DC_end": 29,
+   "RR": 25,
+   "SR_bins": 29,
+   "SR_counter": 29,
+   "TI": 22,
+   "DR": 22,
+   "OOR": 22,
+   "delay_med_h_real": 22,
+   "delay_p95_h_real": 22,
+   "delay_max_h_real": 22,
+   "FZR_naive": 29,
+   "FZR_aware": 29,
+   "FZR_naive_lastbin": 7,
+   "SR_increments": 7,
+   "airtime_s_per_day": 29,
+   "downlinks": 29
+  },
+  "tx_time_diff_s_med_max": 0.306999999999789,
+  "frames_same_ratio": 1.0,
+  "bins_same_ratio": 1.0,
+  "table_runs": {
+   "n_runs": 28,
+   "runs": [
+    "C1_S0",
+    "C1_S1",
+    "C1_S2",
+    "C1_S3",
+    "C2_S0",
+    "C2_S1",
+    "C2_S2",
+    "C2_S3",
+    "C3-10_S0",
+    "C3-10_S1",
+    "C3-10_S2",
+    "C3-10_S3",
+    "C3-30_S0",
+    "C3-30_S1",
+    "C3-30_S2",
+    "C3-30_S3",
+    "C4-24_S0",
+    "C4-24_S1",
+    "C4-24_S2",
+    "C4-24_S3",
+    "C4-48_S0",
+    "C4-48_S3",
+    "C4-72_S0",
+    "C4-72_S3",
+    "C5-overflow_S3",
+    "C5-reboot_S3",
+    "REAL-C4-24_S1",
+    "REAL-C4-24_S3"
+   ],
+   "frames_same": 1811,
+   "frames_real": 1811,
+   "frames_sim": 1811,
+   "bins_same_steps": 7286,
+   "bins_real": 7286,
+   "bins_sim": 7286,
+   "downlinks_real": 17,
+   "downlinks_sim": 17,
+   "values_that_differ": [
+    "delay_med_h_real",
+    "delay_p95_h_real",
+    "delay_max_h_real",
+    "airtime_s_per_day"
+   ],
+   "max_rel_diff": {
+    "bins": 0.0,
+    "frames": 0.0,
+    "sent": 0.0,
+    "suppressed": 0.0,
+    "dropped": 0.0,
+    "DC_1h": 0.0,
+    "DC_24h": 0.0,
+    "DC_end": 0.0,
+    "RR": 0.0,
+    "SR_bins": 0.0,
+    "SR_counter": 0.0,
+    "TI": 0.0,
+    "DR": 0.0,
+    "OOR": 0.0,
+    "delay_med_h_real": 0.0006921212501690293,
+    "delay_p95_h_real": 0.0023512278372532355,
+    "delay_max_h_real": 0.003037602132086522,
+    "FZR_naive": 0.0,
+    "FZR_aware": null,
+    "FZR_naive_lastbin": 0.0,
+    "SR_increments": 0.0,
+    "airtime_s_per_day": 0.005259540892107711,
+    "downlinks": 0.0
+   }
+  }
+ }
+}

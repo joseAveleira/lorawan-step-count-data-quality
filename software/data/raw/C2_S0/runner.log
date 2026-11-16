@@ -1,0 +1,174 @@
+16:50:06  >> set scenario 1
+16:50:06  >> set period 240
+16:50:06  >> set fup 1
+16:50:06  >> set dr 5
+16:50:06  >> set adr 0
+16:50:07  >> set k 4
+16:50:07  >> set n 40
+16:50:07  >> set delta 60
+16:50:07  >> set source 0
+16:50:07  >> set buf 1440
+16:50:07  >> set display 1
+16:50:08  >> set strategy 0
+16:50:08  >> set seed 2599
+16:50:08  >> set scenario 2
+16:50:08  >> set cycle 5760
+16:50:08  >> set window 600
+16:50:08  >> reboot
+16:50:09  EV,set,scenario,1
+16:50:09  EV,set,period,240
+16:50:09  EV,set,fup,1
+16:50:09  EV,set,dr,5
+16:50:09  EV,set,adr,0
+16:50:09  EV,set,k,4
+16:50:09  EV,set,n,40
+16:50:09  EV,set,delta,60,next_boot
+16:50:09  EV,set,source,0,next_boot
+16:50:09  EV,set,buf,1440,next_boot
+16:50:09  EV,set,display,1
+16:50:09  EV,set,strategy,0
+16:50:09  EV,set,seed,2599,next_boot
+16:50:09  EV,set,scenario,2
+16:50:09  EV,set,cycle,5760
+16:50:09  EV,set,window,600
+16:50:09  EV,reboot
+16:50:09  EV,boot,32,0.2.0,3,reset
+16:50:09  EV,config,strategy=0,scenario=2,delta=60,period=240,k=4,n=40,seed=2599,source=0,dr=5,adr=0,fup=1,buf=1440,display=1,cycle=5760,window=600,geloss=10,geburst=3,outstart=1800,outlen=5760
+16:50:09  EV,sensor,ok,0x4B
+16:50:09  EV,buffer,194,192,0
+16:50:09  EV,exp,continue,86328261
+16:50:09  EV,join,restored,-1117,1
+16:50:09  >> clear
+16:50:10  >> exp
+16:50:10  EV,clear
+16:50:10  EV,exp,start,99684354
+16:50:11  experimento C2_S0 en marcha: 19680 s, 1 acciones
+16:50:11  # TTN: conectado (Success), suscrito a v3/lorawan-app-iot@ttn/devices/lorapasos/#
+16:50:13  # gateway: 129 registros nuevos (último id 1071)
+16:54:10  # TTN: uplink fcnt=368 fport=10 rssi=-63 snr=13.5
+16:54:16  TX,32,368,0,1,60,5,13,sent,61,99924128
+16:54:22  # gateway: 2 registros nuevos (último id 1073)
+16:58:10  # TTN: uplink fcnt=369 fport=10 rssi=-46 snr=10.2
+16:58:16  TX,32,369,4,1,60,5,13,sent,61,100164128
+16:58:31  # gateway: 2 registros nuevos (último id 1075)
+17:02:09  TX,32,-1,8,1,60,5,13,suppressed,0,100404122
+17:06:09  TX,32,-1,12,1,60,5,13,suppressed,0,100644115
+17:10:09  TX,32,-1,16,1,60,5,13,suppressed,0,100884125
+17:14:09  TX,32,-1,20,1,60,5,13,suppressed,0,101124120
+17:18:09  TX,32,-1,24,1,60,5,13,suppressed,0,101364131
+17:22:09  TX,32,-1,28,1,60,5,13,suppressed,0,101604127
+17:26:09  TX,32,-1,32,1,60,5,13,suppressed,0,101844115
+17:30:09  TX,32,-1,36,1,60,5,13,suppressed,0,102084127
+17:34:09  TX,32,-1,40,1,60,5,13,suppressed,0,102324115
+17:38:09  TX,32,-1,44,1,60,5,13,suppressed,0,102564128
+17:42:09  TX,32,-1,48,1,60,5,13,suppressed,0,102804116
+17:46:09  TX,32,-1,52,1,60,5,13,suppressed,0,103044129
+17:50:09  TX,32,-1,56,1,60,5,13,suppressed,0,103284117
+17:54:09  TX,32,-1,60,1,60,5,13,suppressed,0,103524129
+17:58:09  TX,32,-1,64,1,60,5,13,suppressed,0,103764119
+18:02:09  TX,32,-1,68,1,60,5,13,suppressed,0,104004132
+18:06:09  TX,32,-1,72,1,60,5,13,suppressed,0,104244122
+18:10:09  TX,32,-1,76,1,60,5,13,suppressed,0,104484114
+18:14:09  TX,32,-1,80,1,60,5,13,suppressed,0,104724122
+18:18:09  TX,32,-1,84,1,60,5,13,suppressed,0,104964113
+18:22:09  TX,32,-1,88,1,60,5,13,suppressed,0,105204121
+18:26:09  TX,32,-1,92,1,60,5,13,suppressed,0,105444115
+18:30:10  # TTN: uplink fcnt=370 fport=10 rssi=-63 snr=13.5
+18:30:16  TX,32,370,96,1,60,5,13,sent,61,105684122
+18:30:55  # gateway: 2 registros nuevos (último id 1077)
+18:34:10  # TTN: uplink fcnt=371 fport=10 rssi=-62 snr=11.5
+18:34:16  TX,32,371,100,1,60,5,13,sent,61,105924121
+18:35:04  # gateway: 2 registros nuevos (último id 1079)
+18:38:09  TX,32,-1,104,1,60,5,13,suppressed,0,106164116
+18:42:09  TX,32,-1,108,1,60,5,13,suppressed,0,106404126
+18:46:09  TX,32,-1,112,1,60,5,13,suppressed,0,106644113
+18:50:09  TX,32,-1,116,1,60,5,13,suppressed,0,106884123
+18:54:09  TX,32,-1,120,1,60,5,13,suppressed,0,107124132
+18:58:09  TX,32,-1,124,1,60,5,13,suppressed,0,107364123
+19:02:09  TX,32,-1,128,1,60,5,13,suppressed,0,107604113
+19:06:09  TX,32,-1,132,1,60,5,13,suppressed,0,107844124
+19:10:09  TX,32,-1,136,1,60,5,13,suppressed,0,108084115
+19:14:09  TX,32,-1,140,1,60,5,13,suppressed,0,108324127
+19:18:09  TX,32,-1,144,1,60,5,13,suppressed,0,108564115
+19:22:09  TX,32,-1,148,1,60,5,13,suppressed,0,108804127
+19:26:09  TX,32,-1,152,1,60,5,13,suppressed,0,109044114
+19:30:09  TX,32,-1,156,1,60,5,13,suppressed,0,109284128
+19:34:09  TX,32,-1,160,1,60,5,13,suppressed,0,109524115
+19:38:09  TX,32,-1,164,1,60,5,13,suppressed,0,109764113
+19:42:09  TX,32,-1,168,1,60,5,13,suppressed,0,110004124
+19:46:09  TX,32,-1,172,1,60,5,13,suppressed,0,110244119
+19:50:09  TX,32,-1,176,1,60,5,13,suppressed,0,110484128
+19:54:09  TX,32,-1,180,1,60,5,13,suppressed,0,110724122
+19:58:09  TX,32,-1,184,1,60,5,13,suppressed,0,110964113
+20:02:09  TX,32,-1,188,1,60,5,13,suppressed,0,111204127
+20:06:10  # TTN: uplink fcnt=372 fport=10 rssi=-62 snr=14
+20:06:15  TX,32,372,192,1,60,5,13,sent,61,111444117
+20:06:26  # gateway: 2 registros nuevos (último id 1081)
+20:10:10  # TTN: uplink fcnt=373 fport=10 rssi=-45 snr=13.8
+20:10:15  TX,32,373,196,1,60,5,13,sent,61,111684117
+20:10:35  # gateway: 2 registros nuevos (último id 1083)
+20:14:09  TX,32,-1,200,1,60,5,13,suppressed,0,111924113
+20:18:09  TX,32,-1,204,1,60,5,13,suppressed,0,112164126
+20:22:09  TX,32,-1,208,1,60,5,13,suppressed,0,112404115
+20:26:09  TX,32,-1,212,1,60,5,13,suppressed,0,112644129
+20:30:09  TX,32,-1,216,1,60,5,13,suppressed,0,112884118
+20:34:09  TX,32,-1,220,1,60,5,13,suppressed,0,113124114
+20:38:09  TX,32,-1,224,1,60,5,13,suppressed,0,113364124
+20:42:09  TX,32,-1,228,1,60,5,13,suppressed,0,113604117
+20:46:09  TX,32,-1,232,1,60,5,13,suppressed,0,113844125
+20:50:09  TX,32,-1,236,1,60,5,13,suppressed,0,114084116
+20:54:09  TX,32,-1,240,1,60,5,13,suppressed,0,114324124
+20:58:09  TX,32,-1,244,1,60,5,13,suppressed,0,114564115
+21:02:09  TX,32,-1,248,1,60,5,13,suppressed,0,114804122
+21:06:09  TX,32,-1,252,1,60,5,13,suppressed,0,115044132
+21:10:09  TX,32,-1,256,1,60,5,13,suppressed,0,115284122
+21:14:09  TX,32,-1,260,1,60,5,13,suppressed,0,115524130
+21:18:09  TX,32,-1,264,1,60,5,13,suppressed,0,115764117
+21:22:09  TX,32,-1,268,1,60,5,13,suppressed,0,116004127
+21:26:09  TX,32,-1,272,1,60,5,13,suppressed,0,116244116
+21:30:09  TX,32,-1,276,1,60,5,13,suppressed,0,116484130
+21:34:09  TX,32,-1,280,1,60,5,13,suppressed,0,116724123
+21:38:09  TX,32,-1,284,1,60,5,13,suppressed,0,116964113
+21:42:10  # TTN: uplink fcnt=374 fport=10 rssi=-43 snr=14.5
+21:42:15  TX,32,374,288,1,60,5,13,sent,61,117204121
+21:43:01  # gateway: 2 registros nuevos (último id 1085)
+21:46:10  # TTN: uplink fcnt=375 fport=10 rssi=-61 snr=14
+21:46:15  TX,32,375,292,1,60,5,13,sent,61,117444118
+21:47:10  # gateway: 2 registros nuevos (último id 1087)
+21:48:10  >> set scenario 1
+21:48:10  nota: vaciado con cobertura continua
+21:48:10  EV,set,scenario,1
+21:50:10  # TTN: uplink fcnt=376 fport=10 rssi=-66 snr=13.8
+21:50:15  TX,32,376,296,1,60,5,13,sent,61,117684117
+21:50:18  # gateway: 2 registros nuevos (último id 1089)
+21:54:10  # TTN: uplink fcnt=377 fport=10 rssi=-60 snr=11.8
+21:54:15  TX,32,377,300,1,60,5,13,sent,61,117924117
+21:54:27  # gateway: 2 registros nuevos (último id 1091)
+21:58:10  # TTN: uplink fcnt=378 fport=10 rssi=-60 snr=14
+21:58:16  TX,32,378,304,1,60,5,13,sent,61,118164114
+21:58:35  # gateway: 2 registros nuevos (último id 1093)
+22:02:10  # TTN: uplink fcnt=379 fport=10 rssi=-60 snr=13.8
+22:02:15  TX,32,379,308,1,60,5,13,sent,61,118404118
+22:02:44  # gateway: 2 registros nuevos (último id 1095)
+22:06:10  # TTN: uplink fcnt=380 fport=10 rssi=-60 snr=14
+22:06:15  TX,32,380,312,1,60,5,13,sent,61,118644132
+22:06:54  # gateway: 2 registros nuevos (último id 1097)
+22:10:10  # TTN: uplink fcnt=381 fport=10 rssi=-43 snr=13.5
+22:10:15  TX,32,381,316,1,60,5,13,sent,61,118884131
+22:11:03  # gateway: 2 registros nuevos (último id 1099)
+22:14:10  # TTN: uplink fcnt=382 fport=10 rssi=-43 snr=13.8
+22:14:10  # gateway: 1 registros nuevos (último id 1100)
+22:14:15  TX,32,382,320,1,60,5,13,sent,61,119124125
+22:15:12  # gateway: 1 registros nuevos (último id 1101)
+22:18:10  # TTN: uplink fcnt=383 fport=10 rssi=-43 snr=11
+22:18:10  >> dump
+22:18:15  >> set strategy 1
+22:18:15  >> set scenario 1
+22:18:16  TX,32,383,324,1,60,5,13,sent,61,119364126
+22:18:16  EV,status,joined=1,epoch=32,open=328,cum=6148,count=0,sent=0,acked=0
+22:18:16  EV,set,strategy,1
+22:18:16  EV,set,scenario,1
+22:18:16  >> set buf 1440
+22:18:16  EV,set,buf,1440,next_boot
+22:18:16  experimento C2_S0 terminado
+22:18:17  # TTN: desconectado

@@ -1,0 +1,349 @@
+{
+ "generated": "2026-10-24T10:13:26",
+ "runs": [
+  "C1_S1",
+  "C1_S2",
+  "C1_S3",
+  "C2_S1",
+  "C2_S2",
+  "C2_S3",
+  "C3-10_S1",
+  "C3-10_S2",
+  "C3-10_S3",
+  "C3-30_S1",
+  "C3-30_S2",
+  "C3-30_S3",
+  "C4-24_S1",
+  "C4-24_S2",
+  "C4-24_S3",
+  "C4-48_S3",
+  "C4-72_S3",
+  "C5-overflow_S3",
+  "C5-reboot_S3",
+  "REAL-C4-24_S1",
+  "REAL-C4-24_S3"
+ ],
+ "per_run": [
+  {
+   "id": "C1_S1",
+   "strategy": 1,
+   "bundles": 48,
+   "intervals": 192,
+   "observation_versions": 192,
+   "provenance": 48,
+   "patient_device": 96,
+   "observed_zero": 134,
+   "observed_positive": 58
+  },
+  {
+   "id": "C1_S2",
+   "strategy": 2,
+   "bundles": 48,
+   "intervals": 192,
+   "observation_versions": 192,
+   "provenance": 48,
+   "patient_device": 96,
+   "observed_zero": 134,
+   "observed_positive": 58
+  },
+  {
+   "id": "C1_S3",
+   "strategy": 3,
+   "bundles": 48,
+   "intervals": 192,
+   "observation_versions": 192,
+   "provenance": 48,
+   "patient_device": 96,
+   "observed_zero": 134,
+   "observed_positive": 58
+  },
+  {
+   "id": "C2_S1",
+   "strategy": 1,
+   "bundles": 16,
+   "intervals": 328,
+   "observation_versions": 328,
+   "provenance": 16,
+   "patient_device": 32,
+   "observed_positive": 18,
+   "observed_zero": 46,
+   "lost": 264
+  },
+  {
+   "id": "C2_S2",
+   "strategy": 2,
+   "bundles": 15,
+   "intervals": 324,
+   "observation_versions": 324,
+   "provenance": 15,
+   "patient_device": 30,
+   "observed_positive": 26,
+   "observed_zero": 46,
+   "lost": 252
+  },
+  {
+   "id": "C2_S3",
+   "strategy": 3,
+   "bundles": 11,
+   "intervals": 328,
+   "observation_versions": 592,
+   "provenance": 11,
+   "patient_device": 22,
+   "observed_positive": 96,
+   "observed_zero": 232,
+   "pending": 264,
+   "received_late": 264
+  },
+  {
+   "id": "C3-10_S1",
+   "strategy": 1,
+   "bundles": 50,
+   "intervals": 220,
+   "observation_versions": 220,
+   "provenance": 50,
+   "patient_device": 100,
+   "observed_zero": 163,
+   "observed_positive": 37,
+   "lost": 20
+  },
+  {
+   "id": "C3-10_S2",
+   "strategy": 2,
+   "bundles": 50,
+   "intervals": 220,
+   "observation_versions": 220,
+   "provenance": 50,
+   "patient_device": 100,
+   "observed_zero": 167,
+   "observed_positive": 41,
+   "lost": 12
+  },
+  {
+   "id": "C3-10_S3",
+   "strategy": 3,
+   "bundles": 48,
+   "intervals": 220,
+   "observation_versions": 240,
+   "provenance": 48,
+   "patient_device": 96,
+   "observed_zero": 169,
+   "observed_positive": 51,
+   "pending": 20,
+   "received_late": 20
+  },
+  {
+   "id": "C3-30_S1",
+   "strategy": 1,
+   "bundles": 40,
+   "intervals": 220,
+   "observation_versions": 220,
+   "provenance": 40,
+   "patient_device": 80,
+   "observed_zero": 100,
+   "observed_positive": 60,
+   "lost": 60
+  },
+  {
+   "id": "C3-30_S2",
+   "strategy": 2,
+   "bundles": 40,
+   "intervals": 220,
+   "observation_versions": 220,
+   "provenance": 40,
+   "patient_device": 80,
+   "observed_zero": 114,
+   "observed_positive": 66,
+   "lost": 40
+  },
+  {
+   "id": "C3-30_S3",
+   "strategy": 3,
+   "bundles": 37,
+   "intervals": 220,
+   "observation_versions": 288,
+   "provenance": 37,
+   "patient_device": 74,
+   "observed_zero": 142,
+   "observed_positive": 78,
+   "pending": 68,
+   "received_late": 68
+  },
+  {
+   "id": "C4-24_S1",
+   "strategy": 1,
+   "bundles": 31,
+   "intervals": 220,
+   "observation_versions": 220,
+   "provenance": 31,
+   "patient_device": 62,
+   "observed_zero": 82,
+   "observed_positive": 42,
+   "lost": 96
+  },
+  {
+   "id": "C4-24_S2",
+   "strategy": 2,
+   "bundles": 31,
+   "intervals": 220,
+   "observation_versions": 220,
+   "provenance": 31,
+   "patient_device": 62,
+   "observed_zero": 86,
+   "observed_positive": 42,
+   "lost": 92
+  },
+  {
+   "id": "C4-24_S3",
+   "strategy": 3,
+   "bundles": 26,
+   "intervals": 220,
+   "observation_versions": 316,
+   "provenance": 26,
+   "patient_device": 52,
+   "observed_zero": 152,
+   "observed_positive": 68,
+   "pending": 96,
+   "received_late": 96
+  },
+  {
+   "id": "C4-48_S3",
+   "strategy": 3,
+   "bundles": 22,
+   "intervals": 316,
+   "observation_versions": 508,
+   "provenance": 22,
+   "patient_device": 44,
+   "observed_positive": 95,
+   "observed_zero": 221,
+   "pending": 192,
+   "received_late": 192
+  },
+  {
+   "id": "C4-72_S3",
+   "strategy": 3,
+   "bundles": 16,
+   "intervals": 412,
+   "observation_versions": 700,
+   "provenance": 16,
+   "patient_device": 32,
+   "observed_positive": 124,
+   "observed_zero": 288,
+   "pending": 288,
+   "received_late": 288
+  },
+  {
+   "id": "C5-overflow_S3",
+   "strategy": 3,
+   "bundles": 26,
+   "intervals": 412,
+   "observation_versions": 504,
+   "provenance": 26,
+   "patient_device": 52,
+   "observed_positive": 71,
+   "observed_zero": 141,
+   "lost": 200,
+   "pending": 92,
+   "received_late": 88
+  },
+  {
+   "id": "C5-reboot_S3",
+   "strategy": 3,
+   "bundles": 26,
+   "intervals": 220,
+   "observation_versions": 220,
+   "provenance": 26,
+   "patient_device": 52,
+   "observed_zero": 152,
+   "observed_positive": 68
+  },
+  {
+   "id": "REAL-C4-24_S1",
+   "strategy": 1,
+   "bundles": 31,
+   "intervals": 220,
+   "observation_versions": 220,
+   "provenance": 31,
+   "patient_device": 62,
+   "observed_zero": 82,
+   "observed_positive": 42,
+   "lost": 96
+  },
+  {
+   "id": "REAL-C4-24_S3",
+   "strategy": 3,
+   "bundles": 26,
+   "intervals": 220,
+   "observation_versions": 316,
+   "provenance": 26,
+   "patient_device": 52,
+   "observed_zero": 152,
+   "observed_positive": 68,
+   "pending": 96,
+   "received_late": 96
+  }
+ ],
+ "totals": {
+  "bundles": 686,
+  "intervals": 5336,
+  "observation_versions": 6452,
+  "provenance": 686,
+  "patient_device": 1372,
+  "observed_zero": 2937,
+  "observed_positive": 1267,
+  "lost": 1132,
+  "pending": 1116,
+  "received_late": 1112,
+  "resources": 8510
+ },
+ "validator": {
+  "returncode": 0,
+  "seconds": 49.7,
+  "validator_version": "7.0.3"
+ },
+ "validation": {
+  "files": 686,
+  "files_with_errors": 0,
+  "issues": {
+   "warning": 19166
+  },
+  "messages": {
+   "warning": [
+    [
+     "Constraint failed: dom-#: 'A resource should have narrative for robust management' (defined in http://hl#.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+     8510
+    ],
+    [
+     "Best Practice Recommendation: In general, all observations should have a performer",
+     6452
+    ],
+    [
+     "UCUM Codes that contain human readable annotations like {steps} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked",
+     4204
+    ]
+   ]
+  }
+ },
+ "examples_validation": {
+  "files": 2,
+  "files_with_errors": 0,
+  "issues": {
+   "warning": 18
+  },
+  "messages": {
+   "warning": [
+    [
+     "Constraint failed: dom-#: 'A resource should have narrative for robust management' (defined in http://hl#.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+     10
+    ],
+    [
+     "Best Practice Recommendation: In general, all observations should have a performer",
+     5
+    ],
+    [
+     "UCUM Codes that contain human readable annotations like {steps} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked",
+     3
+    ]
+   ]
+  }
+ }
+}

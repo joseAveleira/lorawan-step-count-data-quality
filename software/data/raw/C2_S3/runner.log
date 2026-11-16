@@ -1,0 +1,191 @@
+18:37:24  >> set scenario 1
+18:37:24  >> set period 240
+18:37:24  >> set fup 1
+18:37:24  >> set dr 5
+18:37:24  >> set adr 0
+18:37:24  >> set k 4
+18:37:25  >> set n 40
+18:37:25  >> set delta 60
+18:37:25  >> set source 0
+18:37:25  >> set buf 1440
+18:37:25  >> set display 1
+18:37:25  >> set strategy 3
+18:37:26  >> set seed 2599
+18:37:26  >> set scenario 2
+18:37:26  >> set cycle 5760
+18:37:26  >> set window 600
+18:37:26  >> reboot
+18:37:26  EV,set,scenario,1
+18:37:26  EV,set,period,240
+18:37:26  EV,set,fup,1
+18:37:26  EV,set,dr,5
+18:37:26  EV,set,adr,0
+18:37:26  EV,set,k,4
+18:37:26  EV,set,n,40
+18:37:26  EV,set,delta,60,next_boot
+18:37:26  EV,set,source,0,next_boot
+18:37:26  EV,set,buf,1440,next_boot
+18:37:26  EV,set,display,1
+18:37:26  EV,set,strategy,3
+18:37:26  EV,set,seed,2599,next_boot
+18:37:26  EV,set,scenario,2
+18:37:26  EV,set,cycle,5760
+18:37:26  EV,set,window,600
+18:37:26  EV,reboot
+18:37:26  EV,boot,40,0.2.0,3,reset
+18:37:26  EV,config,strategy=3,scenario=2,delta=60,period=240,k=4,n=40,seed=2599,source=0,dr=5,adr=0,fup=1,buf=1440,display=1,cycle=5760,window=600,geloss=10,geburst=3,outstart=1800,outlen=5760
+18:37:27  EV,sensor,ok,0x4B
+18:37:27  EV,buffer,0,0,0
+18:37:27  EV,exp,continue,113624
+18:37:27  EV,join,restored,-1117,1
+18:37:27  >> clear
+18:37:27  >> exp
+18:37:28  EV,clear
+18:37:28  EV,exp,start,19826908
+18:37:29  experimento C2_S3 en marcha: 19680 s, 1 acciones
+18:37:29  # TTN: conectado (Success), suscrito a v3/lorawan-app-iot@ttn/devices/lorapasos/#
+18:37:31  # gateway: 129 registros nuevos (último id 1176)
+18:41:28  # TTN: uplink fcnt=420 fport=13 rssi=-54 snr=13.8
+18:41:33  TX,40,420,0,4,60,5,19,sent,71,20066635
+18:41:41  # gateway: 2 registros nuevos (último id 1178)
+18:45:28  # TTN: uplink fcnt=421 fport=13 rssi=-38 snr=10.2
+18:45:33  TX,40,421,4,4,60,5,19,sent,71,20306638
+18:45:50  # gateway: 2 registros nuevos (último id 1180)
+18:49:27  TX,40,-1,8,4,60,5,19,suppressed,0,20546633
+18:53:27  TX,40,-1,12,4,60,5,19,suppressed,0,20786622
+18:57:27  TX,40,-1,16,4,60,5,19,suppressed,0,21026628
+19:01:27  TX,40,-1,20,4,60,5,19,suppressed,0,21266639
+19:05:27  TX,40,-1,24,4,60,5,19,suppressed,0,21506620
+19:09:27  TX,40,-1,28,4,60,5,19,suppressed,0,21746632
+19:13:27  TX,40,-1,32,4,60,5,19,suppressed,0,21986632
+19:17:27  TX,40,-1,36,4,60,5,19,suppressed,0,22226628
+19:21:27  TX,40,-1,40,4,60,5,19,suppressed,0,22466629
+19:25:27  TX,40,-1,44,4,60,5,19,suppressed,0,22706631
+19:29:27  TX,40,-1,48,4,60,5,19,suppressed,0,22946630
+19:33:27  TX,40,-1,52,4,60,5,19,suppressed,0,23186635
+19:37:27  TX,40,-1,56,4,60,5,19,suppressed,0,23426633
+19:41:27  TX,40,-1,60,4,60,5,19,suppressed,0,23666637
+19:45:27  TX,40,-1,64,4,60,5,19,suppressed,0,23906638
+19:49:27  TX,40,-1,68,4,60,5,19,suppressed,0,24146638
+19:53:27  TX,40,-1,72,4,60,5,19,suppressed,0,24386635
+19:57:27  TX,40,-1,76,4,60,5,19,suppressed,0,24626623
+20:01:27  TX,40,-1,80,4,60,5,19,suppressed,0,24866639
+20:05:27  TX,40,-1,84,4,60,5,19,suppressed,0,25106638
+20:09:27  TX,40,-1,88,4,60,5,19,suppressed,0,25346622
+20:13:27  TX,40,-1,92,4,60,5,19,suppressed,0,25586628
+20:17:28  # TTN: uplink fcnt=422 fport=13 rssi=-56 snr=14.8
+20:17:28  # TTN: ACK (hueco) en cola para la próxima ventana RX: época 40, secuencia 7 (9 downlinks disponibles en 24 h)
+20:17:28  # TTN: lorapasos/down/queued
+20:17:32  # TTN: lorapasos/down/sent
+20:17:32  TX,40,422,96,4,60,5,19,sent,71,25826634
+20:17:33  EV,downlink,20,3
+20:17:33  EV,ack,40,7,7
+20:17:33  EV,rewind,gap,92
+20:18:15  # gateway: 3 registros nuevos (último id 1183)
+20:21:28  # TTN: uplink fcnt=423 fport=13 rssi=-56 snr=10.8
+20:21:34  TX,40,423,8,96,1440,5,203,sent,343,26066622
+20:22:24  # gateway: 2 registros nuevos (último id 1185)
+20:25:27  TX,40,-1,104,4,60,5,19,suppressed,0,26306639
+20:29:27  TX,40,-1,108,4,60,5,19,suppressed,0,26546635
+20:33:27  TX,40,-1,112,4,60,5,19,suppressed,0,26786636
+20:37:27  TX,40,-1,116,4,60,5,19,suppressed,0,27026632
+20:41:28  TX,40,-1,120,4,60,5,19,suppressed,0,27266648
+20:45:27  TX,40,-1,124,4,60,5,19,suppressed,0,27506627
+20:49:27  TX,40,-1,128,4,60,5,19,suppressed,0,27746628
+20:53:27  TX,40,-1,132,4,60,5,19,suppressed,0,27986631
+20:57:27  TX,40,-1,136,4,60,5,19,suppressed,0,28226633
+21:01:27  TX,40,-1,140,4,60,5,19,suppressed,0,28466636
+21:05:28  TX,40,-1,144,4,60,5,19,suppressed,0,28706635
+21:09:28  TX,40,-1,148,4,60,5,19,suppressed,0,28946624
+21:13:27  TX,40,-1,152,4,60,5,19,suppressed,0,29186630
+21:17:28  TX,40,-1,156,4,60,5,19,suppressed,0,29426625
+21:21:28  TX,40,-1,160,4,60,5,19,suppressed,0,29666628
+21:25:27  TX,40,-1,164,4,60,5,19,suppressed,0,29906631
+21:29:28  TX,40,-1,168,4,60,5,19,suppressed,0,30146623
+21:33:28  TX,40,-1,172,4,60,5,19,suppressed,0,30386635
+21:37:28  TX,40,-1,176,4,60,5,19,suppressed,0,30626621
+21:41:28  TX,40,-1,180,4,60,5,19,suppressed,0,30866638
+21:45:28  TX,40,-1,184,4,60,5,19,suppressed,0,31106622
+21:49:28  TX,40,-1,188,4,60,5,19,suppressed,0,31346632
+21:53:28  # TTN: uplink fcnt=424 fport=13 rssi=-57 snr=14.2
+21:53:28  # TTN: ACK (hueco) en cola para la próxima ventana RX: época 40, secuencia 103 (8 downlinks disponibles en 24 h)
+21:53:28  # TTN: lorapasos/down/queued
+21:53:28  # TTN: lorapasos/down/sent
+21:53:33  TX,40,424,192,4,60,5,19,sent,71,31586621
+21:53:33  EV,downlink,20,3
+21:53:33  EV,ack,40,103,95
+21:53:33  EV,rewind,gap,92
+21:53:47  # gateway: 3 registros nuevos (último id 1188)
+21:57:28  # TTN: uplink fcnt=425 fport=13 rssi=-38 snr=13.2
+21:57:34  TX,40,425,104,96,1440,5,203,sent,343,31826637
+21:57:57  # gateway: 2 registros nuevos (último id 1190)
+22:01:28  TX,40,-1,200,4,60,5,19,suppressed,0,32066632
+22:05:28  TX,40,-1,204,4,60,5,19,suppressed,0,32306627
+22:09:28  TX,40,-1,208,4,60,5,19,suppressed,0,32546627
+22:13:28  TX,40,-1,212,4,60,5,19,suppressed,0,32786627
+22:17:28  TX,40,-1,216,4,60,5,19,suppressed,0,33026663
+22:21:28  TX,40,-1,220,4,60,5,19,suppressed,0,33266631
+22:25:28  TX,40,-1,224,4,60,5,19,suppressed,0,33506634
+22:29:28  TX,40,-1,228,4,60,5,19,suppressed,0,33746621
+22:30:40  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+22:33:28  TX,40,-1,232,4,60,5,19,suppressed,0,33986628
+22:37:27  TX,40,-1,236,4,60,5,19,suppressed,0,34226637
+22:41:27  TX,40,-1,240,4,60,5,19,suppressed,0,34466623
+22:43:35  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+22:45:05  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+22:45:27  TX,40,-1,244,4,60,5,19,suppressed,0,34706620
+22:46:35  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+22:49:27  TX,40,-1,248,4,60,5,19,suppressed,0,34946633
+22:51:15  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+22:53:27  TX,40,-1,252,4,60,5,19,suppressed,0,35186621
+22:57:27  TX,40,-1,256,4,60,5,19,suppressed,0,35426626
+23:01:27  TX,40,-1,260,4,60,5,19,suppressed,0,35666634
+23:05:27  TX,40,-1,264,4,60,5,19,suppressed,0,35906636
+23:09:27  TX,40,-1,268,4,60,5,19,suppressed,0,36146627
+23:13:27  TX,40,-1,272,4,60,5,19,suppressed,0,36386620
+23:17:27  TX,40,-1,276,4,60,5,19,suppressed,0,36626637
+23:21:27  TX,40,-1,280,4,60,5,19,suppressed,0,36866635
+23:25:27  TX,40,-1,284,4,60,5,19,suppressed,0,37106627
+23:29:28  # TTN: uplink fcnt=426 fport=13 rssi=-34 snr=13.5
+23:29:28  # TTN: ACK (hueco) en cola para la próxima ventana RX: época 40, secuencia 199 (7 downlinks disponibles en 24 h)
+23:29:28  # TTN: lorapasos/down/queued
+23:29:28  # TTN: lorapasos/down/sent
+23:29:32  TX,40,426,288,4,60,5,19,sent,71,37346639
+23:29:32  EV,downlink,20,3
+23:29:32  EV,ack,40,199,95
+23:29:32  EV,rewind,gap,92
+23:29:44  # gateway: 3 registros nuevos (último id 1193)
+23:33:28  # TTN: uplink fcnt=427 fport=13 rssi=-52 snr=12.8
+23:33:34  TX,40,427,200,96,1440,5,203,sent,343,37586639
+23:33:53  # gateway: 2 registros nuevos (último id 1195)
+23:35:28  >> set scenario 1
+23:35:28  nota: vaciado con cobertura continua
+23:35:28  EV,set,scenario,1
+23:37:27  EV,txerr,-1108
+23:37:27  TX,40,-1,296,4,60,-1,19,dropped,0,37826639
+23:41:27  EV,txerr,-1108
+23:41:27  TX,40,-1,296,8,120,-1,27,dropped,0,38066637
+23:45:27  EV,txerr,-1108
+23:45:27  TX,40,-1,296,12,180,-1,35,dropped,0,38306638
+23:49:27  EV,txerr,-1108
+23:49:27  TX,40,-1,296,16,240,-1,43,dropped,0,38546638
+23:53:28  # TTN: uplink fcnt=428 fport=13 rssi=-55 snr=14.5
+23:53:34  TX,40,428,296,20,300,5,51,sent,118,38786665
+23:53:37  # gateway: 2 registros nuevos (último id 1197)
+23:57:27  EV,txerr,-1108
+23:57:27  TX,40,-1,316,4,60,-1,19,dropped,0,39026632
+00:01:28  # TTN: uplink fcnt=429 fport=13 rssi=-52 snr=11.5
+00:01:34  TX,40,429,316,8,120,5,27,sent,82,39266635
+00:01:55  # gateway: 2 registros nuevos (último id 1199)
+00:05:28  # TTN: uplink fcnt=430 fport=13 rssi=-52 snr=14
+00:05:28  >> dump
+00:05:32  TX,40,430,324,4,60,5,19,sent,71,39506651
+00:05:33  EV,status,joined=1,epoch=40,open=328,cum=6148,count=128,sent=128,acked=0
+00:05:33  >> set strategy 1
+00:05:33  EV,set,strategy,1
+00:05:33  >> set scenario 1
+00:05:33  EV,set,scenario,1
+00:05:33  >> set buf 1440
+00:05:34  EV,set,buf,1440,next_boot
+00:05:34  experimento C2_S3 terminado
+00:05:35  # TTN: desconectado

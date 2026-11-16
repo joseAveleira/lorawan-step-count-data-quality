@@ -1,0 +1,33 @@
+{
+  "id": "S4-valid",
+  "description": "S4 (uplinks confirmados): 3 tramas, corte de 3 tramas y recuperación",
+  "tier": 2,
+  "duration_s": 2400,
+  "eval_s": 2400,
+  "devaddr": "260BA8DC",
+  "setup": [
+    "set scenario 1",
+    "set period 240",
+    "set fup 1",
+    "set dr 5",
+    "set adr 0",
+    "set k 4",
+    "set n 40",
+    "set delta 60",
+    "set source 0",
+    "set buf 1440",
+    "set display 1",
+    "set strategy 4",
+    "set seed 1193",
+    "set scenario 4",
+    "set outstart 720",
+    "set outlen 720"
+  ],
+  "actions": [],
+  "teardown": [
+    "set strategy 1",
+    "set scenario 1",
+    "set buf 1440"
+  ],
+  "ack_every": 0
+}

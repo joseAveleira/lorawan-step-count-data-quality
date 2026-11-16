@@ -1,0 +1,196 @@
+19:34:19  >> set scenario 1
+19:34:20  >> set period 240
+19:34:20  >> set fup 1
+19:34:20  >> set dr 5
+19:34:20  >> set adr 0
+19:34:20  >> set k 4
+19:34:20  >> set n 40
+19:34:21  >> set delta 60
+19:34:21  >> set source 0
+19:34:21  >> set buf 1440
+19:34:21  >> set display 1
+19:34:21  >> set strategy 2
+19:34:21  >> set seed 1101
+19:34:21  >> reboot
+19:34:22  EV,set,scenario,1
+19:34:22  EV,set,period,240
+19:34:22  EV,set,fup,1
+19:34:22  EV,set,dr,5
+19:34:22  EV,set,adr,0
+19:34:22  EV,set,k,4
+19:34:22  EV,set,n,40
+19:34:22  EV,set,delta,60,next_boot
+19:34:22  EV,set,source,0,next_boot
+19:34:22  EV,set,buf,1440,next_boot
+19:34:22  EV,set,display,1
+19:34:22  EV,set,strategy,2
+19:34:22  EV,set,seed,1101,next_boot
+19:34:22  EV,reboot
+19:34:22  EV,boot,26,0.2.0,3,reset
+19:34:22  EV,config,strategy=2,scenario=1,delta=60,period=240,k=4,n=40,seed=1101,source=0,dr=5,adr=0,fup=1,buf=1440,display=1,cycle=5760,window=480,geloss=10,geburst=3,outstart=600,outlen=1200
+19:34:22  EV,sensor,ok,0x4B
+19:34:22  EV,buffer,0,0,0
+19:34:22  EV,exp,continue,11575595
+19:34:22  EV,join,restored,-1117,1
+19:34:22  >> clear
+19:34:23  >> exp
+19:34:23  EV,clear
+19:34:23  EV,exp,start,23136646
+19:34:24  experimento C1_S2 en marcha: 11520 s, 0 acciones
+19:34:24  # TTN: conectado (Success), suscrito a v3/lorawan-app-iot@ttn/devices/lorapasos/#
+19:34:26  # gateway: 129 registros nuevos (último id 636)
+19:38:23  # TTN: uplink fcnt=153 fport=12 rssi=-59 snr=14.2
+19:38:29  TX,26,153,0,4,60,5,19,sent,71,23376482
+19:38:35  # gateway: 2 registros nuevos (último id 638)
+19:42:23  # TTN: uplink fcnt=154 fport=12 rssi=-44 snr=10.5
+19:42:29  TX,26,154,0,8,120,5,27,sent,82,23616475
+19:42:44  # gateway: 2 registros nuevos (último id 640)
+19:46:23  # TTN: uplink fcnt=155 fport=12 rssi=-59 snr=13.5
+19:46:29  TX,26,155,4,8,120,5,27,sent,82,23856491
+19:46:54  # gateway: 2 registros nuevos (último id 642)
+19:50:23  # TTN: uplink fcnt=156 fport=12 rssi=-57 snr=11.2
+19:50:29  TX,26,156,8,8,120,5,27,sent,82,24096507
+19:51:03  # gateway: 2 registros nuevos (último id 644)
+19:54:23  # TTN: uplink fcnt=157 fport=12 rssi=-57 snr=13.8
+19:54:29  TX,26,157,12,8,120,5,27,sent,82,24336523
+19:55:12  # gateway: 2 registros nuevos (último id 646)
+19:58:23  # TTN: uplink fcnt=158 fport=12 rssi=-39 snr=13.5
+19:58:29  TX,26,158,16,8,120,5,27,sent,82,24576539
+19:59:21  # gateway: 2 registros nuevos (último id 648)
+20:02:23  # TTN: uplink fcnt=159 fport=12 rssi=-40 snr=13.8
+20:02:28  # gateway: 2 registros nuevos (último id 650)
+20:02:29  TX,26,159,20,8,120,5,27,sent,82,24816555
+20:06:23  # TTN: uplink fcnt=160 fport=12 rssi=-58 snr=14
+20:06:29  TX,26,160,24,8,120,5,27,sent,82,25056571
+20:06:37  # gateway: 2 registros nuevos (último id 652)
+20:10:23  # TTN: uplink fcnt=161 fport=12 rssi=-58 snr=14.2
+20:10:29  TX,26,161,28,8,120,5,27,sent,82,25296587
+20:10:46  # gateway: 2 registros nuevos (último id 654)
+20:14:23  # TTN: uplink fcnt=162 fport=12 rssi=-59 snr=10.8
+20:14:29  TX,26,162,32,8,120,5,27,sent,82,25536603
+20:14:55  # gateway: 2 registros nuevos (último id 656)
+20:18:23  # TTN: uplink fcnt=163 fport=12 rssi=-59 snr=13.5
+20:18:29  TX,26,163,36,8,120,5,27,sent,82,25776619
+20:19:04  # gateway: 2 registros nuevos (último id 658)
+20:22:23  # TTN: uplink fcnt=164 fport=12 rssi=-54 snr=13.8
+20:22:29  TX,26,164,40,8,120,5,27,sent,82,26016635
+20:23:13  # gateway: 2 registros nuevos (último id 660)
+20:26:23  # TTN: uplink fcnt=165 fport=12 rssi=-56 snr=14
+20:26:29  TX,26,165,44,8,120,5,27,sent,82,26256651
+20:27:22  # gateway: 2 registros nuevos (último id 662)
+20:30:23  # TTN: uplink fcnt=166 fport=12 rssi=-37 snr=14
+20:30:29  TX,26,166,48,8,120,5,27,sent,82,26496667
+20:30:29  # gateway: 2 registros nuevos (último id 664)
+20:34:23  # TTN: uplink fcnt=167 fport=12 rssi=-36 snr=13.8
+20:34:29  TX,26,167,52,8,120,5,27,sent,82,26736683
+20:34:38  # gateway: 2 registros nuevos (último id 666)
+20:38:23  # TTN: uplink fcnt=168 fport=12 rssi=-36 snr=11.8
+20:38:29  TX,26,168,56,8,120,5,27,sent,82,26976699
+20:38:47  # gateway: 2 registros nuevos (último id 668)
+20:42:23  # TTN: uplink fcnt=169 fport=12 rssi=-36 snr=11.8
+20:42:29  TX,26,169,60,8,120,5,27,sent,82,27216715
+20:42:57  # gateway: 2 registros nuevos (último id 670)
+20:46:23  # TTN: uplink fcnt=170 fport=12 rssi=-56 snr=14.5
+20:46:29  TX,26,170,64,8,120,5,27,sent,82,27456731
+20:47:06  # gateway: 2 registros nuevos (último id 672)
+20:50:23  # TTN: uplink fcnt=171 fport=12 rssi=-36 snr=14
+20:50:29  TX,26,171,68,8,120,5,27,sent,82,27696747
+20:51:15  # gateway: 2 registros nuevos (último id 674)
+20:54:23  # TTN: uplink fcnt=172 fport=12 rssi=-56 snr=14.2
+20:54:29  TX,26,172,72,8,120,5,27,sent,82,27936763
+20:55:24  # gateway: 2 registros nuevos (último id 676)
+20:58:23  # TTN: uplink fcnt=173 fport=12 rssi=-55 snr=14
+20:58:29  TX,26,173,76,8,120,5,27,sent,82,28176778
+20:58:31  # gateway: 2 registros nuevos (último id 678)
+21:02:23  # TTN: uplink fcnt=174 fport=12 rssi=-56 snr=9.2
+21:02:29  TX,26,174,80,8,120,5,27,sent,82,28416793
+21:02:40  # gateway: 2 registros nuevos (último id 680)
+21:06:23  # TTN: uplink fcnt=175 fport=12 rssi=-54 snr=13.5
+21:06:29  TX,26,175,84,8,120,5,27,sent,82,28656808
+21:06:49  # gateway: 2 registros nuevos (último id 682)
+21:10:23  # TTN: uplink fcnt=176 fport=12 rssi=-35 snr=14.2
+21:10:29  TX,26,176,88,8,120,5,27,sent,82,28896823
+21:10:59  # gateway: 2 registros nuevos (último id 684)
+21:14:23  # TTN: uplink fcnt=177 fport=12 rssi=-35 snr=11.5
+21:14:29  TX,26,177,92,8,120,5,27,sent,82,29136838
+21:15:08  # gateway: 2 registros nuevos (último id 686)
+21:18:23  # TTN: uplink fcnt=178 fport=12 rssi=-56 snr=13.5
+21:18:29  TX,26,178,96,8,120,5,27,sent,82,29376853
+21:19:17  # gateway: 2 registros nuevos (último id 688)
+21:22:23  # TTN: uplink fcnt=179 fport=12 rssi=-57 snr=13.5
+21:22:24  # gateway: 1 registros nuevos (último id 689)
+21:22:29  TX,26,179,100,8,120,5,27,sent,82,29616868
+21:23:26  # gateway: 1 registros nuevos (último id 690)
+21:26:23  # TTN: uplink fcnt=180 fport=12 rssi=-56 snr=13.8
+21:26:29  TX,26,180,104,8,120,5,27,sent,82,29856883
+21:26:33  # gateway: 2 registros nuevos (último id 692)
+21:30:23  # TTN: uplink fcnt=181 fport=12 rssi=-38 snr=14.5
+21:30:29  TX,26,181,108,8,120,5,27,sent,82,30096898
+21:30:42  # gateway: 2 registros nuevos (último id 694)
+21:34:23  # TTN: uplink fcnt=182 fport=12 rssi=-56 snr=9.5
+21:34:29  TX,26,182,112,8,120,5,27,sent,82,30336914
+21:34:51  # gateway: 2 registros nuevos (último id 696)
+21:38:23  # TTN: uplink fcnt=183 fport=12 rssi=-56 snr=14.2
+21:38:29  TX,26,183,116,8,120,5,27,sent,82,30576930
+21:39:00  # gateway: 2 registros nuevos (último id 698)
+21:42:23  # TTN: uplink fcnt=184 fport=12 rssi=-37 snr=14
+21:42:29  TX,26,184,120,8,120,5,27,sent,82,30816946
+21:43:09  # gateway: 2 registros nuevos (último id 700)
+21:46:23  # TTN: uplink fcnt=185 fport=12 rssi=-57 snr=14
+21:46:29  TX,26,185,124,8,120,5,27,sent,82,31056962
+21:47:18  # gateway: 2 registros nuevos (último id 702)
+21:50:23  # TTN: uplink fcnt=186 fport=12 rssi=-55 snr=13.5
+21:50:26  # gateway: 2 registros nuevos (último id 704)
+21:50:29  TX,26,186,128,8,120,5,27,sent,82,31296978
+21:54:23  # TTN: uplink fcnt=187 fport=12 rssi=-38 snr=14.2
+21:54:29  TX,26,187,132,8,120,5,27,sent,82,31536994
+21:54:34  # gateway: 2 registros nuevos (último id 706)
+21:58:23  # TTN: uplink fcnt=188 fport=12 rssi=-56 snr=10
+21:58:29  TX,26,188,136,8,120,5,27,sent,82,31777010
+21:58:44  # gateway: 2 registros nuevos (último id 708)
+22:02:23  # TTN: uplink fcnt=189 fport=12 rssi=-55 snr=14.2
+22:02:29  TX,26,189,140,8,120,5,27,sent,82,32017026
+22:02:53  # gateway: 2 registros nuevos (último id 710)
+22:06:23  # TTN: uplink fcnt=190 fport=12 rssi=-56 snr=13.5
+22:06:29  TX,26,190,144,8,120,5,27,sent,82,32257042
+22:07:02  # gateway: 2 registros nuevos (último id 712)
+22:10:23  # TTN: uplink fcnt=191 fport=12 rssi=-36 snr=13.8
+22:10:29  TX,26,191,148,8,120,5,27,sent,82,32497058
+22:11:11  # gateway: 2 registros nuevos (último id 714)
+22:14:23  # TTN: uplink fcnt=192 fport=12 rssi=-36 snr=11.5
+22:14:29  TX,26,192,152,8,120,5,27,sent,82,32737074
+22:15:20  # gateway: 2 registros nuevos (último id 716)
+22:18:23  # TTN: uplink fcnt=193 fport=12 rssi=-37 snr=13.5
+22:18:27  # gateway: 2 registros nuevos (último id 718)
+22:18:29  TX,26,193,156,8,120,5,27,sent,82,32977090
+22:22:23  # TTN: uplink fcnt=194 fport=12 rssi=-37 snr=12
+22:22:29  TX,26,194,160,8,120,5,27,sent,82,33217106
+22:22:36  # gateway: 2 registros nuevos (último id 720)
+22:26:23  # TTN: uplink fcnt=195 fport=12 rssi=-56 snr=13.8
+22:26:29  TX,26,195,164,8,120,5,27,sent,82,33457122
+22:26:45  # gateway: 2 registros nuevos (último id 722)
+22:30:23  # TTN: uplink fcnt=196 fport=12 rssi=-56 snr=14.2
+22:30:29  TX,26,196,168,8,120,5,27,sent,82,33697138
+22:30:54  # gateway: 2 registros nuevos (último id 724)
+22:34:23  # TTN: uplink fcnt=197 fport=12 rssi=-55 snr=14
+22:34:29  TX,26,197,172,8,120,5,27,sent,82,33937154
+22:35:03  # gateway: 2 registros nuevos (último id 726)
+22:38:23  # TTN: uplink fcnt=198 fport=12 rssi=-37 snr=13.5
+22:38:29  TX,26,198,176,8,120,5,27,sent,82,34177170
+22:39:13  # gateway: 2 registros nuevos (último id 728)
+22:42:23  # TTN: uplink fcnt=199 fport=12 rssi=-56 snr=14.5
+22:42:29  TX,26,199,180,8,120,5,27,sent,82,34417186
+22:43:22  # gateway: 2 registros nuevos (último id 730)
+22:46:23  >> dump
+22:46:23  # TTN: uplink fcnt=200 fport=12 rssi=-56 snr=8.5
+22:46:28  TX,26,200,184,8,120,5,27,sent,82,34657202
+22:46:28  >> set strategy 1
+22:46:28  # gateway: 3 registros nuevos (último id 733)
+22:46:28  EV,status,joined=1,epoch=26,open=192,cum=3656,count=4,sent=4,acked=0
+22:46:28  EV,set,strategy,1
+22:46:28  >> set scenario 1
+22:46:29  EV,set,scenario,1
+22:46:29  >> set buf 1440
+22:46:29  EV,set,buf,1440,next_boot
+22:46:29  experimento C1_S2 terminado
+22:46:29  # TTN: desconectado

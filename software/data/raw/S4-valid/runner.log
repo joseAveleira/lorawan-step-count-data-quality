@@ -1,0 +1,85 @@
+03:48:42  >> set scenario 1
+03:48:42  >> set period 240
+03:48:42  >> set fup 1
+03:48:42  >> set dr 5
+03:48:42  >> set adr 0
+03:48:43  >> set k 4
+03:48:43  >> set n 40
+03:48:43  >> set delta 60
+03:48:43  >> set source 0
+03:48:43  >> set buf 1440
+03:48:43  >> set display 1
+03:48:44  >> set strategy 4
+03:48:44  >> set seed 1193
+03:48:44  >> set scenario 4
+03:48:44  >> set outstart 720
+03:48:44  >> set outlen 720
+03:48:44  >> reboot
+03:48:45  EV,set,scenario,1
+03:48:45  EV,set,period,240
+03:48:45  EV,set,fup,1
+03:48:45  EV,set,dr,5
+03:48:45  EV,set,adr,0
+03:48:45  EV,set,k,4
+03:48:45  EV,set,n,40
+03:48:45  EV,set,delta,60,next_boot
+03:48:45  EV,set,source,0,next_boot
+03:48:45  EV,set,buf,1440,next_boot
+03:48:45  EV,set,display,1
+03:48:45  EV,set,strategy,4
+03:48:45  EV,set,seed,1193,next_boot
+03:48:45  EV,set,scenario,4
+03:48:45  EV,set,outstart,720
+03:48:45  EV,set,outlen,720
+03:48:45  EV,reboot
+03:48:45  EV,boot,42,0.2.0,3,reset
+03:48:45  EV,config,strategy=4,scenario=4,delta=60,period=240,k=4,n=40,seed=1193,source=0,dr=5,adr=0,fup=1,buf=1440,display=1,cycle=5760,window=600,geloss=30,geburst=3,outstart=720,outlen=720
+03:48:45  EV,sensor,ok,0x4B
+03:48:45  EV,buffer,2,0,0
+03:48:45  EV,exp,continue,39548327
+03:48:45  EV,join,restored,-1117,1
+03:48:45  >> clear
+03:48:46  >> exp
+03:48:46  EV,clear
+03:48:46  EV,exp,start,52905130
+03:48:47  experimento S4-valid en marcha: 2400 s, 0 acciones
+03:48:47  # TTN: conectado (Success), suscrito a v3/lorawan-app-iot@ttn/devices/lorapasos/#
+03:48:49  # gateway: 129 registros nuevos (último id 1282)
+03:52:46  # TTN: uplink fcnt=471 fport=14 rssi=-52 snr=13.8
+03:52:50  EV,confirm,471,1
+03:52:50  TX,42,471,0,4,60,5,19,sent,71,53144899
+03:52:58  # gateway: 2 registros nuevos (último id 1284)
+03:56:46  # TTN: uplink fcnt=472 fport=14 rssi=-35 snr=10
+03:56:51  EV,confirm,472,1
+03:56:51  TX,42,472,4,4,60,5,19,sent,71,53384900
+03:57:08  # gateway: 2 registros nuevos (último id 1286)
+04:00:46  # TTN: uplink fcnt=473 fport=14 rssi=-55 snr=14.2
+04:00:51  EV,confirm,473,1
+04:00:51  TX,42,473,8,4,60,5,19,sent,71,53624900
+04:01:17  # gateway: 2 registros nuevos (último id 1288)
+04:04:45  TX,42,-1,12,4,60,5,19,suppressed,0,53864906
+04:08:45  TX,42,-1,12,8,120,5,27,suppressed,0,54104894
+04:12:45  TX,42,-1,12,12,180,5,35,suppressed,0,54344905
+04:16:46  # TTN: uplink fcnt=474 fport=14 rssi=-52 snr=11.8
+04:16:51  EV,confirm,474,1
+04:16:51  TX,42,474,12,16,240,5,43,sent,107,54584897
+04:16:51  # gateway: 2 registros nuevos (último id 1290)
+04:20:45  EV,txerr,-1108
+04:20:45  TX,42,-1,28,4,60,-1,19,dropped,0,54824904
+04:24:46  # TTN: uplink fcnt=475 fport=14 rssi=-52 snr=14.2
+04:24:51  EV,confirm,475,1
+04:24:51  TX,42,475,28,8,120,5,27,sent,82,55064891
+04:25:11  # gateway: 2 registros nuevos (último id 1292)
+04:28:46  # TTN: uplink fcnt=476 fport=14 rssi=-35 snr=13.5
+04:28:46  >> dump
+04:28:51  EV,confirm,476,1
+04:28:51  TX,42,476,36,4,60,5,19,sent,71,55304907
+04:28:51  EV,status,joined=1,epoch=42,open=40,cum=1637,count=0,sent=0,acked=0
+04:28:51  >> set strategy 1
+04:28:51  EV,set,strategy,1
+04:28:51  >> set scenario 1
+04:28:51  EV,set,scenario,1
+04:28:51  >> set buf 1440
+04:28:51  EV,set,buf,1440,next_boot
+04:28:51  experimento S4-valid terminado
+04:28:52  # TTN: desconectado

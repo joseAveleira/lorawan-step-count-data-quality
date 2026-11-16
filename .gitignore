@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+.env
+.pio/
+software/firmware/hij_node/include/secrets.h
+software/firmware/hij_node/include/secrets_*.h
+software/data/processed/fhir/
+HIJ_2026_extension/

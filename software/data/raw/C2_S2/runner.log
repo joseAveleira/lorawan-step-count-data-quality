@@ -1,0 +1,181 @@
+13:08:47  >> set scenario 1
+13:08:47  >> set period 240
+13:08:47  >> set fup 1
+13:08:48  >> set dr 5
+13:08:48  >> set adr 0
+13:08:48  >> set k 4
+13:08:48  >> set n 40
+13:08:48  >> set delta 60
+13:08:48  >> set source 0
+13:08:48  >> set buf 1440
+13:08:49  >> set display 1
+13:08:49  >> set strategy 2
+13:08:49  >> set seed 2599
+13:08:49  >> set scenario 2
+13:08:49  >> set cycle 5760
+13:08:49  >> set window 600
+13:08:50  >> reboot
+13:08:50  EV,set,scenario,1
+13:08:50  EV,set,period,240
+13:08:50  EV,set,fup,1
+13:08:50  EV,set,dr,5
+13:08:50  EV,set,adr,0
+13:08:50  EV,set,k,4
+13:08:50  EV,set,n,40
+13:08:50  EV,set,delta,60,next_boot
+13:08:50  EV,set,source,0,next_boot
+13:08:50  EV,set,buf,1440,next_boot
+13:08:50  EV,set,display,1
+13:08:50  EV,set,strategy,2
+13:08:50  EV,set,seed,2599,next_boot
+13:08:50  EV,set,scenario,2
+13:08:50  EV,set,cycle,5760
+13:08:50  EV,set,window,600
+13:08:50  EV,reboot
+13:08:50  EV,boot,39,0.2.0,3,reset
+13:08:50  EV,config,strategy=2,scenario=2,delta=60,period=240,k=4,n=40,seed=2599,source=0,dr=5,adr=0,fup=1,buf=1440,display=1,cycle=5760,window=600,geloss=10,geburst=3,outstart=1800,outlen=5760
+13:08:50  EV,sensor,ok,0x4B
+13:08:50  EV,buffer,1,0,0
+13:08:51  EV,exp,continue,4018
+13:08:51  EV,join,restored,-1117,1
+13:08:51  >> clear
+13:08:51  >> exp
+13:08:51  EV,clear
+13:08:51  EV,exp,start,113624
+13:08:53  experimento C2_S2 en marcha: 19680 s, 1 acciones
+13:08:53  # TTN: conectado (Success), suscrito a v3/lorawan-app-iot@ttn/devices/lorapasos/#
+13:08:55  # gateway: 129 registros nuevos (último id 1144)
+13:12:51  # TTN: uplink fcnt=404 fport=12 rssi=-60 snr=13.8
+13:12:57  TX,39,404,0,4,60,5,19,sent,71,353387
+13:13:04  # gateway: 2 registros nuevos (último id 1146)
+13:16:51  # TTN: uplink fcnt=405 fport=12 rssi=-43 snr=10.5
+13:16:57  TX,39,405,0,8,120,5,27,sent,82,593391
+13:17:14  # gateway: 2 registros nuevos (último id 1148)
+13:20:51  TX,39,-1,4,8,120,5,27,suppressed,0,833407
+13:24:51  TX,39,-1,8,8,120,5,27,suppressed,0,1073384
+13:28:51  TX,39,-1,12,8,120,5,27,suppressed,0,1313388
+13:32:51  TX,39,-1,16,8,120,5,27,suppressed,0,1553388
+13:36:51  TX,39,-1,20,8,120,5,27,suppressed,0,1793387
+13:40:51  TX,39,-1,24,8,120,5,27,suppressed,0,2033385
+13:44:51  TX,39,-1,28,8,120,5,27,suppressed,0,2273379
+13:48:51  TX,39,-1,32,8,120,5,27,suppressed,0,2513391
+13:52:51  TX,39,-1,36,8,120,5,27,suppressed,0,2753389
+13:56:51  TX,39,-1,40,8,120,5,27,suppressed,0,2993391
+14:00:51  TX,39,-1,44,8,120,5,27,suppressed,0,3233385
+14:04:51  TX,39,-1,48,8,120,5,27,suppressed,0,3473383
+14:08:51  TX,39,-1,52,8,120,5,27,suppressed,0,3713377
+14:12:51  TX,39,-1,56,8,120,5,27,suppressed,0,3953391
+14:16:51  TX,39,-1,60,8,120,5,27,suppressed,0,4193386
+14:20:51  TX,39,-1,64,8,120,5,27,suppressed,0,4433388
+14:24:51  TX,39,-1,68,8,120,5,27,suppressed,0,4673385
+14:28:39  # TTN: desconectado
+14:28:41  # TTN: conectado (Success), suscrito a v3/lorawan-app-iot@ttn/devices/lorapasos/#
+14:28:51  TX,39,-1,72,8,120,5,27,suppressed,0,4913386
+14:32:51  TX,39,-1,76,8,120,5,27,suppressed,0,5153383
+14:36:51  TX,39,-1,80,8,120,5,27,suppressed,0,5393386
+14:40:51  TX,39,-1,84,8,120,5,27,suppressed,0,5633383
+14:44:51  TX,39,-1,88,8,120,5,27,suppressed,0,5873374
+14:48:51  # TTN: uplink fcnt=406 fport=12 rssi=-60 snr=14.2
+14:48:57  TX,39,406,92,8,120,5,27,sent,82,6113379
+14:49:51  # gateway: 2 registros nuevos (último id 1150)
+14:52:51  # TTN: uplink fcnt=407 fport=12 rssi=-62 snr=11.5
+14:52:57  TX,39,407,96,8,120,5,27,sent,82,6353395
+14:52:58  # gateway: 2 registros nuevos (último id 1152)
+14:56:51  TX,39,-1,100,8,120,5,27,suppressed,0,6593411
+15:00:51  TX,39,-1,104,8,120,5,27,suppressed,0,6833381
+15:04:51  TX,39,-1,108,8,120,5,27,suppressed,0,7073384
+15:06:57  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+15:08:51  TX,39,-1,112,8,120,5,27,suppressed,0,7313386
+15:12:51  TX,39,-1,116,8,120,5,27,suppressed,0,7553378
+15:16:51  TX,39,-1,120,8,120,5,27,suppressed,0,7793389
+15:17:48  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+15:20:20  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+15:20:51  TX,39,-1,124,8,120,5,27,suppressed,0,8033387
+15:21:50  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+15:23:21  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+15:24:51  TX,39,-1,128,8,120,5,27,suppressed,0,8273380
+15:28:51  TX,39,-1,132,8,120,5,27,suppressed,0,8513391
+15:32:51  TX,39,-1,136,8,120,5,27,suppressed,0,8753385
+15:36:51  TX,39,-1,140,8,120,5,27,suppressed,0,8993378
+15:40:51  TX,39,-1,144,8,120,5,27,suppressed,0,9233388
+15:44:51  TX,39,-1,148,8,120,5,27,suppressed,0,9473378
+15:48:51  TX,39,-1,152,8,120,5,27,suppressed,0,9713386
+15:52:51  TX,39,-1,156,8,120,5,27,suppressed,0,9953378
+15:56:51  TX,39,-1,160,8,120,5,27,suppressed,0,10193384
+16:00:51  TX,39,-1,164,8,120,5,27,suppressed,0,10433374
+16:04:51  TX,39,-1,168,8,120,5,27,suppressed,0,10673384
+16:05:21  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+16:08:51  TX,39,-1,172,8,120,5,27,suppressed,0,10913383
+16:12:51  TX,39,-1,176,8,120,5,27,suppressed,0,11153376
+16:16:51  TX,39,-1,180,8,120,5,27,suppressed,0,11393374
+16:20:51  TX,39,-1,184,8,120,5,27,suppressed,0,11633388
+16:24:51  # TTN: uplink fcnt=408 fport=12 rssi=-55 snr=14.2
+16:24:57  TX,39,408,188,8,120,5,27,sent,82,11873387
+16:25:04  # gateway: 2 registros nuevos (último id 1154)
+16:28:51  # TTN: uplink fcnt=409 fport=12 rssi=-36 snr=14
+16:28:57  TX,39,409,192,8,120,5,27,sent,82,12113403
+16:29:13  # gateway: 2 registros nuevos (último id 1156)
+16:32:48  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+16:32:51  TX,39,-1,196,8,120,5,27,suppressed,0,12353419
+16:36:51  TX,39,-1,200,8,120,5,27,suppressed,0,12593389
+16:40:51  TX,39,-1,204,8,120,5,27,suppressed,0,12833379
+16:44:51  TX,39,-1,208,8,120,5,27,suppressed,0,13073373
+16:48:51  TX,39,-1,212,8,120,5,27,suppressed,0,13313388
+16:52:51  TX,39,-1,216,8,120,5,27,suppressed,0,13553377
+16:56:51  TX,39,-1,220,8,120,5,27,suppressed,0,13793390
+17:00:51  TX,39,-1,224,8,120,5,27,suppressed,0,14033381
+17:04:51  TX,39,-1,228,8,120,5,27,suppressed,0,14273376
+17:08:51  TX,39,-1,232,8,120,5,27,suppressed,0,14513388
+17:12:51  TX,39,-1,236,8,120,5,27,suppressed,0,14753383
+17:16:51  TX,39,-1,240,8,120,5,27,suppressed,0,14993375
+17:20:54  TX,39,-1,244,8,120,5,27,suppressed,0,15233391
+17:24:54  TX,39,-1,248,8,120,5,27,suppressed,0,15473380
+17:28:54  TX,39,-1,252,8,120,5,27,suppressed,0,15713378
+17:32:54  TX,39,-1,256,8,120,5,27,suppressed,0,15953390
+17:36:41  # gateway: error al leer: Command '[ssh ...]' timed out after 30 seconds
+17:36:54  TX,39,-1,260,8,120,5,27,suppressed,0,16193387
+17:40:54  TX,39,-1,264,8,120,5,27,suppressed,0,16433378
+17:44:54  TX,39,-1,268,8,120,5,27,suppressed,0,16673376
+17:48:54  TX,39,-1,272,8,120,5,27,suppressed,0,16913375
+17:52:54  TX,39,-1,276,8,120,5,27,suppressed,0,17153391
+17:56:54  TX,39,-1,280,8,120,5,27,suppressed,0,17393385
+18:00:54  # TTN: uplink fcnt=410 fport=12 rssi=-36 snr=13
+18:01:00  TX,39,410,284,8,120,5,27,sent,82,17633379
+18:01:36  # gateway: 2 registros nuevos (último id 1158)
+18:04:54  # TTN: uplink fcnt=411 fport=12 rssi=-55 snr=13.8
+18:05:00  TX,39,411,288,8,120,5,27,sent,82,17873395
+18:05:45  # gateway: 2 registros nuevos (último id 1160)
+18:06:51  >> set scenario 1
+18:06:51  nota: vaciado con cobertura continua
+18:06:51  EV,set,scenario,1
+18:08:54  # TTN: uplink fcnt=412 fport=12 rssi=-56 snr=14.2
+18:09:00  TX,39,412,292,8,120,5,27,sent,82,18113411
+18:09:54  # gateway: 2 registros nuevos (último id 1162)
+18:12:54  # TTN: uplink fcnt=413 fport=12 rssi=-56 snr=8.8
+18:13:00  TX,39,413,296,8,120,5,27,sent,82,18353427
+18:13:05  # gateway: 2 registros nuevos (último id 1164)
+18:16:54  # TTN: uplink fcnt=414 fport=12 rssi=-55 snr=14.8
+18:17:00  TX,39,414,300,8,120,5,27,sent,82,18593443
+18:17:14  # gateway: 2 registros nuevos (último id 1166)
+18:20:54  # TTN: uplink fcnt=415 fport=12 rssi=-54 snr=13.8
+18:21:00  TX,39,415,304,8,120,5,27,sent,82,18833459
+18:21:23  # gateway: 2 registros nuevos (último id 1168)
+18:24:54  # TTN: uplink fcnt=416 fport=12 rssi=-55 snr=14.2
+18:25:00  TX,39,416,308,8,120,5,27,sent,82,19073475
+18:25:32  # gateway: 2 registros nuevos (último id 1170)
+18:28:54  # TTN: uplink fcnt=417 fport=12 rssi=-36 snr=14
+18:29:00  TX,39,417,312,8,120,5,27,sent,82,19313491
+18:29:41  # gateway: 2 registros nuevos (último id 1172)
+18:32:54  # TTN: uplink fcnt=418 fport=12 rssi=-35 snr=14
+18:33:00  TX,39,418,316,8,120,5,27,sent,82,19553507
+18:33:51  # gateway: 2 registros nuevos (último id 1174)
+18:36:51  >> dump
+18:36:51  EV,status,joined=1,epoch=39,open=327,cum=6148,count=7,sent=4,acked=0
+18:36:51  >> set strategy 1
+18:36:52  EV,set,strategy,1
+18:36:52  >> set scenario 1
+18:36:52  EV,set,scenario,1
+18:36:52  >> set buf 1440
+18:36:52  EV,set,buf,1440,next_boot
+18:36:52  experimento C2_S2 terminado
+18:36:53  # TTN: desconectado

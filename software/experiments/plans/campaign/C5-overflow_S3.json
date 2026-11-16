@@ -1,0 +1,34 @@
+{
+  "id": "C5-overflow_S3",
+  "description": "Corte de 72 h con B = 96 bins (24 h)",
+  "tier": 1,
+  "duration_s": 24840,
+  "eval_s": 24840,
+  "devaddr": "260BA8DC",
+  "setup": [
+    "set scenario 1",
+    "set period 240",
+    "set fup 1",
+    "set dr 5",
+    "set adr 0",
+    "set k 4",
+    "set n 40",
+    "set delta 60",
+    "set source 0",
+    "set buf 1440",
+    "set display 1",
+    "set strategy 3",
+    "set seed 1144",
+    "set scenario 5",
+    "set outstart 1800",
+    "set outlen 17280",
+    "set buf 96"
+  ],
+  "actions": [],
+  "teardown": [
+    "set strategy 1",
+    "set scenario 1",
+    "set buf 1440"
+  ],
+  "ack_every": 40
+}
